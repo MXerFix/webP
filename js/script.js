@@ -252,6 +252,11 @@ for (productCard of prouctCards) {
     })
 }
 
+const goHome = document.getElementById("go-home")
+goHome.addEventListener("click", function(){
+    window.document.getElementById("content").scrollIntoView();
+})
+
 // const toCUbtns = document.getElementsByClassName("to-cu-btn");
 // for (toCUbtn of toCUbtns) {
 //     toCUbtn.addEventListener("click", function(){

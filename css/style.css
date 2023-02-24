@@ -96,6 +96,15 @@ a {
     border-radius: 1000px;
 }
 
+.nav-list-item a {
+    color: white;
+    transition: all .3s;
+}
+
+.nav-list-item:hover a {
+    color: #222;
+}
+
 .nav-list {
     list-style-type: none;
     display: flex;
