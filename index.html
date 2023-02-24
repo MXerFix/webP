@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,18 +9,342 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500&family=Montserrat+Alternates&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800&family=Tilt+Neon&display=swap"
+        rel="stylesheet">
     <title>Web-Project</title>
 </head>
+
 <body>
     <div class="content">
+        <img id="title-back" src="img/title-back.png" alt="" class="parallax-object">
+        <!-- <img src="img/black-ellipse.svg" alt="" class="parallax-object">
+        <img src="img/black-ellipse.svg" alt="" class="parallax-object">
+        <img src="img/Ellipse1.svg" alt="" class="parallax-object">
+        <img src="img/Ellipse2.svg" alt="" class="parallax-object">
+        <img src="img/Ellipse3.svg" alt="" class="parallax-object"> -->
+        <img src="" alt="" class="parallax-object">
+        <div id="header-scrolled" class="header">
+            <div class="logo">
+                <img src="img/header-logo.svg" alt="" class="logo-img">
+            </div>
+            <div class="nav">
+                <div class="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-list-item">
+                            Услуги
+                        </li>
+                        <li class="nav-list-item">
+                            Проекты
+                        </li>
+                        <li class="nav-list-item">
+                            Контакты
+                        </li>
+                        <li class="nav-list-item">
+                            Отзывы
+                        </li>
+                    </ul>
+                    <img src="img/homeic.svg" alt="" class="burger-home-img">
+                </div>
+                <!-- <div id="close-btn-header" class="close-btn">
+                    <span class="burger-line"></span>
+                </div> -->
+                <div id="close-btn" class="burger-btn-standart active">
+                    <span class="btn-span active"></span>
+                    <span class="btn-span active"></span>
+                    <span class="btn-span active"></span>
+                </div>
+            </div>
+        </div>
+        <div class="under-section">
+            <div class="background-title">
+                <div class="title">
+                    <img src="img/title.svg" alt="" class="title-img">
+                    <p class="typing-title"></p>
+                </div>
+            </div>
+            <a href="#how-to-work" class="scroll-down-window"><img src="img/down-arrow.svg" alt=""></a>
+        </div>
         <div class="container">
-            <div class="in-progress">
-               <a class="anim" href="https://vk.com/webprojectstudio">В разработке :)</a>
+            <div id="how-to-work" class="section-title">
+                <h2>
+                    Как мы работаем?
+                </h2>
+            </div>
+            <div class="steps">
+                <div class="steps-box">
+                    <ul class="steps-list">
+                        <li class="step-item" data-step="0">00 Консультация</li>
+                        <li class="step-item" data-step="1">01 Прототипирование</li>
+                        <li class="step-item" data-step="2">02 Дизайн-концепция</li>
+                        <li class="step-item" data-step="3">03 Верстка по макету</li>
+                        <li class="step-item" data-step="4">04 Тестирование</li>
+                        <li class="step-item" data-step="5">05 Запуск</li>
+                    </ul>
+                    <div class="step-icons-box">
+                        <div class="step-icon step-center"><img src="img/step_consultation.svg" alt=""></div>
+                        <div class="step-icon step-down"><img src="img/step_prototype.svg" alt=""></div>
+                        <div class="step-icon unvisible"><img src="img/step_design.svg" alt=""></div>
+                        <div class="step-icon unvisible"><img src="img/step_layout.svg" alt=""></div>
+                        <div class="step-icon unvisible"><img src="img/step_testing.svg" alt=""></div>
+                        <div class="step-icon step-up"><img src="img/step_start.svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="what-develop" class="section-title">
+                <h2>
+                    Что разрабатываем?
+                </h2>
+            </div>
+            <div class="catalog">
+                <div class="products-box">
+                    <div class="products-item">
+                        <div class="product-inbox">
+                            <div class="dev-time">
+                                от 7 дней
+                            </div>
+                            <div class="product-title">
+                                <h4>Лендинг</h4>
+                                <p>одностраничный сайт</p>
+                                <img src="img/hot.svg" alt="" style="width: 160px;">
+                            </div>
+                            <div class="product-price">
+                                <p>от 19990</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-item">
+                        <div class="product-inbox">
+                            <div class="dev-time">
+                                от 5 дней
+                            </div>
+                            <div class="product-title">
+                                <h4>Сайт-визитка</h4>
+                                <p>сайт с информацией о компании</p>
+                            </div>
+                            <div class="product-price">
+                                <p>от 14990</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-item">
+                        <div class="product-inbox">
+                            <div class="dev-time">
+                                от 14 дней
+                            </div>
+                            <div class="product-title">
+                                <h4>Многостраничный</h4>
+                                <p>сайт для крупных организаций</p>
+                            </div>
+                            <div class="product-price">
+                                <p>от 44990</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-item">
+                        <div class="product-inbox">
+                            <div class="dev-time">
+                                от 21 дня
+                            </div>
+                            <div class="product-title">
+                                <h4>Интернет-магазин</h4>
+                                <p>сайт для онлайн продаж</p>
+                            </div>
+                            <div class="product-price">
+                                <p>от 64990</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact-us-st" class="card-take-offer-btn to-cu-btn">Заказать</a>
+                </div>
+                
+                <!-- <div class="cards">
+                    <div class="card" data-card="0">
+                        <div class="incard">
+                            <div class="dev-time">от х дней</div>
+                            <div class="card-title">Сайт-визитка</div>
+                            <div class="title-descr">сайт с информацией о компании</div>
+                            <div class="card__detail">Подойдет малому бизнесу, молодым фирмам и индивидуальным
+                                предпринимателям. <br> Обычно состоит из 3-5 страниц.</div>
+                        </div>
+                    </div>
+                    <div class="card" data-card="1">
+                        <div class="incard">
+                            <img src="img/hot.svg" alt="" class="hot-img">
+                            <div id="dev-time-hot" class="dev-time">от х дней</div>
+                            <div class="card-title">Лендинг</div>
+                            <div class="title-descr">одностраничный сайт</div>
+                            <div class="card__detail">Ключевое отличие лендинга от других типов сайтов то, что он всегда
+                                состоит из одной страницы и создается только под один товар или услугу.</div>
+                        </div>
+                    </div>
+                    <div class="card" data-card="2">
+                        <div class="incard">
+                            <div class="dev-time">от х дней</div>
+                            <div class="card-title fs-32">Многостраничный</div>
+                            <div class="title-descr">сайт для крупных организаций</div>
+                            <div class="card__detail">Такие сайты могут быть использованы практически для любых типов
+                                проектов. <br> Число страниц может быть произвольным.</div>
+                        </div>
+                    </div>
+                    <div class="card" data-card="3">
+                        <div class="incard">
+                            <div class="dev-time">от х дней</div>
+                            <div class="card-title">Лендинг</div>
+                            <div class="title-descr">одностраничный сайт</div>
+                            <div class="card__detail">Ключевое отличие лендинга от других типов сайтов то, что он всегда
+                                состоит из одной страницы и создается только под один товар или услугу.</div>
+                        </div>
+                    </div> -->
+                <!-- <div class="card" data-card="4">
+                        <div class="dev-time">от х дней</div>
+                        <div class="card-title">Многостраничный сайт</div>
+                        <div class="card__detail">Корпоративный</div>
+                    </div>
+                    <div class="card" data-card="5">
+                        <div class="dev-time">от х дней</div>
+                        <div class="card-title"></div>
+                        <div class="card__detail">Еще лендинг</div>
+                    </div> -->
+                <!-- <div id="arrow-left" class="slide-arrow"><img src="img/slide-arrow.svg" alt=""></div>
+                    <div id="arrow-right" class="slide-arrow"><img src="img/slide-arrow.svg" alt=""></div>
+                </div>
+                <div class="card-take-offer-btn">Заказать</div> -->
+            </div>
+            <div class="container">
+                <div class="section-title">
+                    <h2>Другое всякое</h2>
+                </div>
+                <div class="other-services">
+                    <div class="other-services-box">
+                        <div class="other-service">
+                            <div class="other-service-inbox">
+                                <div class="dev-time-box">
+                                    <div class="dev-time">от х дней</div>
+                                </div>
+                                <div class="other-service-title">
+                                    <h4>Редизайн сайтов</h4>
+                                    <p>внесение поправок в готовый сайт</p>
+                                </div>
+                                <div class="other-service-descr">
+                                    <p>Поможем, если сайт устарел, давно не обновлялся или не показывает нужную
+                                        конверсию.</p>
+                                </div>
+                                <div class="other-btn-box">
+                                    <a href="#contact-us-st" class="other-btn to-cu-btn">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="other-service">
+                            <div class="other-service-inbox">
+                                <div class="dev-time-box">
+                                    <div class="dev-time">от х дней</div>
+                                </div>
+                                <div class="other-service-title">
+                                    <h4>Создание фирменного стиля</h4>
+                                    <p>создание внешного образа компании</p>
+                                </div>
+                                <div class="other-service-descr">
+                                    <p>Поможем определиться с имиджем компании. Имея уникальный образ, Вы сможете
+                                        привлечь гораздо больше клиентов.</p>
+                                </div>
+                                <div class="other-btn-box">
+                                    <a href="#contact-us-st" class="other-btn to-cu-btn">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-title">
+                    <h2>Наши работы</h2>
+                </div>
+                <div class="portfolio">
+                    <div class="portfolio-box">
+                        <div class="portfolio-inbox">
+                            <div class="blur">
+                                <a target="_blank" id="goto-avtomix" href="https://avtomix27.ru/" class="portfolio-goto">Перейти</a>
+                            </div>
+                            <div class="other-service-title">
+                                <h4>AVTOMIX27</h4>
+                                <p>Сервис технического осмотра</p>
+                            </div>
+                            <div id="avtomix" class="portfolio-item"><img src="img/avtomix.webp" alt=""></div>
+                        </div>
+                        <div class="portfolio-inbox">
+                            <!-- <div class="blur">
+                                <a id="" href="avtimix27.ru" class="portfolio-goto">Перейти</a>
+                            </div> -->
+                            <div class="other-service-title">
+                                <h4>Место для вашего кейса</h4>
+                                <p>закажите сайт у нас, и он обязательно появится в этом окне</p>
+                            </div>
+                            <a href="#contact-us-st" id="new-case" class="new-case"><img src="img/new-case.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact-us-st" class="contact-us-title">
+                    <h3>Обратная связь</h3>
+                </div>
+                <div class="contact-us">
+                    <div class="contact-us-box">
+                        <div id="tg-item" class="contact-us-item">
+                            <!-- <img src="img/c-u-ellipse.svg" alt="" class="in-c-ellipse"> -->
+                            <div class="in-c-ellipse"></div>
+                            <p>Telegram</p>
+                        </div>
+                        <div id="vk-item" class="contact-us-item">
+                            <div class="in-c-ellipse"></div>
+                            <p>VKontakte</p>
+                        </div>
+                        <div id="email-item" class="contact-us-item">
+                            <div id="email-ellipse" class="in-c-ellipse"></div>
+                            <p>eMail</p>
+                        </div>
+                    </div>
+                    <div class="contact-us-fomr">
+                        <div class="form-title">Заполните форму <br> и мы свяжемся с Вами!</div>
+                        <form action="" class="form-box">
+                            <div class="text-field text-field_floating-3">
+                                <input name="name" type="name" id="name" class="form-item text-field__input"
+                                    placeholder="Ваше имя" type="text">
+                                <label class="text-field__label" for="name">Имя</label>
+                            </div>
+                            <div class="text-field text-field_floating-3">
+                                <input name="tel" type="tel" id="tel" class="form-item text-field__input"
+                                    placeholder="Номер телефона" type="text">
+                                <label class="text-field__label" for="tel">Почта или телефон</label>
+                            </div>
+                            <!-- <select class="form-item" name="product" id="product">
+                                <option value="Лендинг">Лендинг</option>
+                                <option value="Визитка">Визитка</option>
+                                <option value="Многостраничный сайт">Многостраничный сайт</option>
+                                <option value="Интернет-магазин">Интернет-магазин</option>
+                                <option value="Редизайн">Редизайн</option>
+                                <option value="Оформление компании">Оформление компании</option>
+                            </select> -->
+                            <div class="category-box">
+
+                            </div>
+                            <button class="form-item submit-item">Отправить</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Flip.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/MotionPathPlugin.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/PixiPlugin.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script defer src="js/script.js"></script>
 </body>
+
 </html>
