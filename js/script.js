@@ -11,16 +11,24 @@ gsap.to(".title", {
 })
 
 gsap.from(".steps-list", {
-    x: -200,
-    scrollTrigger: {
+    x: -400,
+    opacity:0,
+        scrollTrigger: {
         scrub: true,
+        start:"-800px",
+        end:"100%",
+        trigger:"#how-to-work",
     }
 })
 
 gsap.from(".step-icons-box", {
     x: 100,
+    opacity:0,
     scrollTrigger: {
+        trigger:"#how-to-work",
         scrub: true,
+        start:"-800px",
+        end:"100%",
     }
 })
 
@@ -32,6 +40,36 @@ gsap.to("#title-back", {
         scrub: true,
     }
 })
+
+gsap.to("#ellipse1", {
+    x: 400,
+    scale: 0.2,
+    opacity: 0,
+    scrollTrigger: {
+        scrub: true,
+    }
+})
+
+gsap.to("#ellipse2", {
+    y: -1000,
+    scale: 0.2,
+    opacity: 0,
+    scrollTrigger: {
+        scrub: true,
+    }
+})
+
+gsap.to("#ellipse3", {
+    x: -400,
+    scale: 0.2,
+    opacity: 0,
+    scrollTrigger: {
+        scrub: true,
+        duration: 3,
+    }
+})
+
+
 
 // gsap.fromTo(".catalog", { opacity: 0 }, { opacity: 1, scrollTrigger: { scrub: true, trigger: "#what-develop", start: "center 75%", end: "top" } })
 
@@ -227,7 +265,8 @@ const steps = ((() => {
 //     homeIcon.classList.toggle("rotate1");
 // });
 
-const closeAnimBtn = document.getElementById("close-btn");
+window.addEventListener("DOMContentLoaded", function () {
+    const closeAnimBtn = document.getElementById("close-btn");
 closeAnimBtn.addEventListener("click", function () {
     let navMenu = document.getElementsByClassName("nav-list-item");
     for (navMenuItem of navMenu) {
@@ -244,39 +283,57 @@ closeAnimBtn.addEventListener("click", function () {
 const prouctCards = document.getElementsByClassName("products-item");
 for (productCard of prouctCards) {
     productCard.addEventListener("click", function() {
-        for (card of prouctCards) {
+        let that = this
+        // if (this.classList.contains("on")) {
+        //     for (card of prouctCards) {
+        //         card.classList.remove("d-none")
+        //     }
+        // }
+        // else {
+        //     setTimeout(function(){
+        //         for (card of prouctCards) {
+        //             card.classList.add("d-none")
+        //         }
+        //     }, 300)
+        // }
+        for (let card of prouctCards) {
             card.classList.toggle("off")
-        }
+            card.querySelector(".product-inbox").classList.toggle("off")
+            // if (card.classList.contains("d-none")){
+            //     card.classList.remove("d-none")
+            // }
+            // else {
+            //     setTimeout(function(){
+            //         card.classList.add("d-none")
+            //     }, 300);
+            // }
+            }
         inbox = this.querySelector("#outbox")
         if (inbox.classList.contains("inbox-on")) {
+
             setTimeout(function() {
                 inbox.classList.remove("inbox-on")
             }, 300)
         }
-        else {inbox.classList.add("inbox-on")}
+        else {
+            inbox.classList.add("inbox-on")
+        }
+        // setTimeout(function(){that.classList.remove("d-none");}, 300);
         this.classList.remove("off");
+        this.querySelector(".product-inbox").classList.remove("off")
         this.classList.toggle("on");
         inbox.querySelector(".product-descr-hidden").classList.toggle("product-descr-visible")
     })
 }
+})
+
+
 
 const goHome = document.getElementById("go-home")
 goHome.addEventListener("click", function(){
     window.document.getElementById("content").scrollIntoView();
 })
 
-// const toCUbtns = document.getElementsByClassName("to-cu-btn");
-// for (toCUbtn of toCUbtns) {
-//     toCUbtn.addEventListener("click", function(){
-
-//     })
-// }
-
-// $(document).ready(function () {
-//     $(".burger-btn-standart").click(function () {
-//         $(this).find("span").toggleClass("active");
-//     });
-// });
 
 
 const $header = $("#header-scrolled")
@@ -295,4 +352,58 @@ $(window).on("scroll", function () {
     prevScroll = scrolled
 });
 
+
+gsap.from("#landing-item", {
+    x: -200,
+    // opacity:0,
+        scrollTrigger: {
+        scrub: 0,
+        start:"-1000px",
+        end:"-250px",
+        trigger:"#landing-item",
+    }
+})
+
+gsap.from("#bcard-item", {
+    x: 200,
+    // opacity:0,
+    scrollTrigger: {
+        trigger:"#bcard-item",
+        scrub: 0,
+        start:"-1000px",
+        end:"-300px",
+    }
+})
+
+gsap.from("#multi-item", {
+    x: -200,
+    // opacity:0,
+        scrollTrigger: {
+        scrub: 0,
+        start:"-1000px",
+        end:"-450px",
+        trigger:"#multi-item",
+    }
+})
+
+gsap.from("#shop-item", {
+    x: 200,
+    // opacity:0,
+    scrollTrigger: {
+        trigger:"#shop-item",
+        scrub: 0,
+        start:"-1000px",
+        end:"-700px",
+    }
+})
+
+gsap.from(".other-service", {
+    scale: 0.3,
+    scrollTrigger: {
+        trigger:".other-services",
+        scrub:true,
+        start:"-1000px",
+        end:"-250px"
+    }
+})
 

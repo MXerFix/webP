@@ -34,6 +34,31 @@ a {
     z-index: -10;
 }
 
+#back-ellipses {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+#ellipse1 {
+    top: 600px;
+    left: 1000px;
+}
+
+#ellipse2 {
+    top: 200px;
+    left: 400px;
+}
+
+#ellipse3 {
+    top: 650px;
+    left: 50px;
+}
+
+.ellipse-shadow {
+
+}
+
 #title-back {
     width: 1024px;
     top: 120px;
@@ -282,7 +307,7 @@ a {
 }
 
 .section-title {
-    margin-bottom: 128px;
+    margin-bottom: 64px;
 }
 
 .section-title h2 {
@@ -299,17 +324,15 @@ a {
 }
 
 .steps {
-    margin-bottom: 64px;
+    
 }
 
 .steps-box {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-
     border-radius: 36px;
-    padding: 72px;
 }
 
 .steps-list {
@@ -317,6 +340,8 @@ a {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 .step-item {
@@ -392,8 +417,8 @@ a {
 .step-descr p {
     margin: 0;
     padding: 8px 18px;
-    font-size: 18px;
-    font-weight: 200;
+    font-size: 17px;
+    font-weight: 300;
     /* text-align: center; */
     font-family: "Montserrat", sans-serif;
 }
@@ -437,6 +462,10 @@ a {
     justify-content: center;
     align-items: center;
     transition: all .3s;
+    background-image: url(../img/click.svg);
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position: 1260px 100px;
 }
 
 .products-item {
@@ -447,6 +476,10 @@ a {
     /* border: 2px #fff solid; */
     transition: all .3s;
     cursor: pointer;
+}
+
+.products-item:last-child {
+    margin-bottom: 0;
 }
 
 .products-item:hover {
@@ -483,6 +516,8 @@ a {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    opacity: 1;
+    transition: opacity .05s;
 }
 
 .product-inbox:hover {
@@ -542,14 +577,19 @@ a {
     box-shadow: none;
 }
 
+.d-none {
+    display: none;
+}
+
 .off {
+    opacity: 0;
+    transition: all .3s;
     margin: 0;
-    padding: 0;
-    border: 0;
     width: 0;
     height: 0;
+    padding: 0;
+    border: 0;
     visibility: hidden;
-    transition: all .3s;
     scale: 0;
 }
 
@@ -566,14 +606,18 @@ a {
 .product-descr-hidden {
     scale: 0;
     opacity: 0;
-    transition: all .3s;
+    transition: all .2s;
+}
+
+.product-descr-hidden img {
+    width: 768px;
 }
 
 
 .product-descr-visible {
     scale: 1;
     opacity: 1;
-    transition: all .3s;
+    transition: all .2s;
 }
 
 
@@ -705,6 +749,7 @@ a {
     transition: all .3s;
     cursor: pointer;
     margin-bottom: 24px;
+    margin-top: 48px;
 }
 
 .card-take-offer-btn:hover {
@@ -851,6 +896,11 @@ a {
     text-align: center;
 }
 
+.other-service-big {
+    width: 75%;
+    margin-bottom: 48px;
+}
+
 .other-btn-box {
     display: block;
     width: max-content;
@@ -934,7 +984,7 @@ a {
 
 .blur {
     width: 100%;
-    height: 100%;
+    height: 90%;
     border-radius: 48px;
     position: absolute;
     z-index: 3;
@@ -1295,6 +1345,7 @@ a {
 
 .footer {
     width: 100%;
+    background-color: #222;
 }
 
 .footer a {
@@ -1306,6 +1357,7 @@ a {
 }
 
 .footer-nav-list {
+    margin-top: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
