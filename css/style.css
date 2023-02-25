@@ -108,43 +108,43 @@ a {
     background-color: #222;
 }
 
-
-
 .nav-list-item {
-    margin-left: 40px;
-    color: white;
-    font-size: 28px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 200;
-    padding: 10px 20px;
-    border-radius: 1000px;
-    opacity: 1;
-    transition: all .3s;
-    transition: font-size .3s;
-    transition: margin .3s;
-    transition: opacity .3s;
-    transition: padding .3s;
 }
 
 .nav-list-item a {
+    margin-left: 40px;
     color: white;
-    transition: all .3s;
+    font-size: 28px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 200;
+    padding: 10px 20px;
+    border-radius: 48px;
+    color: #fff;
+    transition: .3s;
 }
+
+/* .nav-list-item:hover {
+    color: #222;
+    background-color: #FFCC00;
+} */
 
 .nav-list-item:hover a {
     color: #222;
+    background-color: #FFCC00;
 }
 
 #take-offer {
     background-color: #FFCC00;
+    border-radius: 48px;
+    padding: 10px 20px;
 }
 
-#take-offer a {
+#take-offer {
     color: #222;
 }
 
 #take-offer:hover {
-    box-shadow: 8px 8px 0 #111;
+    box-shadow: 8px 8px 0 #fff;
 }
 
 
@@ -152,22 +152,6 @@ a {
     list-style-type: none;
     display: flex;
     padding: 0;
-}
-
-.nav-close {
-    margin: 0;
-    padding: 0;
-    font-size: 0;
-    transition: all .3s;
-    transition: font-size .3s;
-    transition: margin .3s;
-    transition: padding .3s;
-}
-
-
-.nav-list-item:hover {
-    color: #222;
-    background-color: #FFCC00;
 }
 
 .burger-home-img {
@@ -190,6 +174,12 @@ a {
     rotate: 360deg;
     margin-left: 4px;
     transition: all .3s;
+}
+
+.nav-close {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 0 !important;
 }
 
 .burger-btn,

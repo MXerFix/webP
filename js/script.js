@@ -269,7 +269,7 @@ window.addEventListener("DOMContentLoaded", function () {
     
     const closeAnimBtn = document.getElementById("close-btn");
 closeAnimBtn.addEventListener("click", function () {
-    let navMenu = document.getElementsByClassName("nav-list-item");
+    let navMenu = document.getElementsByClassName("nlia");
     for (navMenuItem of navMenu) {
         navMenuItem.classList.toggle("nav-close")
     }
