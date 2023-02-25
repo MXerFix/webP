@@ -1139,32 +1139,6 @@ a {
     background-color: #222;
 }
 
-@media only screen and (max-width : 736px) {
-    .cards {
-        flex-direction: column;
-        margin: auto 0;
-    }
-
-    .card {
-        display: flex;
-        width: 90%;
-    }
-
-    .card--left {
-        transform: scale(0.75) translate(0px, -150px) rotateY(0) rotateX(-10deg) translateZ(-5px);
-    }
-
-    .card--center {
-        transform: scale(1) translate(0px, 0px) perspective(750px) rotateY(0deg) rotateX(0deg) translateZ(5px);
-    }
-
-    .card--right {
-        transform: scale(0.75) translate(0px, 150px) perspective(750px) rotateY(0) rotateX(10deg) translateZ(-5px);
-    }
-
-}
-
-
 .text-field {
     margin-bottom: 1rem;
 }
@@ -1267,4 +1241,88 @@ a {
 .text-field_floating-3 .text-field__input:not(:placeholder-shown)~.text-field__label {
     transform: scale(.85) translateY(-.75rem) translateX(.15rem);
     color: #FFCC00;
+}
+
+.footer {
+    width: 100%;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer-nav {
+
+}
+
+.footer-nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 36px;
+    padding: 0;
+}
+
+.footer-nav-item a {
+    font-size: 20px;
+    color: white;
+    transition: all .3s;
+    padding: 12px 24px;
+}
+
+.footer-nav-item a:hover {
+    color: #222;
+    background-color: #FFCC00;
+    box-shadow: 10px 10px 0 #111;
+}
+
+.center-item {
+    margin: 0 72px;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.footer-contact {
+    color: white;
+    padding: 12px 24px;
+    transition: all .3s;
+}
+
+.footer-contact:hover {
+    color: #222;
+    background-color: #FFCC00;
+    box-shadow: 10px 10px 0 #111;
+}
+
+.right-item {
+    margin-left: 36px;
+    color: #FFCC00;
+}
+
+.designed-by {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 72px;
+}
+
+.designed-by a {
+    color: white;
+}
+
+.designed-by a span {
+    padding: 12px 24px;
+    color: #222;
+    background-color: #fff;
+    box-shadow: #FFCC00 10px 10px 0;
+    margin-left: 12px;
 }
