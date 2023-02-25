@@ -396,11 +396,12 @@ a {
 
 .products-box {
     width: 1440px;
-    height: 800px;
+    height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all .3s;
 }
 
 .products-item {
@@ -417,9 +418,28 @@ a {
     /* border-color: #FFCC00; */
 }
 
-.product-inbox {
+.outbox {
     width: 100%;
     height: 100%;
+    background-color: #fff;
+    border-radius: 60px;
+    transition: all .3s;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.outbox:hover {
+    margin: 18px 0px 0px 18px;
+    box-shadow: #ffcc00 -18px -18px 0;
+    transition: all .3s;
+}
+
+.product-inbox {
+    width: 100%;
+    height: 160px;
     background-color: #fff;
     border-radius: 60px;
     transition: all .3s;
@@ -431,8 +451,11 @@ a {
 }
 
 .product-inbox:hover {
-    margin: 18px 0px 0px 18px;
-    box-shadow: #ffcc00 -18px -18px 0;
+}
+
+.inbox-on {
+    align-items: flex-start;
+    transition: all .3s;
 }
 
 .product-inbox .dev-time {
@@ -469,9 +492,9 @@ a {
 .product-price {
 }
 
-.product-price p {
+.product-price a {
     text-align: center;
-    padding: 12px 24px;
+    padding: 12px 36px;
     background-color: #ffcc00;
     box-shadow: 10px 10px 0 #222;
     width: 140px;
@@ -480,7 +503,7 @@ a {
     cursor: pointer;
 }
 
-.product-price p:hover {
+.product-price a:hover {
     box-shadow: none;
 }
 
@@ -888,6 +911,41 @@ a {
 
 .blur:hover .portfolio-goto {
     opacity: 1;
+}
+
+.what-stek-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.what-stek-item {
+    width: 40%;
+}
+
+.what-stek-text {
+    color: #222;
+}
+
+.what-stek-text p {
+    padding: 20px 36px;
+    background-color: #FFCC00;
+    box-shadow: 15px 15px 0 #111;
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+}
+
+.what-stek-images-box {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.what-stek-images-box img {
+    width: 160px;
 }
 
 /* #avtomix {

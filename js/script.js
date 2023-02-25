@@ -245,17 +245,24 @@ const prouctCards = document.getElementsByClassName("products-item");
 for (productCard of prouctCards) {
     productCard.addEventListener("click", function() {
         for (card of prouctCards) {
-            card.classList.toggle("off");
+            card.classList.toggle("off")
         }
-        this.classList.remove("off")
-        this.classList.toggle("on")
+        inbox = this.querySelector("#outbox")
+        if (inbox.classList.contains("inbox-on")) {
+            setTimeout(function() {
+                inbox.classList.remove("inbox-on")
+            }, 300)
+        }
+        else {inbox.classList.add("inbox-on")}
+        this.classList.remove("off");
+        this.classList.toggle("on");
     })
 }
 
-const goHome = document.getElementById("go-home")
-goHome.addEventListener("click", function(){
-    window.document.getElementById("content").scrollIntoView();
-})
+// const goHome = document.getElementById("go-home")
+// goHome.addEventListener("click", function(){
+//     window.document.getElementById("content").scrollIntoView();
+// })
 
 // const toCUbtns = document.getElementsByClassName("to-cu-btn");
 // for (toCUbtn of toCUbtns) {
