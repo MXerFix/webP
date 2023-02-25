@@ -80,9 +80,9 @@ var tl2 = gsap.timeline();
 
 
 tl.from("#title-back", { x: -200, duration: 2, opacity: 0, scale: 0.8 })
-tl.from("#ellipse1", {duration:1, x: -100, opacity:0, scale:0})
-tl1.from("#ellipse2", {duration:1, delay:2, x: 100, opacity:0, scale:0})
-tl2.from("#ellipse3", {duration:1, delay:2, x: -100, y:100, opacity:0, scale:0})
+tl.from("#ellipse1", {duration:2, delay:2, x: -100, opacity:0, scale:0})
+tl1.from("#ellipse2", {duration:2, delay:4, x: 100, opacity:0, scale:0})
+tl2.from("#ellipse3", {duration:2, delay:4, x: -100, y:100, opacity:0, scale:0})
 
 
 tl_1.from(".title img", { delay: 0.5, duration: 3, scale: 1, opacity: 0, ease: "power1" });
