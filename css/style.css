@@ -329,6 +329,7 @@ a {
     font-size: 48px;
     font-family: 'Rubik', sans-serif;
     margin-bottom: 6px;
+    box-shadow: 10px 10px 0px #ffcc00;
     /* box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.4); */
 }
 
@@ -336,7 +337,8 @@ a {
     background-color: #FFCC00;
     font-size: 56px;
     padding: 20px;
-    box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.4);
+    margin: 10px 0;
 }
 
 .step-icons-box {
@@ -368,6 +370,34 @@ a {
     overflow: hidden;
 }
 
+.step-descr {
+    width: 240px;
+    height: 205px;
+    /* background-color: #fff; */
+    border: 2px solid white;
+    border-radius: 26px;
+    margin-right: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all .3s;
+}
+
+.step-descr h4 {
+    font-size: 22px;
+}
+
+.step-descr p {
+    margin: 0;
+    padding: 8px 18px;
+    font-size: 18px;
+    font-weight: 200;
+    /* text-align: center; */
+    font-family: "Montserrat", sans-serif;
+}
+
 .step-icon img {
     width: 220px;
 }
@@ -382,6 +412,10 @@ a {
 .step-center {
     transform: scale(1) translate(0px, 0px) rotateY(0deg);
     z-index: 3;
+}
+
+.step-center .step-descr {
+    box-shadow: 5px 5px 0 #ffcc00;
 }
 
 .step-down {
@@ -525,6 +559,19 @@ a {
 
 .on {
     height: 768px;
+    transition: all .3s;
+}
+
+.product-descr-hidden {
+    scale: 0;
+    opacity: 0;
+    transition: all .3s;
+}
+
+
+.product-descr-visible {
+    scale: 1;
+    opacity: 1;
     transition: all .3s;
 }
 
@@ -744,6 +791,7 @@ a {
     border: dashed 4px #fff;
     transition: all .3s;
     font-family: "Rubik", sans-serif;
+    margin-bottom: 32px;
 }
 
 .other-service-inbox {
@@ -917,6 +965,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-bottom: 72px;
 }
 
 .what-stek-item {

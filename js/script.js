@@ -18,7 +18,7 @@ gsap.from(".steps-list", {
 })
 
 gsap.from(".step-icons-box", {
-    x: 200,
+    x: 100,
     scrollTrigger: {
         scrub: true,
     }
@@ -256,13 +256,14 @@ for (productCard of prouctCards) {
         else {inbox.classList.add("inbox-on")}
         this.classList.remove("off");
         this.classList.toggle("on");
+        inbox.querySelector(".product-descr-hidden").classList.toggle("product-descr-visible")
     })
 }
 
-// const goHome = document.getElementById("go-home")
-// goHome.addEventListener("click", function(){
-//     window.document.getElementById("content").scrollIntoView();
-// })
+const goHome = document.getElementById("go-home")
+goHome.addEventListener("click", function(){
+    window.document.getElementById("content").scrollIntoView();
+})
 
 // const toCUbtns = document.getElementsByClassName("to-cu-btn");
 // for (toCUbtn of toCUbtns) {
