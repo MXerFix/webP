@@ -425,7 +425,8 @@ a {
 }
 
 .catalog {
-
+    display: flex;
+    justify-content: center;
 }
 
 .products-box {
