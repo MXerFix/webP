@@ -10,27 +10,6 @@ gsap.to(".title", {
     }
 })
 
-gsap.from(".steps-list", {
-    x: -400,
-    opacity:0,
-        scrollTrigger: {
-        scrub: true,
-        start:"-800px",
-        end:"100%",
-        trigger:"#how-to-work",
-    }
-})
-
-gsap.from(".step-icons-box", {
-    x: 100,
-    opacity:0,
-    scrollTrigger: {
-        trigger:"#how-to-work",
-        scrub: true,
-        start:"-800px",
-        end:"100%",
-    }
-})
 
 gsap.to("#title-back", {
     x: 200,
@@ -69,7 +48,7 @@ gsap.to("#ellipse3", {
     }
 })
 
-
+var widthWind = document.querySelector('body').offsetWidth;
 
 // gsap.fromTo(".catalog", { opacity: 0 }, { opacity: 1, scrollTrigger: { scrub: true, trigger: "#what-develop", start: "center 75%", end: "top" } })
 
@@ -80,9 +59,9 @@ var tl2 = gsap.timeline();
 
 
 tl.from("#title-back", { x: -200, duration: 2, opacity: 0, scale: 0.8 })
-tl.from("#ellipse1", {duration:2, delay:2, x: -100, opacity:0, scale:0})
-tl1.from("#ellipse2", {duration:2, delay:4, x: 100, opacity:0, scale:0})
-tl2.from("#ellipse3", {duration:2, delay:4, x: -100, y:100, opacity:0, scale:0})
+tl.from("#ellipse1", { duration: 2, delay: 2, x: -100, opacity: 0, scale: 0 })
+tl1.from("#ellipse2", { duration: 2, delay: 4, x: 100, opacity: 0, scale: 0 })
+tl2.from("#ellipse3", { duration: 2, delay: 4, x: -100, y: 100, opacity: 0, scale: 0 })
 
 
 tl_1.from(".title img", { delay: 0.5, duration: 3, scale: 1, opacity: 0, ease: "power1" });
@@ -273,74 +252,115 @@ const steps = ((() => {
 // });
 
 window.addEventListener("DOMContentLoaded", function () {
-    
-    const closeAnimBtn = document.getElementById("close-btn");
-closeAnimBtn.addEventListener("click", function () {
-    let navMenu = document.getElementsByClassName("nlia");
-    for (navMenuItem of navMenu) {
-        navMenuItem.classList.toggle("nav-close")
-    }
-    let homeIcon = document.querySelector(".burger-home-img");
-    homeIcon.classList.toggle("rotate1");
-    let spans = document.getElementsByClassName("btn-span");
-    for (span of spans) {
-        span.classList.toggle("active");
-    }
-});
 
-const prouctCards = document.getElementsByClassName("products-item");
-for (productCard of prouctCards) {
-    productCard.addEventListener("click", function() {
-        let that = this
-        // if (this.classList.contains("on")) {
-        //     for (card of prouctCards) {
-        //         card.classList.remove("d-none")
-        //     }
-        // }
-        // else {
-        //     setTimeout(function(){
-        //         for (card of prouctCards) {
-        //             card.classList.add("d-none")
-        //         }
-        //     }, 300)
-        // }
-        for (let card of prouctCards) {
-            card.classList.toggle("off")
-            card.querySelector(".product-inbox").classList.toggle("off")
-            // if (card.classList.contains("d-none")){
-            //     card.classList.remove("d-none")
+    const closeAnimBtn = document.getElementById("close-btn");
+    closeAnimBtn.addEventListener("click", function () {
+        let navMenu = document.getElementsByClassName("nlia");
+        for (navMenuItem of navMenu) {
+            navMenuItem.classList.toggle("nav-close")
+        }
+        let homeIcon = document.querySelector(".burger-home-img");
+        homeIcon.classList.toggle("rotate1");
+        let spans = document.getElementsByClassName("btn-span");
+        for (span of spans) {
+            span.classList.toggle("active");
+        }
+    });
+
+    const prouctCards = document.getElementsByClassName("products-item");
+    for (productCard of prouctCards) {
+        productCard.addEventListener("click", function () {
+            let that = this
+            // if (this.classList.contains("on")) {
+            //     for (card of prouctCards) {
+            //         card.classList.remove("d-none")
+            //     }
             // }
             // else {
             //     setTimeout(function(){
-            //         card.classList.add("d-none")
-            //     }, 300);
+            //         for (card of prouctCards) {
+            //             card.classList.add("d-none")
+            //         }
+            //     }, 300)
             // }
+            for (let card of prouctCards) {
+                card.classList.toggle("off")
+                card.querySelector(".product-inbox").classList.toggle("off")
+                // if (card.classList.contains("d-none")){
+                //     card.classList.remove("d-none")
+                // }
+                // else {
+                //     setTimeout(function(){
+                //         card.classList.add("d-none")
+                //     }, 300);
+                // }
             }
-        inbox = this.querySelector("#outbox")
-        if (inbox.classList.contains("inbox-on")) {
+            inbox = this.querySelector("#outbox")
+            if (inbox.classList.contains("inbox-on")) {
 
-            setTimeout(function() {
-                inbox.classList.remove("inbox-on")
-            }, 300)
-        }
-        else {
-            inbox.classList.add("inbox-on")
-        }
-        // setTimeout(function(){that.classList.remove("d-none");}, 300);
-        this.classList.remove("off");
-        this.querySelector(".product-inbox").classList.remove("off")
-        this.classList.toggle("on");
-        inbox.querySelector(".product-descr-hidden").classList.toggle("product-descr-visible")
-    })
-}
+                setTimeout(function () {
+                    inbox.classList.remove("inbox-on")
+                }, 300)
+            }
+            else {
+                setTimeout(function () {
+                    inbox.scrollIntoView({
+                        block: "center",
+                        behavior: "smooth"
+                    })
+                }, 150)
+                inbox.classList.add("inbox-on")
+            }
+            // setTimeout(function(){that.classList.remove("d-none");}, 300);
+            this.classList.remove("off");
+            this.querySelector(".product-inbox").classList.remove("off")
+            this.classList.toggle("on");
+            inbox.querySelector(".product-descr-hidden").classList.toggle("product-descr-visible")
+        })
+    }
 })
 
 
 
 const goHome = document.getElementById("go-home")
-goHome.addEventListener("click", function(){
+goHome.addEventListener("click", function () {
     window.document.getElementById("content").scrollIntoView();
 })
+
+const checkbox = document.getElementById("checkbox");
+const checkboxBox = document.getElementById("check-div");
+checkboxBox.addEventListener("click", function () {
+    if (checkboxBox.querySelector(".checkbox-unchecked").classList.contains("checkbox-checked")) {
+        checkboxBox.querySelector(".checkbox-unchecked").classList.remove("checkbox-checked");
+        checkbox.checked = false;
+    }
+    else {
+        checkboxBox.querySelector(".checkbox-unchecked").classList.add("checkbox-checked");
+        checkbox.checked = true;
+    }
+})
+
+const checkbox2 = document.getElementById("checkbox2");
+const checkboxBox2 = document.getElementById("check-div2");
+checkboxBox2.addEventListener("click", function () {
+    if (checkboxBox2.querySelector(".checkbox-unchecked").classList.contains("checkbox-checked")) {
+        checkboxBox2.querySelector(".checkbox-unchecked").classList.remove("checkbox-checked");
+        checkbox2.checked = false;
+    }
+    else {
+        checkboxBox2.querySelector(".checkbox-unchecked").classList.add("checkbox-checked");
+        checkbox2.checked = true;
+    }
+})
+
+const form2 = document.getElementById("form2")
+const form2btns = document.getElementsByClassName("form2-toggle-btn")
+for (let form2btn of form2btns) {
+    form2btn.addEventListener("click", function(){
+        form2.classList.toggle("form2-active")
+        this.querySelector("svg").classList.toggle("rotate45")
+    })
+}
 
 
 
@@ -361,57 +381,141 @@ $(window).on("scroll", function () {
 });
 
 
-gsap.from("#landing-item", {
-    x: -200,
-    // opacity:0,
+if (widthWind > 767) {
+    gsap.from("#landing-item", {
+        x: -200,
+        // opacity:0,
         scrollTrigger: {
-        scrub: 0,
-        start:"-1000px",
-        end:"-250px",
-        trigger:"#landing-item",
-    }
-})
+            scrub: 0,
+            start: "-1000px",
+            end: "-250px",
+            trigger: "#landing-item",
+        }
+    })
 
-gsap.from("#bcard-item", {
-    x: 200,
-    // opacity:0,
-    scrollTrigger: {
-        trigger:"#bcard-item",
-        scrub: 0,
-        start:"-1000px",
-        end:"-300px",
-    }
-})
-
-gsap.from("#multi-item", {
-    x: -200,
-    // opacity:0,
+    gsap.from("#bcard-item", {
+        x: 200,
+        // opacity:0,
         scrollTrigger: {
-        scrub: 0,
-        start:"-1000px",
-        end:"-450px",
-        trigger:"#multi-item",
-    }
-})
+            trigger: "#bcard-item",
+            scrub: 0,
+            start: "-1000px",
+            end: "-300px",
+        }
+    })
 
-gsap.from("#shop-item", {
-    x: 200,
-    // opacity:0,
-    scrollTrigger: {
-        trigger:"#shop-item",
-        scrub: 0,
-        start:"-1000px",
-        end:"-700px",
-    }
-})
+    gsap.from("#multi-item", {
+        x: -200,
+        // opacity:0,
+        scrollTrigger: {
+            scrub: 0,
+            start: "-1000px",
+            end: "-450px",
+            trigger: "#multi-item",
+        }
+    })
 
-gsap.from(".other-service", {
-    scale: 0.3,
-    scrollTrigger: {
-        trigger:".other-services",
-        scrub:true,
-        start:"-1000px",
-        end:"-250px"
-    }
-})
+    gsap.from("#shop-item", {
+        x: 200,
+        // opacity:0,
+        scrollTrigger: {
+            trigger: "#shop-item",
+            scrub: 0,
+            start: "-1000px",
+            end: "-700px",
+        }
+    })
+
+    gsap.from(".other-service", {
+        scale: 0.3,
+        scrollTrigger: {
+            trigger: ".other-services",
+            scrub: true,
+            start: "-1000px",
+            end: "-250px"
+        }
+    })
+
+    gsap.from(".steps-list", {
+        x: -50,
+        opacity: 0,
+        scrollTrigger: {
+            scrub: true,
+            start: "-800px",
+            end: "100%",
+            trigger: "#how-to-work",
+        }
+    })
+
+    gsap.from(".step-icons-box", {
+        x: 50,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: "#how-to-work",
+            scrub: true,
+            start: "-800px",
+            end: "100%",
+        }
+    })
+
+
+}
+
+if (widthWind < 768) {
+    gsap.from(".mobile-menu", { duration: 1, ease: "bounce", y: 70 })
+}
+
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+});
+
+function onScroll(event) {
+    var scrollPos = $(document).scrollTop();
+    $('.mobile-menu a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top - 64 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('.mobile-menu a').removeClass("active-menu-item");
+            currLink.addClass("active-menu-item");
+        }
+        else {
+            currLink.removeClass("active-menu-item");
+        }
+    });
+}
+
+
+$('#footer-num').submit(function(){
+	$.post(
+		'post-email.php', // адрес обработчика
+		 $("#footer-num").serialize(), // отправляемые данные  		
+  
+		function(msg) { // получен ответ сервера  
+			$('#footer-num').hide('slow');
+			$('#message').html(msg);
+            $('#form-title').text('Ваша заявка в пути! Ответим в ближайшее время!')
+            $('#form-title').addClass('form-title-agree')
+		}
+	);
+	
+	return false;
+});
+
+$('#footer-num2').submit(function(){
+	$.post(
+		'post-email.php', // адрес обработчика
+		 $("#footer-num2").serialize(), // отправляемые данные  		
+  
+		function(msg) { // получен ответ сервера  
+			$('#footer-num2').hide('slow');
+			$('#message2').html(msg);
+            $('#form-title2').text('Ваша заявка в пути! Ответим в ближайшее время!')
+            $('#form-title2').addClass('form-title-agree')
+		}
+	);
+	
+	return false;
+});
+
+
 

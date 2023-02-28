@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,7 +17,172 @@
 </head>
 
 <body>
-    <div id="content" class="content">
+    <div class="content">
+        <div id="form2" class="contact-us-fomr">
+            <div id="form-title2" class="form-title">Оставьте заявку или <br> свяжитесь с нами <br> удобным для Вас способом</div>
+            <form id="footer-num2" action="" method="post" class="form-box">
+                <div class="text-field text-field_floating-3">
+                    <input required name="f[name]" id="name2" class="form-item text-field__input"
+                        placeholder="Ваше имя" type="text">
+                    <label class="text-field__label" for="name">Имя</label>
+                </div>
+                <div class="text-field text-field_floating-3">
+                    <input autocomplete="email" required name="f[email]" type="email" id="email2"
+                        class="form-item text-field__input" placeholder="Номер телефона">
+                    <label class="text-field__label" for="email">Почта или телефон</label>
+                </div>
+                <div id="comment-div" class="text-field text-field_floating-3">
+                    <input name="f[comment]" type="comment" id="comment2"
+                        class="form-item text-field__input" placeholder="Комментарий" type="text">
+                    <label class="text-field__label" for="comment">Комментарий</label>
+                </div>
+                <div id="check-div2" class="checkbox">
+                    <div class="checkbox-box">
+                        <div class="checkbox-unchecked"></div>
+                    </div>
+                    <span>Я соглашаюсь на хранение и обработку персональных данных</span>
+                    <input required class="checkbox-input" type="checkbox" name="f[checkbox]"
+                        id="checkbox2">
+                </div>
+                <div id="mobile-contact-us-inform" class="contact-us-box contact-us-box-mobile">
+                    <a id="tg-item" class="contact-us-item-mobile">
+                        <img src="img/tg.svg" alt="Telegram">
+                    </a>
+                    <a href="https://vk.me/webprojectstudio" target="_blank" id="vk-item"
+                        class="contact-us-item-mobile">
+                        <img src="img/vk.svg" alt="VKontakte">
+                    </a>
+                    <a href="mailto:info@web-project-studio.ru" id="email-item" class="contact-us-item-mobile">
+                        <img src="img/email.svg" alt="Email">
+                    </a>
+                </div>
+                <!-- <select class="form-item" name="product" id="product">
+                    <option value="Лендинг">Лендинг</option>
+                    <option value="Визитка">Визитка</option>
+                    <option value="Многостраничный сайт">Многостраничный сайт</option>
+                    <option value="Интернет-магазин">Интернет-магазин</option>
+                    <option value="Редизайн">Редизайн</option>
+                    <option value="Оформление компании">Оформление компании</option>
+                </select> -->
+                <button id="submit-item2" type="submit" class="form-item submit-item">Отправить</button>
+                <div id="message2"></div>
+            </form>
+        </div>
+        <div class="mobile-menu">
+            <a href="#content" class="mobile-item">
+                <svg class="mobile-menu-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path opacity="0.1"
+                            d="M17.7218 8.08382L14.7218 5.29811C13.4309 4.09937 12.7854 3.5 12 3.5C11.2146 3.5 10.5691 4.09937 9.2782 5.29811L6.2782 8.08382C5.64836 8.66867 5.33345 8.96109 5.16672 9.34342C5 9.72575 5 10.1555 5 11.015V16.9999C5 18.8856 5 19.8284 5.58579 20.4142C6.17157 20.9999 7.11438 20.9999 9 20.9999H9.75V16.9999C9.75 15.7573 10.7574 14.7499 12 14.7499C13.2426 14.7499 14.25 15.7573 14.25 16.9999V20.9999H15C16.8856 20.9999 17.8284 20.9999 18.4142 20.4142C19 19.8284 19 18.8856 19 16.9999L19 11.015C19 10.1555 19 9.72575 18.8333 9.34342C18.6666 8.96109 18.3516 8.66866 17.7218 8.08382Z"
+                            fill="#ffcc00"></path>
+                        <path
+                            d="M19 9L19 17C19 18.8856 19 19.8284 18.4142 20.4142C17.8284 21 16.8856 21 15 21L14 21L10 21L9 21C7.11438 21 6.17157 21 5.58579 20.4142C5 19.8284 5 18.8856 5 17L5 9"
+                            stroke="#ffcc00" stroke-width="2" stroke-linejoin="round"></path>
+                        <path d="M3 11L7.5 7L10.6713 4.18109C11.429 3.50752 12.571 3.50752 13.3287 4.18109L16.5 7L21 11"
+                            stroke="#ffcc00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M10 21V17C10 15.8954 10.8954 15 12 15V15C13.1046 15 14 15.8954 14 17V21"
+                            stroke="#ffcc00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+                <p>главная</p>
+            </a>
+            <a href="#catalog-container" class="mobile-item">
+                <svg class="mobile-menu-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path opacity="0.1"
+                            d="M14 17.5C14 16.0955 14 15.3933 14.3371 14.8889C14.483 14.6705 14.6705 14.483 14.8889 14.3371C15.3933 14 16.0955 14 17.5 14V14V14C18.9045 14 19.6067 14 20.1111 14.3371C20.3295 14.483 20.517 14.6705 20.6629 14.8889C21 15.3933 21 16.0955 21 17.5V17.5V17.5C21 18.9045 21 19.6067 20.6629 20.1111C20.517 20.3295 20.3295 20.517 20.1111 20.6629C19.6067 21 18.9045 21 17.5 21V21V21C16.0955 21 15.3933 21 14.8889 20.6629C14.6705 20.517 14.483 20.3295 14.3371 20.1111C14 19.6067 14 18.9045 14 17.5V17.5V17.5Z"
+                            fill="#ffcc00"></path>
+                        <path opacity="0.1"
+                            d="M3 17.5C3 16.0955 3 15.3933 3.33706 14.8889C3.48298 14.6705 3.67048 14.483 3.88886 14.3371C4.39331 14 5.09554 14 6.5 14V14V14C7.90446 14 8.60669 14 9.11114 14.3371C9.32952 14.483 9.51702 14.6705 9.66294 14.8889C10 15.3933 10 16.0955 10 17.5V17.5V17.5C10 18.9045 10 19.6067 9.66294 20.1111C9.51702 20.3295 9.32952 20.517 9.11114 20.6629C8.60669 21 7.90446 21 6.5 21V21V21C5.09554 21 4.39331 21 3.88886 20.6629C3.67048 20.517 3.48298 20.3295 3.33706 20.1111C3 19.6067 3 18.9045 3 17.5V17.5V17.5Z"
+                            fill="#ffcc00"></path>
+                        <path opacity="0.1"
+                            d="M3 6.5C3 5.09554 3 4.39331 3.33706 3.88886C3.48298 3.67048 3.67048 3.48298 3.88886 3.33706C4.39331 3 5.09554 3 6.5 3V3V3C7.90446 3 8.60669 3 9.11114 3.33706C9.32952 3.48298 9.51702 3.67048 9.66294 3.88886C10 4.39331 10 5.09554 10 6.5V6.5V6.5C10 7.90446 10 8.60669 9.66294 9.11114C9.51702 9.32952 9.32952 9.51702 9.11114 9.66294C8.60669 10 7.90446 10 6.5 10V10V10C5.09554 10 4.39331 10 3.88886 9.66294C3.67048 9.51702 3.48298 9.32952 3.33706 9.11114C3 8.60669 3 7.90446 3 6.5V6.5V6.5Z"
+                            fill="#ffcc00"></path>
+                        <path
+                            d="M14 17.5C14 16.0955 14 15.3933 14.3371 14.8889C14.483 14.6705 14.6705 14.483 14.8889 14.3371C15.3933 14 16.0955 14 17.5 14V14V14C18.9045 14 19.6067 14 20.1111 14.3371C20.3295 14.483 20.517 14.6705 20.6629 14.8889C21 15.3933 21 16.0955 21 17.5V17.5V17.5C21 18.9045 21 19.6067 20.6629 20.1111C20.517 20.3295 20.3295 20.517 20.1111 20.6629C19.6067 21 18.9045 21 17.5 21V21V21C16.0955 21 15.3933 21 14.8889 20.6629C14.6705 20.517 14.483 20.3295 14.3371 20.1111C14 19.6067 14 18.9045 14 17.5V17.5V17.5Z"
+                            stroke="#ffcc00" stroke-width="2"></path>
+                        <path
+                            d="M3 17.5C3 16.0955 3 15.3933 3.33706 14.8889C3.48298 14.6705 3.67048 14.483 3.88886 14.3371C4.39331 14 5.09554 14 6.5 14V14V14C7.90446 14 8.60669 14 9.11114 14.3371C9.32952 14.483 9.51702 14.6705 9.66294 14.8889C10 15.3933 10 16.0955 10 17.5V17.5V17.5C10 18.9045 10 19.6067 9.66294 20.1111C9.51702 20.3295 9.32952 20.517 9.11114 20.6629C8.60669 21 7.90446 21 6.5 21V21V21C5.09554 21 4.39331 21 3.88886 20.6629C3.67048 20.517 3.48298 20.3295 3.33706 20.1111C3 19.6067 3 18.9045 3 17.5V17.5V17.5Z"
+                            stroke="#ffcc00" stroke-width="2"></path>
+                        <path
+                            d="M3 6.5C3 5.09554 3 4.39331 3.33706 3.88886C3.48298 3.67048 3.67048 3.48298 3.88886 3.33706C4.39331 3 5.09554 3 6.5 3V3V3C7.90446 3 8.60669 3 9.11114 3.33706C9.32952 3.48298 9.51702 3.67048 9.66294 3.88886C10 4.39331 10 5.09554 10 6.5V6.5V6.5C10 7.90446 10 8.60669 9.66294 9.11114C9.51702 9.32952 9.32952 9.51702 9.11114 9.66294C8.60669 10 7.90446 10 6.5 10V10V10C5.09554 10 4.39331 10 3.88886 9.66294C3.67048 9.51702 3.48298 9.32952 3.33706 9.11114C3 8.60669 3 7.90446 3 6.5V6.5V6.5Z"
+                            stroke="#ffcc00" stroke-width="2"></path>
+                        <path d="M14 6.5H21" stroke="#ffcc00" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path d="M17.5 3V10" stroke="#ffcc00" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+                <p>услуги</p>
+            </a>
+            <div class="mobile-item mobile-item-main form2-toggle-btn">
+                <svg class="mobile-menu-svg-center" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path opacity="0.1"
+                            d="M3 12C3 4.5885 4.5885 3 12 3C19.4115 3 21 4.5885 21 12C21 19.4115 19.4115 21 12 21C4.5885 21 3 19.4115 3 12Z"
+                            fill="#ffcc00"></path>
+                        <path d="M9 12H15" stroke="#ffcc00" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path d="M12 9L12 15" stroke="#ffcc00" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                        <path
+                            d="M3 12C3 4.5885 4.5885 3 12 3C19.4115 3 21 4.5885 21 12C21 19.4115 19.4115 21 12 21C4.5885 21 3 19.4115 3 12Z"
+                            stroke="#ffcc00" stroke-width="2"></path>
+                    </g>
+                </svg>
+                <p>заказать</p>
+            </div>
+            <a href="#portfolio-container" class="mobile-item">
+                <svg class="mobile-menu-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path opacity="0.1"
+                            d="M21 11.152C20.7154 12.0872 20.2501 12.9557 19.6405 13.7265C17.9516 15.8622 15.1545 17.25 12 17.25C8.84545 17.25 6.04844 15.8622 4.35949 13.7265C3.74993 12.9557 3.28461 12.0872 3 11.152V17C3 18.8856 3 19.8284 3.58579 20.4142C4.17157 21 5.11438 21 7 21H17C18.8856 21 19.8284 21 20.4142 20.4142C21 19.8284 21 18.8856 21 17V11.152Z"
+                            fill="#ffcc00"></path>
+                        <path
+                            d="M3 10C3 9.06812 3 8.60218 3.15224 8.23463C3.35523 7.74458 3.74458 7.35523 4.23463 7.15224C4.60218 7 5.06812 7 6 7V7H18V7C18.9319 7 19.3978 7 19.7654 7.15224C20.2554 7.35523 20.6448 7.74458 20.8478 8.23463C21 8.60218 21 9.06812 21 10V17C21 18.8856 21 19.8284 20.4142 20.4142C19.8284 21 18.8856 21 17 21H16H8H7C5.11438 21 4.17157 21 3.58579 20.4142C3 19.8284 3 18.8856 3 17V10Z"
+                            stroke="#ffcc00" stroke-width="2" stroke-linejoin="round"></path>
+                        <path d="M8 7V5C8 3.89543 8.89543 3 10 3H14C15.1046 3 16 3.89543 16 5V7" stroke="#ffcc00"
+                            stroke-width="2" stroke-linejoin="round"></path>
+                        <path
+                            d="M3 10C3.18614 11.3166 3.73499 12.5338 4.55558 13.5714C6.19462 15.644 8.91777 17 12 17C15.0822 17 17.8054 15.644 19.4444 13.5714C20.265 12.5338 20.8139 11.3166 21 10"
+                            stroke="#ffcc00" stroke-width="2" stroke-linecap="round"></path>
+                        <path d="M11.5 13H12.5" stroke="#ffcc00" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+                <p>проекты</p>
+            </a>
+            <a href="#contacts-st" class="mobile-item">
+                <svg class="mobile-menu-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3 5C3 3.89543 3.89543 3 5 3H17C18.1046 3 19 3.89543 19 5V19C19 20.1046 18.1046 21 17 21H15.245C15.2513 20.9694 15.2519 20.937 15.2459 20.9044C15.0276 19.7209 14.6277 18.9082 13.9145 18.4054C13.2115 17.9097 12.2512 17.75 11 17.75C9.74611 17.75 8.78559 17.923 8.08282 18.4324C7.37171 18.9478 6.97232 19.7715 6.75415 20.9547C6.75134 20.9699 6.74997 20.9851 6.74996 21H5C3.89543 21 3 20.1046 3 19V5ZM7.75 12C7.75 10.2051 9.20507 8.75 11 8.75C12.7949 8.75 14.25 10.2051 14.25 12C14.25 13.7949 12.7949 15.25 11 15.25C9.20507 15.25 7.75 13.7949 7.75 12Z"
+                            fill="#ffcc00"></path>
+                        <path
+                            d="M11 3H17C18.1046 3 19 3.89543 19 5V7V17V19C19 20.1046 18.1046 21 17 21H11H5C3.89543 21 3 20.1046 3 19V17V7V5C3 3.89543 3.89543 3 5 3H11Z"
+                            stroke="#ffcc00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M11 3H17H20C21.1046 3 22 3.89543 22 5V19C22 20.1046 21.1046 21 20 21H17H11"
+                            stroke="#ffcc00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path
+                            d="M14 12C14 13.6569 12.6569 15 11 15C9.34315 15 8 13.6569 8 12C8 10.3431 9.34315 9 11 9C12.6569 9 14 10.3431 14 12Z"
+                            stroke="#ffcc00" stroke-width="2"></path>
+                        <path d="M7 21C7.42546 18.6928 8.51999 18 11 18C13.48 18 14.5745 18.6425 15 20.9497"
+                            stroke="#ffcc00" stroke-width="2" stroke-linecap="round"></path>
+                    </g>
+                </svg>
+                <p>контакты</p>
+            </a>
+        </div>
         <img id="title-back" src="img/title-back.png" alt="" class="parallax-object">
         <!-- <img src="img/black-ellipse.svg" alt="" class="parallax-object">
         <img src="img/black-ellipse.svg" alt="" class="parallax-object">
@@ -44,7 +210,7 @@
                             <a href="#contact-us-st">Контакты</a>
                         </li> -->
                         <li class="nav-list-item">
-                            <a class="nlia" id="take-offer" href="#contact-us-st">Заказать сайт</a>
+                            <a class="nlia form2-toggle-btn" id="take-offer" href="#contact-us-st">Заказать сайт</a>
                         </li>
                     </ul>
                     <img id="go-home" src="img/homeic.svg" alt="" class="burger-home-img">
@@ -59,7 +225,7 @@
                 </div>
             </div>
         </div>
-        <div class="under-section">
+        <div id="content" class="under-section">
             <div class="background-title">
                 <img id="ellipse1" src="img/Ellipse1.svg" alt="" class="parallax-object ellipse-shadow">
                 <img id="ellipse2" src="img/Ellipse2.svg" alt="" class="parallax-object ellipse-shadow">
@@ -72,92 +238,93 @@
             <a href="#what-develop" class="scroll-down-window"><img src="img/down-arrow.svg" alt=""></a>
         </div>
         <div class="container">
-            <div id="what-develop" class="section-title">
-                <h2>
-                    Что разрабатываем?
-                </h2>
-            </div>
-            <div class="catalog">
-                <div class="products-box">
-                    <div id="landing-item" class="products-item">
-                        <div id="outbox" class="outbox">
-                            <div id="inbox" class="product-inbox">
-                                <div class="dev-time">
-                                    от 7 дней
-                                </div>
-                                <div class="product-title">
-                                    <h4>Лендинг</h4>
-                                    <p>одностраничный сайт</p>
-                                    <img src="img/hot.svg" alt="" style="width: 160px;">
-                                </div>
-                                <div class="product-price">
-                                    <a>от 19990</a>
-                                </div>
-                            </div>
-                            <div class="product-descr-hidden">
-                                <img src="img/landing.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="bcard-item" class="products-item">
-                        <div id="outbox" class="outbox">
-                            <div id="inbox" class="product-inbox">
-                                <div class="dev-time">
-                                    от 5 дней
-                                </div>
-                                <div class="product-title">
-                                    <h4>Сайт-визитка</h4>
-                                    <p>сайт с информацией о компании</p>
-                                </div>
-                                <div class="product-price">
-                                    <a>от 14990</a>
-                                </div>
-                            </div>
-                            <div class="product-descr-hidden">
-                                <img src="img/bcard-site.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="multi-item" class="products-item">
-                        <div id="outbox" class="outbox">
-                            <div id="inbox" class="product-inbox">
-                                <div class="dev-time">
-                                    от 14 дней
-                                </div>
-                                <div class="product-title">
-                                    <h4>Многостраничный</h4>
-                                    <p>сайт для крупных организаций</p>
-                                </div>
-                                <div class="product-price">
-                                    <a>от 44990</a>
-                                </div>
-                            </div>
-                            <div class="product-descr-hidden">
-                                <img src="img/multi-page.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="shop-item" class="products-item">
-                        <div id="outbox" class="outbox">
-                            <div id="inbox" class="product-inbox">
-                                <div class="dev-time">
-                                    от 21 дня
-                                </div>
-                                <div class="product-title">
-                                    <h4>Интернет-магазин</h4>
-                                    <p>сайт для онлайн продаж</p>
-                                </div>
-                                <div class="product-price">
-                                    <a>от 64990</a>
-                                </div>
-                            </div>
-                            <div class="product-descr-hidden">
-                                <img src="img/online-store.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
+            <div id="catalog-container">
+                <div class="section-title how-to-work-mobile">
+                    <h2>
+                        Что разрабатываем?
+                    </h2>
                 </div>
-                <!-- <div class="cards">
+                <div id="what-develop" class="catalog">
+                    <div class="products-box">
+                        <div id="landing-item" class="products-item">
+                            <div id="outbox" class="outbox">
+                                <div id="inbox" class="product-inbox">
+                                    <div class="dev-time">
+                                        от 7 дней
+                                    </div>
+                                    <div class="product-title">
+                                        <h4>Лендинг</h4>
+                                        <p>одностраничный сайт</p>
+                                        <img src="img/hot.svg" alt="">
+                                    </div>
+                                    <div class="product-price">
+                                        <a>от 19990</a>
+                                    </div>
+                                </div>
+                                <div class="product-descr-hidden">
+                                    <img src="img/landing.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="bcard-item" class="products-item">
+                            <div id="outbox" class="outbox">
+                                <div id="inbox" class="product-inbox">
+                                    <div class="dev-time">
+                                        от 5 дней
+                                    </div>
+                                    <div class="product-title">
+                                        <h4>Сайт-визитка</h4>
+                                        <p>сайт с информацией о компании</p>
+                                    </div>
+                                    <div class="product-price">
+                                        <a>от 14990</a>
+                                    </div>
+                                </div>
+                                <div class="product-descr-hidden">
+                                    <img src="img/bcard-site.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="multi-item" class="products-item">
+                            <div id="outbox" class="outbox">
+                                <div id="inbox" class="product-inbox">
+                                    <div class="dev-time">
+                                        от 14 дней
+                                    </div>
+                                    <div class="product-title">
+                                        <h4>Многостраничный</h4>
+                                        <p>сайт для крупных организаций</p>
+                                    </div>
+                                    <div class="product-price">
+                                        <a>от 44990</a>
+                                    </div>
+                                </div>
+                                <div class="product-descr-hidden">
+                                    <img src="img/multi-page.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="shop-item" class="products-item">
+                            <div id="outbox" class="outbox">
+                                <div id="inbox" class="product-inbox">
+                                    <div class="dev-time">
+                                        от 21 дня
+                                    </div>
+                                    <div class="product-title">
+                                        <h4>Интернет-магазин</h4>
+                                        <p>сайт для онлайн продаж</p>
+                                    </div>
+                                    <div class="product-price">
+                                        <a>от 64990</a>
+                                    </div>
+                                </div>
+                                <div class="product-descr-hidden">
+                                    <img src="img/online-store.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="cards">
                     <div class="card" data-card="0">
                         <div class="incard">
                             <div class="dev-time">от х дней</div>
@@ -195,7 +362,7 @@
                                 состоит из одной страницы и создается только под один товар или услугу.</div>
                         </div>
                     </div> -->
-                <!-- <div class="card" data-card="4">
+                    <!-- <div class="card" data-card="4">
                         <div class="dev-time">от х дней</div>
                         <div class="card-title">Многостраничный сайт</div>
                         <div class="card__detail">Корпоративный</div>
@@ -205,14 +372,13 @@
                         <div class="card-title"></div>
                         <div class="card__detail">Еще лендинг</div>
                     </div> -->
-                <!-- <div id="arrow-left" class="slide-arrow"><img src="img/slide-arrow.svg" alt=""></div>
+                    <!-- <div id="arrow-left" class="slide-arrow"><img src="img/slide-arrow.svg" alt=""></div>
                     <div id="arrow-right" class="slide-arrow"><img src="img/slide-arrow.svg" alt=""></div>
                 </div>
                 <div class="card-take-offer-btn">Заказать</div> -->
-            </div>
-            <a href="#contact-us-st" class="card-take-offer-btn to-cu-btn">Заказать</a>
-            <div class="container">
-                <div class="section-title">
+                </div>
+                <a href="#contact-us-st" class="card-take-offer-btn to-cu-btn">Заказать</a>
+                <div class="section-title how-to-work-mobile">
                     <h2>Другие услуги</h2>
                 </div>
                 <div class="other-services">
@@ -273,74 +439,78 @@
                         </div>
                     </div>
                 </div>
-                <div class="container">
-                    <div id="how-to-work" class="section-title">
-                        <h2>
-                            Как мы работаем?
-                        </h2>
-                    </div>
-                    <div class="steps">
-                        <div class="steps-box">
-                            <ul class="steps-list">
-                                <li class="step-item" data-step="0">00 Обсуждение проекта</li>
-                                <li class="step-item" data-step="1">01 Анализ бизнеса</li>
-                                <li class="step-item" data-step="2">02 Дизайн-концепция</li>
-                                <li class="step-item" data-step="3">03 Программирование</li>
-                                <li class="step-item" data-step="4">04 Тестирование</li>
-                                <li class="step-item" data-step="5">05 Запуск</li>
-                            </ul>
-                            <div class="step-icons-box">
-                                <div class="step-icon step-center">
-                                    <div class="step-descr">
-                                        <h4>00</h4>
-                                        <p>Обсуждаем тип проекта, его цели</p>
-                                        <p>Подбираем наилучший вариант сайта</p>
-                                    </div>
-                                    <img src="img/step_consultation.svg" alt="">
+            </div>
+            <div class="container">
+                <div id="how-to-work" class="section-title how-to-work-mobile">
+                    <h2>
+                        Как мы работаем?
+                    </h2>
+                </div>
+                <div class="steps">
+                    <div class="steps-box">
+                        <ul class="steps-list">
+                            <li class="step-item" data-step="0">00 Обсуждение проекта</li>
+                            <li class="step-item" data-step="1">01 Анализ бизнеса</li>
+                            <li class="step-item" data-step="2">02 Дизайн-концепция</li>
+                            <li class="step-item" data-step="3">03 Программирование</li>
+                            <li class="step-item" data-step="4">04 Тестирование</li>
+                            <li class="step-item" data-step="5">05 Запуск</li>
+                        </ul>
+                        <div class="step-icons-box">
+                            <div class="step-icon step-center">
+                                <div class="step-descr">
+                                    <h4>00</h4>
+                                    <p>Обсуждаем тип проекта, его цели</p>
+                                    <p>Подбираем наилучший вариант сайта</p>
                                 </div>
-                                <div class="step-icon step-down">
-                                    <div class="step-descr">
-                                        <h4>01</h4>
-                                        <p>Анализируем сферу бизнеса, целевую аудиторию и её потребности</p>
-                                        <p>Начинаем разработку прототипа будущего сайта</p>
-                                    </div>
-                                    <img src="img/step_prototype.svg" alt="">
+                                <img src="img/step_consultation.svg" alt="">
+                            </div>
+                            <div class="step-icon step-down">
+                                <div class="step-descr">
+                                    <h4>01</h4>
+                                    <p>Анализируем сферу бизнеса, целевую аудиторию и её потребности</p>
+                                    <p>Начинаем разработку прототипа будущего сайта</p>
                                 </div>
-                                <div class="step-icon unvisible">
-                                    <div class="step-descr">
-                                        <h4>02</h4>
-                                        <p>Прорабатываем полноценную дизайн-концепцию сайта в мельчайших интерактивных деталях</p>
-                                        <p></p>
-                                    </div>
-                                    <img src="img/step_design.svg" alt="">
+                                <img src="img/step_prototype.svg" alt="">
+                            </div>
+                            <div class="step-icon unvisible">
+                                <div class="step-descr">
+                                    <h4>02</h4>
+                                    <p>Прорабатываем полноценную дизайн-концепцию сайта в мельчайших интерактивных
+                                        деталях</p>
+                                    <p></p>
                                 </div>
-                                <div class="step-icon unvisible">
-                                    <div class="step-descr">
-                                        <h4>03</h4>
-                                        <p>После утверждения дизайна разработчик начинает вёрстку проекта</p>
-                                        <p>Проект адаптируется под любой тип устройств</p>
-                                    </div>
-                                    <img src="img/step_layout.svg" alt="">
+                                <img src="img/step_design.svg" alt="">
+                            </div>
+                            <div class="step-icon unvisible">
+                                <div class="step-descr">
+                                    <h4>03</h4>
+                                    <p>После утверждения дизайна разработчик начинает вёрстку проекта</p>
+                                    <p>Проект адаптируется под любой тип устройств</p>
                                 </div>
-                                <div class="step-icon unvisible">
-                                    <div class="step-descr">
-                                        <h4>04</h4>
-                                        <p>На этапе тестирования выявляются и исправляются все визуальные и функциональные ошибки</p>
-                                    </div>
-                                    <img src="img/step_testing.svg" alt="">
+                                <img src="img/step_layout.svg" alt="">
+                            </div>
+                            <div class="step-icon unvisible">
+                                <div class="step-descr">
+                                    <h4>04</h4>
+                                    <p>На этапе тестирования выявляются и исправляются все визуальные и функциональные
+                                        ошибки</p>
                                 </div>
-                                <div class="step-icon step-up">
-                                    <div class="step-descr">
-                                        <h4>05</h4>
-                                        <p>Запускаем проект на хостинг и передаём клиенту управление сайтом</p>
-                                    </div>
-                                    <img src="img/step_start.svg" alt="">
+                                <img src="img/step_testing.svg" alt="">
+                            </div>
+                            <div class="step-icon step-up">
+                                <div class="step-descr">
+                                    <h4>05</h4>
+                                    <p>Запускаем проект на хостинг и передаём клиенту управление сайтом</p>
                                 </div>
+                                <img src="img/step_start.svg" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="portfolio-st" class="section-title">
+            </div>
+            <div id="portfolio-container">
+                <div id="portfolio-st" class="section-title how-to-work-mobile">
                     <h2>Наши работы</h2>
                 </div>
                 <div class="portfolio">
@@ -369,74 +539,103 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="contact-us-title">
+                <h3>Что используем для разработки?</h3>
+            </div>
+            <div class="what-stek-box">
+                <div class="what-stek-item">
+                    <div class="what-stek-text">
+                        <p>Основное направление нашей студии - разработка сайтов с помощью нативных средств
+                            разработки (HTML5, CSS3(SASS, LESS), JS(React, JQuery))</p>
+                        <p>Также мы предоставляем услуги по разработке сайтов на Tilda, отталкиваясь
+                            от ТЗ заказчика.</p>
+                        <p>В качестве дополнительных, мы оказываем услуги по разработке дизайна и фирменного стиля
+                            компании.</p>
+                    </div>
+                </div>
+                <div class="what-stek-images-box">
+                    <img src="img/html-5.svg" alt="">
+                    <img src="img/css3.svg" alt="">
+                    <img src="img/javascript.svg" alt="">
+                    <img src="img/figma.svg" alt="">
+                    <img src="img/principle.png" alt="">
+                    <img src="img/procreate.png" alt="">
+                </div>
+            </div>
+            <div id="contact-us-st">
                 <div class="contact-us-title">
-                    <h3>Что используем для разработки?</h3>
-                </div>
-                <div class="what-stek-box">
-                    <div class="what-stek-item">
-                        <div class="what-stek-text">
-                            <p>Основное направление нашей студии - разработка сайтов с помощью нативных средств
-                                разработки (HTML5, CSS3(SASS, LESS), JS(React, JQuery))</p>
-                            <p>Но также мы предоставляем услуги по разработке сайтов на Tilda, отталкиваясь
-                                от ТЗ заказчика.</p>
-                            <p>В качестве дополнительных, мы оказываем услуги по разработке дизайна и фирменного стиля
-                                компании.</p>
-                        </div>
-                    </div>
-                    <div class="what-stek-images-box">
-                        <img src="img/html-5.svg" alt="">
-                        <img src="img/css3.svg" alt="">
-                        <img src="img/javascript.svg" alt="">
-                        <img src="img/figma.svg" alt="">
-                        <img src="img/principle.png" alt="">
-                        <img src="img/procreate.png" alt="">
-                    </div>
-                </div>
-                <div id="contact-us-st" class="contact-us-title">
                     <h3>Обратная связь</h3>
                 </div>
                 <div class="contact-us">
-                    <div class="contact-us-box">
-                        <a id="tg-item" class="contact-us-item">
-                            <!-- <img src="img/c-u-ellipse.svg" alt="" class="in-c-ellipse"> -->
-                            <div class="in-c-ellipse"></div>
-                            <p>Telegram</p>
-                        </a>
-                        <a href="https://vk.me/webprojectstudio" target="_blank" id="vk-item" class="contact-us-item">
-                            <div class="in-c-ellipse"></div>
-                            <p>VKontakte</p>
-                        </a>
-                        <a id="email-item" class="contact-us-item">
-                            <div id="email-ellipse" class="in-c-ellipse"></div>
-                            <p>eMail</p>
-                        </a>
-                    </div>
-                    <div class="contact-us-fomr">
-                        <div class="form-title">Заполните форму <br> и мы свяжемся с Вами!</div>
-                        <form action="" class="form-box">
-                            <div class="text-field text-field_floating-3">
-                                <input name="name" type="name" id="name" class="form-item text-field__input"
-                                    placeholder="Ваше имя" type="text">
-                                <label class="text-field__label" for="name">Имя</label>
-                            </div>
-                            <div class="text-field text-field_floating-3">
-                                <input name="tel" type="tel" id="tel" class="form-item text-field__input"
-                                    placeholder="Номер телефона" type="text">
-                                <label class="text-field__label" for="tel">Почта или телефон</label>
-                            </div>
-                            <!-- <select class="form-item" name="product" id="product">
-                                <option value="Лендинг">Лендинг</option>
-                                <option value="Визитка">Визитка</option>
-                                <option value="Многостраничный сайт">Многостраничный сайт</option>
-                                <option value="Интернет-магазин">Интернет-магазин</option>
-                                <option value="Редизайн">Редизайн</option>
-                                <option value="Оформление компании">Оформление компании</option>
-                            </select> -->
-                            <div class="category-box">
-
-                            </div>
-                            <button class="form-item submit-item">Отправить</button>
-                        </form>
+                    <div id="contacts-st">
+                        <div id="form" class="contact-us-fomr">
+                            <div id="form-title" class="form-title">Если стесняетесь, <br> свяжемся с Вами
+                                самостоятельно. <br> (отвечаем
+                                очень быстро, честно)</div>
+                            <form id="footer-num" action="" method="post" class="form-box">
+                                <div class="text-field text-field_floating-3">
+                                    <input required name="f[name]" id="name" class="form-item text-field__input"
+                                        placeholder="Ваше имя" type="text">
+                                    <label class="text-field__label" for="name">Имя</label>
+                                </div>
+                                <div class="text-field text-field_floating-3">
+                                    <input autocomplete="email" required name="f[email]" type="email" id="email"
+                                        class="form-item text-field__input" placeholder="Номер телефона">
+                                    <label class="text-field__label" for="email">Почта или телефон</label>
+                                </div>
+                                <div id="comment-div" class="text-field text-field_floating-3">
+                                    <input name="f[comment]" type="comment" id="comment"
+                                        class="form-item text-field__input" placeholder="Комментарий" type="text">
+                                    <label class="text-field__label" for="comment">Комментарий</label>
+                                </div>
+                                <div id="check-div" class="checkbox">
+                                    <div class="checkbox-box">
+                                        <div class="checkbox-unchecked"></div>
+                                    </div>
+                                    <span>Я соглашаюсь на хранение и обработку персональных данных</span>
+                                    <input required class="checkbox-input" type="checkbox" name="f[checkbox]"
+                                        id="checkbox">
+                                </div>
+                                <!-- <select class="form-item" name="product" id="product">
+                                    <option value="Лендинг">Лендинг</option>
+                                    <option value="Визитка">Визитка</option>
+                                    <option value="Многостраничный сайт">Многостраничный сайт</option>
+                                    <option value="Интернет-магазин">Интернет-магазин</option>
+                                    <option value="Редизайн">Редизайн</option>
+                                    <option value="Оформление компании">Оформление компании</option>
+                                </select> -->
+                                <button id="submit-item" type="submit" class="form-item submit-item">Отправить</button>
+                                <div id="message"></div>
+                            </form>
+                        </div>
+                        <div class="contact-us-box">
+                            <a id="tg-item" class="contact-us-item">
+                                <div class="in-c-ellipse"></div>
+                                <p>Telegram</p>
+                            </a>
+                            <a href="https://vk.me/webprojectstudio" target="_blank" id="vk-item"
+                                class="contact-us-item">
+                                <div class="in-c-ellipse"></div>
+                                <p>VKontakte</p>
+                            </a>
+                            <a href="mailto:info@web-project-studio.ru" id="email-item" class="contact-us-item">
+                                <div id="email-ellipse" class="in-c-ellipse"></div>
+                                <p>eMail</p>
+                            </a>
+                        </div>
+                        <div id="mobile-contact-us" class="contact-us-box contact-us-box-mobile">
+                            <a id="tg-item" class="contact-us-item-mobile">
+                                <img src="img/tg.svg" alt="Telegram">
+                            </a>
+                            <a href="https://vk.me/webprojectstudio" target="_blank" id="vk-item"
+                                class="contact-us-item-mobile">
+                                <img src="img/vk.svg" alt="VKontakte">
+                            </a>
+                            <a href="mailto:info@web-project-studio.ru" id="email-item" class="contact-us-item-mobile">
+                                <img src="img/email.svg" alt="Email">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -451,7 +650,8 @@
             </div>
             <div class="footer-contacts">
                 <a href="tel:89841709374" class="footer-contact">8 984 170-93-74</a>
-                <a href="mailto:info@web-project-studio.ru" class="footer-contact right-item">info@web-project-studio.ru</a>
+                <a href="mailto:info@web-project-studio.ru"
+                    class="footer-contact right-item">info@web-project-studio.ru</a>
             </div>
             <div class="designed-by">
                 <a href="">designed by <span>web-project-studio</span></a>
