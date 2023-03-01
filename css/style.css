@@ -5,6 +5,8 @@ html {
 body {
     font-family: 'Rubik', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #222;
+    width: 100%;
+    height: 100vh;
 }
 
 h4 {
@@ -423,11 +425,11 @@ a {
 
 .step-descr p {
     margin: 0;
-    padding: 8px 18px;
+    padding: 4px 10px;
     font-size: 17px;
     font-weight: 300;
-    /* text-align: center; */
     font-family: "Montserrat", sans-serif;
+    text-align: center;
 }
 
 .step-icon img {
@@ -447,7 +449,14 @@ a {
 }
 
 .step-center .step-descr {
-    box-shadow: 5px 5px 0 #ffcc00;
+    box-shadow: none;
+    color: #222;
+    background-color: #fff;
+    font-weight: 500;
+}
+
+.step-center .step-descr p {
+    font-weight: 400;
 }
 
 .step-down {
@@ -487,6 +496,10 @@ a {
 
 .products-item:last-child {
     margin-bottom: 0;
+}
+
+.pi {
+    margin-bottom: 32px;
 }
 
 .products-item:hover {
@@ -840,8 +853,9 @@ a {
     justify-content: space-evenly;
 }
 
+
 .other-service {
-    width: 40%;
+    width: 48%;
     height: 360px;
     border-radius: 48px;
     border: dashed 4px #fff;
@@ -911,6 +925,27 @@ a {
     margin-bottom: 48px;
 }
 
+.other-services {
+    width: 85%;
+    margin: auto;
+}
+
+.other-services-box {
+    justify-content: space-around;
+}
+
+.other-service {
+    width: 46%;
+}
+
+.other-service-inbox {
+    height: 360px;
+}
+
+.other-service-big {
+    width: 90%;
+}
+
 .other-btn-box {
     display: block;
     width: max-content;
@@ -934,7 +969,9 @@ a {
     box-shadow: #222 -8px -8px 0px;
 }
 
-.portfolio {}
+.portfolio {
+    margin-bottom: 64px;
+}
 
 .portfolio-box {
     display: flex;
@@ -984,6 +1021,10 @@ a {
     align-items: center;
     margin-top: 64px;
     cursor: pointer;
+}
+
+#new-case img {
+    border: none;
 }
 
 .blur {
@@ -1532,3 +1573,56 @@ a {
 #form2 {
     display: none;
 }
+
+.why-we {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 64px;
+}
+
+.why-we-title {
+    margin-bottom: 32px;
+}
+
+.why-we-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.why-we-item {
+    width: 300px;
+    height: 240px;
+    background-color: #fff;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #FFCC00 15px 15px 0;
+    transition: all .3s;
+    margin-bottom: 32px;
+    cursor: pointer;
+}
+
+.why-we-item:hover {
+    background-color: #FFCC00;
+    box-shadow: #fff -15px -15px 0;
+    margin: 15px 0 0 15px;
+    margin-bottom: 32px;
+}
+
+.why-we-item h4 {
+    font-size: 24px;
+}
+
+.why-we-item p {
+    text-align: center;
+    padding: 8px 12px;
+}
+

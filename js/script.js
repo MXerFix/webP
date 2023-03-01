@@ -1,3 +1,4 @@
+
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.fromTo(".scroll-down-window", { opacity: 0.7 }, { opacity: 0, scrollTrigger: { scrub: true, start: "top", end: "10%" } })
@@ -74,7 +75,7 @@ if (widthWind > 767) {
         x: -200,
         // opacity:0,
         scrollTrigger: {
-            scrub: 0,
+            scrub: 1,
             start: "-1000px",
             end: "-250px",
             trigger: "#landing-item",
@@ -86,7 +87,7 @@ if (widthWind > 767) {
         // opacity:0,
         scrollTrigger: {
             trigger: "#bcard-item",
-            scrub: 0,
+            scrub: 1,
             start: "-1000px",
             end: "-300px",
         }
@@ -96,7 +97,7 @@ if (widthWind > 767) {
         x: -200,
         // opacity:0,
         scrollTrigger: {
-            scrub: 0,
+            scrub: 1,
             start: "-1000px",
             end: "-450px",
             trigger: "#multi-item",
@@ -108,41 +109,177 @@ if (widthWind > 767) {
         // opacity:0,
         scrollTrigger: {
             trigger: "#shop-item",
-            scrub: 0,
+            scrub: 1,
             start: "-1000px",
             end: "-700px",
         }
     })
 
-    gsap.from(".other-service", {
-        scale: 0.3,
+    gsap.from(".si-1", {
+        x: -550,
         scrollTrigger: {
-            trigger: ".other-services",
-            scrub: true,
+            scrub: 1,
             start: "-1000px",
-            end: "-250px"
+            end: "-500px",
+            trigger: ".si-1",
+        }
+    })
+    gsap.from(".si-2", {
+        x: -550,
+        scrollTrigger: {
+            scrub: 1,
+            start: "-1000px",
+            end: "-500px",
+            trigger: ".si-2",
+        }
+    })
+    gsap.from(".si-3", {
+        x: -550,
+        scrollTrigger: {
+            scrub: 1,
+            start: "-1000px",
+            end: "-500px",
+            trigger: ".si-3",
+        }
+    })
+    gsap.from(".si-4", {
+        x: -550,
+        scrollTrigger: {
+            scrub: 1,
+            start: "-1000px",
+            end: "-500px",
+            trigger: ".si-4",
+        }
+    })
+    gsap.from(".si-5", {
+        x: -550,
+        scrollTrigger: {
+            scrub: 1,
+            start: "-1000px",
+            end: "-500px",
+            trigger: ".si-5",
+        }
+    })
+    gsap.from(".si-6", {
+        x: -550,
+        scrollTrigger: {
+            scrub: 1,
+            start: "-1000px",
+            end: "-500px",
+            trigger: ".si-6",
         }
     })
 
-    gsap.from(".steps-list", {
-        x: -50,
-        opacity: 0,
-        scrollTrigger: {
-            scrub: true,
-            start: "-800px",
-            end: "100%",
-            trigger: "#how-to-work",
+    // gsap.from(".step-icons-box", {
+    //     x: 50,
+    //     opacity:0,
+    //     scrollTrigger: {
+    //         trigger: "#how-to-work",
+    //         scrub: true,
+    //         start: "-800px",
+    //         end: "100%",
+    //     }
+    // })
+
+    // gsap.from(".portfolio-inbox", {
+    //     scale:0,
+    //     scrollTrigger: {
+    //         scrub:true,
+    //         start:"-1200px",
+    //         end:"-500px",
+    //         trigger:".portfolio"
+    //     }
+    // })
+
+    gsap.from(".why-we-item-left", {
+        x:-150,
+        y:150,
+        scrollTrigger:{
+            scrub:1,
+            start:"-600px",
+            end:"-250px",
+            trigger:".why-we"
         }
     })
 
-    gsap.from(".step-icons-box", {
-        x: 50,
-        opacity: 0,
-        scrollTrigger: {
-            trigger: "#how-to-work",
-            scrub: true,
-            start: "-800px",
-            end: "100%",
+    gsap.from(".why-we-item-center", {
+        y:150,
+        scrollTrigger:{
+            scrub:1,
+            start:"-600px",
+            end:"-250px",
+            trigger:".why-we"
+        }
+    })
+
+    gsap.from(".why-we-item-right", {
+        x:150,
+        y:150,
+        scrollTrigger:{
+            scrub:1,
+            start:"-600px",
+            end:"-250px",
+            trigger:".why-we"
+        }
+    })
+
+    gsap.from(".t1", {
+        x:-650,
+        scrollTrigger:{
+            scrub:1,
+            start:"-1200px",
+            end:"-400px",
+            trigger:".t1"
+        }
+    })
+
+    gsap.from(".t2", {
+        x:-650,
+        scrollTrigger:{
+            scrub:1,
+            start:"-1200px",
+            end:"-400px",
+            trigger:".t2"
+        }
+    })
+
+    gsap.from(".t3", {
+        x:-650,
+        scrollTrigger:{
+            scrub:1,
+            start:"-1200px",
+            end:"-400px",
+            trigger:".t3"
+        }
+    })
+
+    gsap.from(".t1-rev", {
+        scale:0,
+        scrollTrigger:{
+            scrub:1,
+            start:"-1200px",
+            end:"-300px",
+            trigger:".t1"
+        }
+    })
+    
+    gsap.from(".t2-rev", {
+        scale:0,
+        scrollTrigger:{
+            scrub:1,
+            start:"-1200px",
+            end:"-300px",
+            trigger:".t2"
+        }
+    })
+
+    gsap.from(".t3-rev", {
+        scale:0,
+        scrollTrigger:{
+            scrub:1,
+            start:"-1200px",
+            end:"-300px",
+            trigger:".t3"
         }
     })
 
@@ -152,6 +289,7 @@ if (widthWind > 767) {
 if (widthWind < 768) {
     gsap.from(".mobile-menu", { duration: 1, ease: "bounce", y: 70 })
 }
+
 
 
 const steps = ((() => {
@@ -381,10 +519,10 @@ function onScroll(event) {
 
 $('#footer-num').submit(function () {
     $.post(
-        'post-email.php', // адрес обработчика
-        $("#footer-num").serialize(), // отправляемые данные  		
+        'post-email.php',
+        $("#footer-num").serialize(),
 
-        function (msg) { // получен ответ сервера  
+        function (msg) { 
             $('#footer-num').hide('slow');
             $('#message').html(msg);
             $('#form-title').text('Ваша заявка в пути! Ответим в ближайшее время!')
@@ -397,10 +535,10 @@ $('#footer-num').submit(function () {
 
 $('#footer-num2').submit(function () {
     $.post(
-        'post-email.php', // адрес обработчика
-        $("#footer-num2").serialize(), // отправляемые данные  		
+        'post-email.php', 
+        $("#footer-num2").serialize(),
 
-        function (msg) { // получен ответ сервера  
+        function (msg) { 
             $('#footer-num2').hide('slow');
             $('#message2').html(msg);
             $('#form-title2').text('Ваша заявка в пути! Ответим в ближайшее время!')
@@ -410,6 +548,7 @@ $('#footer-num2').submit(function () {
 
     return false;
 });
+
 
 
 
