@@ -502,6 +502,10 @@ a {
     margin-bottom: 32px;
 }
 
+.pi-0 {
+    margin-bottom: 0 !important;
+}
+
 .products-item:hover {
     /* border-color: #FFCC00; */
 }

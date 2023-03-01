@@ -406,6 +406,10 @@ window.addEventListener("DOMContentLoaded", function () {
     const prouctCards = document.getElementsByClassName("products-item");
     for (productCard of prouctCards) {
         productCard.addEventListener("click", function () {
+            pis = document.getElementsByClassName("pi")
+            for (let pi of pis) {
+                pi.classList.toggle("pi-0")
+            }
             for (let card of prouctCards) {
                 card.classList.toggle("off")
                 card.querySelector(".product-inbox").classList.toggle("off")
