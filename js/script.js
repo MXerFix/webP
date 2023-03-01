@@ -192,94 +192,94 @@ if (widthWind > 767) {
     // })
 
     gsap.from(".why-we-item-left", {
-        x:-150,
-        y:150,
-        scrollTrigger:{
-            scrub:1,
-            start:"-600px",
-            end:"-250px",
-            trigger:".why-we"
+        x: -150,
+        y: 150,
+        scrollTrigger: {
+            scrub: 1,
+            start: "-600px",
+            end: "-250px",
+            trigger: ".why-we"
         }
     })
 
     gsap.from(".why-we-item-center", {
-        y:150,
-        scrollTrigger:{
-            scrub:1,
-            start:"-600px",
-            end:"-250px",
-            trigger:".why-we"
+        y: 150,
+        scrollTrigger: {
+            scrub: 1,
+            start: "-600px",
+            end: "-250px",
+            trigger: ".why-we"
         }
     })
 
     gsap.from(".why-we-item-right", {
-        x:150,
-        y:150,
-        scrollTrigger:{
-            scrub:1,
-            start:"-600px",
-            end:"-250px",
-            trigger:".why-we"
+        x: 150,
+        y: 150,
+        scrollTrigger: {
+            scrub: 1,
+            start: "-600px",
+            end: "-250px",
+            trigger: ".why-we"
         }
     })
 
     gsap.from(".t1", {
-        x:-650,
-        scrollTrigger:{
-            scrub:1,
-            start:"-1200px",
-            end:"-400px",
-            trigger:".t1"
+        x: -650,
+        scrollTrigger: {
+            scrub: 1,
+            start: "-1200px",
+            end: "-400px",
+            trigger: ".t1"
         }
     })
 
     gsap.from(".t2", {
-        x:-650,
-        scrollTrigger:{
-            scrub:1,
-            start:"-1200px",
-            end:"-400px",
-            trigger:".t2"
+        x: -650,
+        scrollTrigger: {
+            scrub: 1,
+            start: "-1200px",
+            end: "-400px",
+            trigger: ".t2"
         }
     })
 
     gsap.from(".t3", {
-        x:-650,
-        scrollTrigger:{
-            scrub:1,
-            start:"-1200px",
-            end:"-400px",
-            trigger:".t3"
+        x: -650,
+        scrollTrigger: {
+            scrub: 1,
+            start: "-1200px",
+            end: "-400px",
+            trigger: ".t3"
         }
     })
 
     gsap.from(".t1-rev", {
-        scale:0,
-        scrollTrigger:{
-            scrub:1,
-            start:"-1200px",
-            end:"-300px",
-            trigger:".t1"
+        scale: 0,
+        scrollTrigger: {
+            scrub: 1,
+            start: "-1200px",
+            end: "-300px",
+            trigger: ".t1"
         }
     })
-    
+
     gsap.from(".t2-rev", {
-        scale:0,
-        scrollTrigger:{
-            scrub:1,
-            start:"-1200px",
-            end:"-300px",
-            trigger:".t2"
+        scale: 0,
+        scrollTrigger: {
+            scrub: 1,
+            start: "-1200px",
+            end: "-300px",
+            trigger: ".t2"
         }
     })
 
     gsap.from(".t3-rev", {
-        scale:0,
-        scrollTrigger:{
-            scrub:1,
-            start:"-1200px",
-            end:"-300px",
-            trigger:".t3"
+        scale: 0,
+        scrollTrigger: {
+            scrub: 1,
+            start: "-1200px",
+            end: "-300px",
+            trigger: ".t3"
         }
     })
 
@@ -522,7 +522,7 @@ $('#footer-num').submit(function () {
         'post-email.php',
         $("#footer-num").serialize(),
 
-        function (msg) { 
+        function (msg) {
             $('#footer-num').hide('slow');
             $('#message').html(msg);
             $('#form-title').text('Ваша заявка в пути! Ответим в ближайшее время!')
@@ -535,10 +535,10 @@ $('#footer-num').submit(function () {
 
 $('#footer-num2').submit(function () {
     $.post(
-        'post-email.php', 
+        'post-email.php',
         $("#footer-num2").serialize(),
 
-        function (msg) { 
+        function (msg) {
             $('#footer-num2').hide('slow');
             $('#message2').html(msg);
             $('#form-title2').text('Ваша заявка в пути! Ответим в ближайшее время!')
