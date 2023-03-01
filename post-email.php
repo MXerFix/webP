@@ -24,22 +24,20 @@ if (!$name)
 }
  
  
-$to = 'maksrfx@vk.com'; // адрес получателя
+$to = 'info@web-project-studio.ru'; 
 
-$subject = 'Заявка от: ' . $name; // тема письма
+$subject = 'Заявка от: ' . $name; 
  
-// формируем тело сообщения
+
 $message = 'Имя: ' . $name . "\r\n" . 'Email: ' . $email . "\r\n" . "Комментарий: " . $comment; 
  
-// формируем headers для письма
-$headers = 'From: '. $email . "\r\n"; // от кого
- 
-// кодируем заголовок в UTF-8
+
+$headers = 'From: '. $email . "\r\n";
+
 $subject = preg_replace("/(\r\n)|(\r)|(\n)/", "", $subject);
 $subject = preg_replace("/(\t)/", " ", $subject);
 $subject = '=?UTF-8?B?' . base64_encode($subject) . '?=';
- 
-// отправка
+
 @mail($to, $subject, $message, $headers);
  
 echo 'Спасибо, ваше сообщение отправлено!';
