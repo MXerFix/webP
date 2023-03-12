@@ -71,6 +71,10 @@ tl_1.from(".scroll-down-window", { opacity: 0, duration: 1, ease: "sine.out" })
 gsap.to(".typing-title", { delay: 1, duration: 5, text: { value: "Самое главное в бизнесе - сконцентрироваться <br> на создании чего-то важного." }, ease: "none" })
 
 if (widthWind > 767) {
+
+    let si_start = "-600px";
+    let si_end = "-300px";
+
     gsap.from("#landing-item", {
         x: -200,
         // opacity:0,
@@ -116,59 +120,125 @@ if (widthWind > 767) {
     })
 
     gsap.from(".si-1", {
-        x: -550,
+        x: "50%",
         scrollTrigger: {
-            scrub: 1,
-            start: "-1000px",
-            end: "-500px",
+            scrub: 2,
+            start: si_start,
+            end: si_end,
             trigger: ".si-1",
         }
     })
-    gsap.from(".si-2", {
-        x: -550,
+
+    gsap.from(".si-1-2", {
+        x: "-32%",
         scrollTrigger: {
-            scrub: 1,
-            start: "-1000px",
-            end: "-500px",
+            scrub: 2,
+            start: si_start,
+            end: si_end,
+            trigger: ".si-1",
+        }
+    })
+
+    gsap.from(".si-2", {
+        x: "50%",
+        scrollTrigger: {
+            scrub: 2,
+            start: si_start,
+            end: si_end,
             trigger: ".si-2",
         }
     })
-    gsap.from(".si-3", {
-        x: -550,
+
+    gsap.from(".si-2-2", {
+        x: "-32%",
         scrollTrigger: {
-            scrub: 1,
-            start: "-1000px",
-            end: "-500px",
+            scrub: 2,
+            start: si_start,
+            end: si_end,
+            trigger: ".si-2",
+        }
+    })
+
+    gsap.from(".si-3", {
+        x: "50%",
+        scrollTrigger: {
+            scrub: 2,
+            start: si_start,
+            end: si_end,
             trigger: ".si-3",
         }
     })
-    gsap.from(".si-4", {
-        x: -550,
+
+    gsap.from(".si-3-2", {
+        x: "-32%",
         scrollTrigger: {
-            scrub: 1,
-            start: "-1000px",
-            end: "-500px",
+            scrub: 2,
+            start: si_start,
+            end: si_end,
+            trigger: ".si-3",
+        }
+    })
+
+    gsap.from(".si-4", {
+        x: "50%",
+        scrollTrigger: {
+            scrub: 2,
+            start: si_start,
+            end: si_end,
             trigger: ".si-4",
         }
     })
-    gsap.from(".si-5", {
-        x: -550,
+
+    gsap.from(".si-4-2", {
+        x: "-32%",
         scrollTrigger: {
-            scrub: 1,
-            start: "-1000px",
-            end: "-500px",
+            scrub: 2,
+            start: si_start,
+            end: si_end,
+            trigger: ".si-4",
+        }
+    })
+
+    gsap.from(".si-5", {
+        x: "50%",
+        scrollTrigger: {
+            scrub: 2,
+            start: si_start,
+            end: si_end,
             trigger: ".si-5",
         }
     })
-    gsap.from(".si-6", {
-        x: -550,
+
+    gsap.from(".si-5-2", {
+        x: "-32%",
         scrollTrigger: {
-            scrub: 1,
-            start: "-1000px",
-            end: "-500px",
+            scrub: 2,
+            start: si_start,
+            end: si_end,
+            trigger: ".si-5",
+        }
+    })
+
+    gsap.from(".si-6", {
+        x: "50%",
+        scrollTrigger: {
+            scrub: 2,
+            start: si_start,
+            end: si_end,
             trigger: ".si-6",
         }
     })
+
+    gsap.from(".si-6-2", {
+        x: "-32%",
+        scrollTrigger: {
+            scrub: 2,
+            start: si_start,
+            end: si_end,
+            trigger: ".si-6",
+        }
+    })
+
 
     // gsap.from(".step-icons-box", {
     //     x: 50,
@@ -475,10 +545,18 @@ checkboxBox2.addEventListener("click", function () {
 const form2 = document.getElementById("form2")
 const form2btns = document.getElementsByClassName("form2-toggle-btn")
 for (let form2btn of form2btns) {
-    form2btn.addEventListener("click", function () {
+    form2btn.addEventListener("click", function() {
         form2.classList.toggle("form2-active")
         this.querySelector("svg").classList.toggle("rotate45")
     })
+}
+
+const stepItemsClicked = document.getElementsByClassName('step-box')
+for (stepItemClicked of stepItemsClicked) {
+stepItemClicked.addEventListener('click', function() {
+    this.querySelector('.si-l').classList.toggle('si-l-active');
+    this.classList.toggle('mb-124');
+})
 }
 
 
@@ -552,6 +630,44 @@ $('#footer-num2').submit(function () {
 
     return false;
 });
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     const deadline = new Date(2023, 05, 01);
+    
+//     let timerId = null;
+    
+//     function declensionNum(num, words) {
+//         return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(num % 10 < 5) ? num % 10 : 5]];
+//     }
+    
+//     function countdownTimer() {
+//         const diff = deadline - new Date();
+//         if (diff <= 0) {
+//             clearInterval(timerId);
+//         }
+//         const days = diff > 0 ? Math.floor(diff / 1000 / 60 / 60 / 24) : 0;
+//         const hours = diff > 0 ? Math.floor(diff / 1000 / 60 / 60) % 24 : 0;
+//         const minutes = diff > 0 ? Math.floor(diff / 1000 / 60) % 60 : 0;
+//         const seconds = diff > 0 ? Math.floor(diff / 1000) % 60 : 0;
+//         $days.textContent = days < 10 ? '0' + days : days;
+//         $hours.textContent = hours < 10 ? '0' + hours : hours;
+//         $minutes.textContent = minutes < 10 ? '0' + minutes : minutes;
+//         $seconds.textContent = seconds < 10 ? '0' + seconds : seconds;
+//         $days.dataset.title = declensionNum(days, ['день', 'дня', 'дней']);
+//         $hours.dataset.title = declensionNum(hours, ['час', 'часа', 'часов']);
+//         $minutes.dataset.title = declensionNum(minutes, ['минута', 'минуты', 'минут']);
+//         $seconds.dataset.title = declensionNum(seconds, ['секунда', 'секунды', 'секунд']);
+//     }
+    
+//     const $days = document.querySelector('.timer__days');
+//     const $hours = document.querySelector('.timer__hours');
+//     const $minutes = document.querySelector('.timer__minutes');
+//     const $seconds = document.querySelector('.timer__seconds');
+    
+//     countdownTimer();
+    
+//     timerId = setInterval(countdownTimer, 1000);
+// });
 
 
 

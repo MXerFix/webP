@@ -230,6 +230,10 @@
             <a href="#what-develop" class="scroll-down-window"><img src="img/down-arrow.svg" alt=""></a>
         </div>
         <div class="container">
+            <div class="offer">
+                <div class="offer-title"></div>
+                <div class="offer-descr"></div>
+            </div>
             <div id="catalog-container">
                 <div class="section-title how-to-work-mobile">
                     <h2>
@@ -360,7 +364,7 @@
                                     <p>создание внешного образа компании</p>
                                 </div>
                                 <div class="other-service-descr ost-min">
-                                    <p>Поможем определиться с имиджем компании. С уникальным образом, Вы привлечете
+                                    <p>Поможем определиться с имиджем компании. С уникальным образом Вы привлечете
                                         гораздо больше клиентов.</p>
                                 </div>
                                 <div class="other-btn-box">
@@ -378,7 +382,7 @@
                                     <p>разработка ui/ux дизайна для приложений</p>
                                 </div>
                                 <div class="other-service-descr ost-min">
-                                    <p>Сделаем удобный и понятный интерфейс для приложения, который доставит
+                                    <p>Сделаем удобный и понятный интерфейс, который доставит
                                         удовольствие от пользования. </p>
                                 </div>
                                 <div class="other-btn-box">
@@ -397,27 +401,71 @@
                 </div>
                 <div class="steps">
                     <div class="steps-box">
-                        <ul class="steps-list">
-                            <div class="si-1">
-                                <li class="step-item" data-step="0">00 Обсуждение проекта</li>
+                        <div class="step-box">
+                            <div class="si si-1 si-l">
+                                <div class="step-item step-item-left" data-step="0">
+                                    <p>Обсуждаем тип проекта, его цели <br> Подбираем наилучший вариант сайта</p>
+                                </div>
                             </div>
-                            <div class="si-2">
-                                <li class="step-item" data-step="1">01 Анализ бизнеса</li>
+                            <div class="si si-1-2 si-r">
+                                <div class="step-item step-item-right" data-step="0">00 Обсуждение проекта</div>
                             </div>
-                            <div class="si-3">
-                                <li class="step-item" data-step="2">02 Дизайн-концепция</li>
+                        </div>
+                        <div class="step-box">
+                            <div class="si si-2 si-l">
+                                <div class="step-item step-item-left" data-step="0">
+                                    <p>Анализируем сферу бизнеса, её целевую аудиторию<br> Начинаем
+                                        разработку прототипа будущего сайта</p>
+                                </div>
                             </div>
-                            <div class="si-4">
-                                <li class="step-item" data-step="3">03 Программирование</li>
+                            <div class="si si-2-2 si-r">
+                                <div class="step-item step-item-right" data-step="0">01 Анализ бизнеса</div>
                             </div>
-                            <div class="si-5">
-                                <li class="step-item" data-step="4">04 Тестирование</li>
+                        </div>
+                        <div class="step-box">
+                            <div class="si si-3 si-l">
+                                <div class="step-item step-item-left" data-step="0">
+                                    <p>Прорабатываем полноценную дизайн-концепцию сайта в мельчайших интерактивных
+                                        деталях</p>
+                                </div>
                             </div>
-                            <div class="si-6">
-                                <li class="step-item" data-step="5">05 Запуск</li>
+                            <div class="si si-3-2 si-r">
+                                <div class="step-item step-item-right" data-step="0">02 Дизайн-концепция</div>
                             </div>
-                        </ul>
-                        <div class="step-icons-box">
+                        </div>
+                        <div class="step-box">
+                            <div class="si si-4 si-l"> 
+                                <div class="step-item step-item-left" data-step="0">
+                                    <p>После утверждения дизайна разработчик начинает вёрстку<br> Проект
+                                        адаптируется под любой тип устройств</p>
+                                </div>
+                            </div>
+                            <div class="si si-4-2 si-r">
+                                <div class="step-item step-item-right" data-step="0">03 Программирование</div>
+                            </div>
+                        </div>
+                        <div class="step-box">
+                            <div class="si si-5 si-l">
+                                <div class="step-item step-item-left" data-step="0">
+                                    <p>На этапе тестирования выявляются и исправляются все ошибки и вносятся необходимые
+                                        правки</p>
+                                </div>
+                            </div>
+                            <div class="si si-5-2 si-r">
+                                <div class="step-item step-item-right" data-step="0">04 Тестирование</div>
+                            </div>
+                        </div>
+                        <div class="step-box">
+                            <div class="si si-6 si-l step-item-closed">
+                                <div class="step-item step-item-left" data-step="0">
+                                    <p>Запускаем проект на хостинг и передаём клиенту управление сайтом</p>
+                                </div>
+                            </div>
+                            <div class="si si-6-2 si-r">
+                                <div class="step-item step-item-right" data-step="0">05 Запуск</div>
+                            </div>
+                        </div>
+                        <!-- <div class="step-icons-box">
                             <div class="step-icon step-center">
                                 <div class="step-descr">
                                     <h4>00</h4>
@@ -454,8 +502,7 @@
                             <div class="step-icon unvisible">
                                 <div class="step-descr">
                                     <h4>04</h4>
-                                    <p>На этапе тестирования выявляются и исправляются все визуальные и функциональные
-                                        ошибки</p>
+                                    <p>На этапе тестирования выявляются и исправляются все ошибки и вносятся необходимые правки</p>
                                 </div>
                                 <img src="img/step_testing.svg" alt="">
                             </div>
@@ -466,7 +513,7 @@
                                 </div>
                                 <img src="img/step_start.svg" alt="">
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -487,6 +534,28 @@
                             </div>
                             <div id="avtomix" class="portfolio-item"><img src="img/avtomix.webp" alt=""></div>
                         </div>
+                        <!-- <div class="portfolio-inbox">
+                            <div class="blur">
+                                <a target="_blank" id="goto-avtomix" href="https://avtomix27.ru/"
+                                    class="portfolio-goto">Перейти</a>
+                            </div>
+                            <div class="other-service-title">
+                                <h4>AVTOMIX27</h4>
+                                <p>Сервис технического осмотра в Хабаровске</p>
+                            </div>
+                            <div id="avtomix" class="portfolio-item"><img src="img/avtomix.webp" alt=""></div>
+                        </div>
+                        <div class="portfolio-inbox">
+                            <div class="blur">
+                                <a target="_blank" id="goto-avtomix" href="https://avtomix27.ru/"
+                                    class="portfolio-goto">Перейти</a>
+                            </div>
+                            <div class="other-service-title">
+                                <h4>AVTOMIX27</h4>
+                                <p>Сервис технического осмотра в Хабаровске</p>
+                            </div>
+                            <div id="avtomix" class="portfolio-item"><img src="img/avtomix.webp" alt=""></div>
+                        </div> -->
                         <div class="portfolio-inbox">
                             <!-- <div class="blur">
                                 <a target="_blank" id="goto-avtomix" href="https://avtomix27.ru/"
@@ -517,22 +586,37 @@
                 <div class="why-we-box">
                     <div class="why-we-item-left">
                         <div class="why-we-item">
-                            <h4>Сайт под ключ</h4>
-                            <p>В тарифы входит всё, начиная с первичного обсуждения проекта, заканчивая технической
-                                поддержкой сайта</p>
+                            <div class="why-we-item-title">
+                                <h4>Сайт под ключ</h4>
+                            </div>
+                            <div class="why-we-item-descr">
+                                <p>В тарифы входит всё, начиная с первичного обсуждения проекта, заканчивая поисковой оптимизацией и технической
+                                    поддержкой сайта</p>
+                            </div>
                         </div>
                     </div>
                     <div class="why-we-item-center">
                         <div class="why-we-item">
-                            <h4>Оплата итерациями</h4>
-                            <p>Система оплаты итерациями позволяет заказчику контролировать каждый этап работы, а
-                                исполнителю не остаться без гонорара</p>
+                            <div class="why-we-item-title">
+                                <h4>Оплата итерациями</h4>
+                            </div>
+                            <div class="why-we-item-descr">
+                                <p>Система оплаты итерациями позволяет заказчику контролировать каждый этап работы и вносить необходимые поправки на любом этапе</p>
+                            </div>
                         </div>
                     </div>
                     <div class="why-we-item-right">
                         <div class="why-we-item">
-                            <h4>Бессрочная гарантия</h4>
-                            <p>Мы предоставляем бессрочную гарантию на наши проекты</p>
+                            <div class="why-we-item-title">
+                                <h4>Бессрочная гарантия</h4>
+                            </div>
+                            <div class="why-we-item-descr">
+                                <p>Мы предоставляем бессрочную гарантию на наши проекты так как:</p>
+                                <ul>
+                                    <li>Полностью уверенны в функциональности</li>
+                                    <li>Уважаем время, средства клиента и свою репутацию</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -544,7 +628,7 @@
                 <div class="what-stek-item">
                     <div class="what-stek-text">
                         <p class="t1">Основное направление нашей студии - разработка сайтов с помощью нативных средств
-                            разработки (HTML5, CSS3(SCSS), JS(React, JQuery))</p>
+                            разработки (HTML5, CSS3(SCSS), JS)</p>
                         <p class="t2">Также мы предоставляем услуги по разработке сайтов на NOCODE решениях,
                             отталкиваясь
                             от ТЗ заказчика.</p>
@@ -646,6 +730,10 @@
             </div>
             <div class="designed-by">
                 <a href="">designed by <span>web-project-studio</span></a>
+            </div>
+            <div class="copyr">
+                <p>Предложения на сайте не являются публичной офертой</p>
+                <p>Все права защищены ©web-project-studio, 2023</p>
             </div>
         </div>
     </div>
