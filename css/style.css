@@ -603,6 +603,7 @@ a {
 .product-inbox:hover {}
 
 .inbox-on {
+    justify-content: flex-start;
     align-items: flex-start;
     transition: all .3s;
 }
@@ -687,13 +688,16 @@ a {
 }
 
 .product-descr-hidden {
+    width: 85%;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 260px;
     scale: 0;
     opacity: 0;
     transition: all .2s;
 }
 
 .product-descr-hidden img {
-    width: 768px;
 }
 
 
@@ -703,6 +707,74 @@ a {
     transition: all .2s;
 }
 
+.product-descr-title h4 {
+    font-size: 36px;
+}
+
+.product-descr-title span {
+    background-color: #222;
+    color: #FFCC00;
+    padding: 2px 10px;
+}
+
+.product-descr-descr {
+    width: 100%;
+}
+
+.product-descr-descr h5 {
+    font-size: 24px;
+    margin: 12px;
+    margin-bottom: 8px;
+}
+
+.pdd-about {
+    font-size: 18px;
+}
+
+.product-descr-descr p {
+    font-weight: 200;
+}
+
+.product-descr-descr ul {
+    margin-top: 0;
+}
+
+.product-descr-descr li {
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.product-descr-descr span {
+    font-weight: 400;
+}
+
+.product-descr-descr div {
+    margin-bottom: 12px;
+}
+
+.product-descr-descr div h6 {
+    width: max-content;
+    padding: 4px 10px;
+    margin: 0;
+    margin-bottom: 6px;
+    font-size: 20px;
+    background-color: #222;
+    color: rgb(0, 223, 89);
+}
+
+.product-descr-descr div p {
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+.product-descr-descr div span {
+    color: rgb(255, 233, 205);
+    text-shadow: #222 1px 1px 0;
+    background-color: rgb(253, 172, 240);
+    padding: 1px 4px;
+    line-height:24px;
+}
 
 .in-progress {
     width: 100%;
