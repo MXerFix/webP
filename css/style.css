@@ -29,6 +29,7 @@ a {
     padding-top: 120px;
     padding: 32px;
     padding-bottom: 64px;
+    max-width: 1440px;
 }
 
 .parallax-object {
@@ -548,6 +549,7 @@ a {
     /* border: 2px #fff solid; */
     transition: all .3s;
     cursor: pointer;
+    /* overflow: hidden; */
 }
 
 .products-item:last-child {
@@ -577,6 +579,7 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .outbox:hover {
@@ -753,7 +756,7 @@ a {
 }
 
 .product-descr-descr div h6 {
-    width: max-content;
+    width: fit-content;
     padding: 4px 10px;
     margin: 0;
     margin-bottom: 6px;
@@ -769,7 +772,7 @@ a {
 }
 
 .product-descr-descr div span {
-    color: rgb(255, 233, 205);
+    color: rgb(255, 218, 170);
     text-shadow: #222 1px 1px 0;
     background-color: rgb(253, 172, 240);
     padding: 1px 4px;
@@ -1365,10 +1368,10 @@ a {
 }
 
 .contact-us-fomr {
-    width: 65%;
+    width: 75%;
     height: max-content;
-    background-color: #333;
-    border-radius: 72px;
+    background-color: white;
+    border-radius: 64px;
     padding: 32px;
     padding-bottom: 64px;
     margin-bottom: 48px;
@@ -1379,7 +1382,7 @@ a {
 }
 
 .form-title {
-    color: white;
+    color: #222;
     font-family: 'Rubik', sans-serif;
     display: block;
     margin-right: auto;
@@ -1416,6 +1419,10 @@ a {
     background-clip: padding-box;
     transition: all .2s;
     box-sizing: border-box;
+}
+
+.submit-item {
+    color: #222;
 }
 
 .submit-item:hover {
@@ -1503,7 +1510,7 @@ a {
 
 .text-field_floating-3 .text-field__input:focus {
     outline: 0;
-    border-bottom: 1px solid #ffcc00;
+    border: 1px solid #ffcc00;
     box-shadow: none;
 }
 
@@ -1532,7 +1539,7 @@ a {
 .text-field_floating-3 .text-field__input:not(:placeholder-shown) {
     padding-top: 1.625rem;
     padding-bottom: .625rem;
-    border-bottom: 3px solid #FFCC00;
+    border: 1px solid #FFCC00;
 }
 
 .text-field_floating-3 .text-field__input:focus~.text-field__label,
@@ -1646,7 +1653,7 @@ a {
 
 .checkbox span {
     margin-left: 16px;
-    color: #fff;
+    color: #222;
     transition: all .2s;
 }
 
@@ -1777,11 +1784,17 @@ a {
 }
 
 .copyr {
+    max-width: 80%;
     font-size: 12px;
     color: #111;
     width: max-content;
     margin: auto;
     text-align: center;
+}
+
+.confidence-policy-a {
+    color: #FFCC00;
+    text-decoration: underline;
 }
 
 

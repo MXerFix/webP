@@ -67,7 +67,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 6px 6px;
+        padding: 6px 4px;
         font-family: "Montserrat", sans-serif;
         transition: all .2s;
         border-radius: 24px;
@@ -176,6 +176,12 @@
         font-size: 12px;
         margin: 2px 0;
         margin-bottom: 16px;
+    }
+
+    .products-item {
+    }
+    
+    #landing-p-item {
     }
 
 
@@ -403,7 +409,6 @@
     }
 
     .product-descr-visible {
-        display: flex;
         justify-content: center;
         align-items: center;
         margin: auto;
@@ -541,12 +546,17 @@
     .step-center .step-descr p {
         font-weight: 400;
     }
+
+    .product-title {
+        width: 100%;
+    }
+
     .product-title img {
         content: url(../img/mini-hot.svg);
         width: 48px;
         position: absolute;
-        top: -64px;
-        left: -16px;
+        top:auto;
+        left: 24px;
     }
     
     .step-down {
@@ -618,6 +628,74 @@
         transition: all .3s;
     }
 
+    .product-descr-title {
+        width: 100%;
+        display: block;
+    }
+
+    .product-descr-title h4 span {
+        line-height: 40px;
+    }
+
+    .product-descr-title h4 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .product-descr-descr {
+        width: 100%;
+    }
+
+    .product-descr-descr h5 {
+        font-size: 20px;
+        margin: 12px;
+        margin-bottom: 8px;
+    }
+    
+    .pdd-about {
+        font-size: 14px;
+    }
+    
+    .product-descr-descr p {
+        font-weight: 200;
+        font-size: 14px;
+    }
+    
+    .product-descr-descr ul {
+        margin-top: 0;
+    }
+    
+    .product-descr-descr li {
+        font-weight: 200;
+        font-size: 14px;
+    }
+    
+    .product-descr-descr span {
+        font-weight: 400;
+    }
+    
+    .product-descr-descr div {
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    
+    .product-descr-descr div h6 {
+        max-width: fit-content;
+        padding: 4px 10px;
+        margin: 0;
+        margin-bottom: 6px;
+        font-size: 18px;
+        background-color: #222;
+        color: rgb(0, 223, 89);
+    }
+    
+    .product-descr-descr div p {
+        padding: 0;
+        margin: 0;
+        font-weight: normal;
+        font-size: 14px;
+    }
+
 }
 
 
@@ -634,6 +712,10 @@
 
 
 @media (max-width:448px) {
+
+    .mnogostr-span {
+        font-size: 20px;
+    }
 
 
 
@@ -670,12 +752,13 @@
         }
         
         .product-inbox {
+            
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
-            height: 160px;
+            height: 100%;
             border-radius: 60px;
         }
     
