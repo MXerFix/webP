@@ -4,10 +4,13 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.fromTo(".scroll-down-window", { opacity: 0.7 }, { opacity: 0, scrollTrigger: { scrub: true, start: "top", end: "10%" } })
 
 gsap.to(".title", {
-    x: -1000,
+    x: -8000,
     scale: 0.5,
     scrollTrigger: {
-        scrub: true,
+        scrub: 2,
+        // trigger: "#catalog-container",
+        // start: "100%",
+        // end: "400px"
     }
 })
 
@@ -17,7 +20,7 @@ gsap.to("#title-back", {
     scale: 0.7,
     opacity: 0,
     scrollTrigger: {
-        scrub: true,
+        scrub: 1,
     }
 })
 
@@ -26,7 +29,7 @@ gsap.to("#ellipse1", {
     scale: 0.2,
     opacity: 0,
     scrollTrigger: {
-        scrub: true,
+        scrub: 1,
     }
 })
 
@@ -35,7 +38,7 @@ gsap.to("#ellipse2", {
     scale: 0.2,
     opacity: 0,
     scrollTrigger: {
-        scrub: true,
+        scrub: 1,
     }
 })
 
@@ -44,7 +47,7 @@ gsap.to("#ellipse3", {
     scale: 0.2,
     opacity: 0,
     scrollTrigger: {
-        scrub: true,
+        scrub: 1,
         duration: 3,
     }
 })
@@ -264,6 +267,7 @@ if (widthWind > 767) {
     gsap.from(".why-we-item-left", {
         x: -150,
         y: 150,
+        opacity:0,
         scrollTrigger: {
             scrub: 1,
             start: "-600px",
@@ -274,6 +278,7 @@ if (widthWind > 767) {
 
     gsap.from(".why-we-item-center", {
         y: 150,
+        opacity:0,
         scrollTrigger: {
             scrub: 1,
             start: "-600px",
@@ -285,6 +290,7 @@ if (widthWind > 767) {
     gsap.from(".why-we-item-right", {
         x: 150,
         y: 150,
+        opacity:0,
         scrollTrigger: {
             scrub: 1,
             start: "-600px",
