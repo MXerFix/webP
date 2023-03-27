@@ -1,3 +1,26 @@
+window.onload = function () {
+    document.body.classList.add('loaded-hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded-hiding');
+    }, 500);
+  }
+
+
+function toggleTheme(attr, theme) {
+        attr.classList.toggle(theme)
+}
+
+const black = 'black-theme';
+const white = 'white-theme';
+const onlycolorBlack = 'only-color_black';
+const onlycolorWhite = 'only-color_white';
+const borderBlack = 'border-black';
+const borderWhite = 'border-white';
+const shadowBlack = 'shadow-black';
+const shadowWhite = 'shadow-white';
+
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -8,9 +31,6 @@ gsap.to(".title", {
     scale: 0.5,
     scrollTrigger: {
         scrub: 2,
-        // trigger: "#catalog-container",
-        // start: "100%",
-        // end: "400px"
     }
 })
 
@@ -123,7 +143,7 @@ if (widthWind > 767) {
     })
 
     gsap.from(".si-1", {
-        x: "50%",
+        x: "41%",
         scrollTrigger: {
             scrub: 2,
             start: si_start,
@@ -133,7 +153,7 @@ if (widthWind > 767) {
     })
 
     gsap.from(".si-1-2", {
-        x: "-32%",
+        x: "-41%",
         scrollTrigger: {
             scrub: 2,
             start: si_start,
@@ -143,7 +163,7 @@ if (widthWind > 767) {
     })
 
     gsap.from(".si-2", {
-        x: "50%",
+        x: "41%",
         scrollTrigger: {
             scrub: 2,
             start: si_start,
@@ -153,7 +173,7 @@ if (widthWind > 767) {
     })
 
     gsap.from(".si-2-2", {
-        x: "-32%",
+        x: "-41%",
         scrollTrigger: {
             scrub: 2,
             start: si_start,
@@ -163,7 +183,7 @@ if (widthWind > 767) {
     })
 
     gsap.from(".si-3", {
-        x: "50%",
+        x: "41%",
         scrollTrigger: {
             scrub: 2,
             start: si_start,
@@ -173,7 +193,7 @@ if (widthWind > 767) {
     })
 
     gsap.from(".si-3-2", {
-        x: "-32%",
+        x: "-41%",
         scrollTrigger: {
             scrub: 2,
             start: si_start,
@@ -183,7 +203,7 @@ if (widthWind > 767) {
     })
 
     gsap.from(".si-4", {
-        x: "50%",
+        x: "41%",
         scrollTrigger: {
             scrub: 2,
             start: si_start,
@@ -193,7 +213,7 @@ if (widthWind > 767) {
     })
 
     gsap.from(".si-4-2", {
-        x: "-32%",
+        x: "-41%",
         scrollTrigger: {
             scrub: 2,
             start: si_start,
@@ -203,7 +223,7 @@ if (widthWind > 767) {
     })
 
     gsap.from(".si-5", {
-        x: "50%",
+        x: "41%",
         scrollTrigger: {
             scrub: 2,
             start: si_start,
@@ -213,7 +233,7 @@ if (widthWind > 767) {
     })
 
     gsap.from(".si-5-2", {
-        x: "-32%",
+        x: "-41%",
         scrollTrigger: {
             scrub: 2,
             start: si_start,
@@ -223,7 +243,7 @@ if (widthWind > 767) {
     })
 
     gsap.from(".si-6", {
-        x: "50%",
+        x: "41%",
         scrollTrigger: {
             scrub: 2,
             start: si_start,
@@ -233,7 +253,7 @@ if (widthWind > 767) {
     })
 
     gsap.from(".si-6-2", {
-        x: "-32%",
+        x: "-41%",
         scrollTrigger: {
             scrub: 2,
             start: si_start,
@@ -241,28 +261,6 @@ if (widthWind > 767) {
             trigger: ".si-6",
         }
     })
-
-
-    // gsap.from(".step-icons-box", {
-    //     x: 50,
-    //     opacity:0,
-    //     scrollTrigger: {
-    //         trigger: "#how-to-work",
-    //         scrub: true,
-    //         start: "-800px",
-    //         end: "100%",
-    //     }
-    // })
-
-    // gsap.from(".portfolio-inbox", {
-    //     scale:0,
-    //     scrollTrigger: {
-    //         scrub:true,
-    //         start:"-1200px",
-    //         end:"-500px",
-    //         trigger:".portfolio"
-    //     }
-    // })
 
     gsap.from(".why-we-item-left", {
         x: -150,
@@ -367,102 +365,6 @@ if (widthWind < 768) {
 }
 
 
-
-const steps = ((() => {
-    window.addEventListener('DOMContentLoaded', () => { setTimeout(initial, 1) }, true);
-
-    function initial(e) {
-        if (document.querySelector(".steps-list")) {
-            let steps = document.querySelector(".steps-list");
-            steps.addEventListener('mouseover', clicked, false);
-            document.querySelectorAll(".step-item")[0].click();
-        }
-    }
-
-    function clicked(e) {
-        let step = e.target;
-        if (step.getAttribute("data-step")) { rearrange(step.getAttribute("data-step")); }
-    }
-
-
-
-    function rearrange(step) {
-        let steps = document.querySelectorAll(".step-icon");
-        for (let n = 0; n < steps.length; n++) {
-            steps[n].classList.remove("step-down");
-            steps[n].classList.remove("step-center");
-            steps[n].classList.remove("step-up");
-        }
-        steps[step].classList.add("step-center");
-        if (step == 0) {
-            steps[3].classList.add("unvisible");
-            steps[4].classList.add("unvisible");
-            steps[2].classList.add("unvisible");
-            steps[0].classList.remove("unvisible");
-            steps[1].classList.remove("unvisible");
-            steps[5].classList.remove("unvisible");
-            steps[5].classList.add("step-up");
-            steps[1].classList.add("step-down");
-        }
-        if (step == 1) {
-            steps[3].classList.add("unvisible");
-            steps[4].classList.add("unvisible");
-            steps[5].classList.add("unvisible");
-            steps[1].classList.remove("unvisible");
-            steps[0].classList.remove("unvisible");
-            steps[2].classList.remove("unvisible");
-            steps[0].classList.add("step-up");
-            steps[2].classList.add("step-down");
-        }
-        if (step == 2) {
-
-            steps[0].classList.add("unvisible");
-            steps[4].classList.add("unvisible");
-            steps[5].classList.add("unvisible");
-            steps[2].classList.remove("unvisible");
-            steps[1].classList.remove("unvisible");
-            steps[3].classList.remove("unvisible");
-            steps[1].classList.add("step-up");
-            steps[3].classList.add("step-down");
-        }
-        if (step == 3) {
-            steps[1].classList.add("unvisible");
-            steps[0].classList.add("unvisible");
-            steps[5].classList.add("unvisible");
-            steps[3].classList.remove("unvisible");
-            steps[2].classList.remove("unvisible");
-            steps[4].classList.remove("unvisible");
-            steps[2].classList.add("step-up");
-            steps[4].classList.add("step-down");
-        }
-        if (step == 4) {
-            steps[0].classList.add("unvisible");
-            steps[1].classList.add("unvisible");
-            steps[2].classList.add("unvisible");
-            steps[4].classList.remove("unvisible");
-            steps[3].classList.remove("unvisible");
-            steps[5].classList.remove("unvisible");
-            steps[3].classList.add("step-up");
-            steps[5].classList.add("step-down");
-        }
-        if (step == 5) {
-            steps[2].classList.add("unvisible");
-            steps[3].classList.add("unvisible");
-            steps[1].classList.add("unvisible");
-            steps[5].classList.remove("unvisible");
-            steps[4].classList.remove("unvisible");
-            steps[0].classList.remove("unvisible");
-            steps[4].classList.add("step-up");
-            steps[0].classList.add("step-down");
-        }
-    }
-
-    return {
-        initial
-    }
-})());
-
-
 window.addEventListener("DOMContentLoaded", function () {
 
     const closeAnimBtn = document.getElementById("close-btn");
@@ -510,6 +412,7 @@ window.addEventListener("DOMContentLoaded", function () {
             this.querySelector(".product-inbox").classList.remove("off")
             this.classList.toggle("on");
             inbox.querySelector(".product-descr-hidden").classList.toggle("product-descr-visible")
+            this.querySelector('.product-inbox').querySelector('.product-arrow').classList.toggle('product-arrow-rotate')
         })
     }
 })
@@ -564,6 +467,73 @@ stepItemClicked.addEventListener('click', function() {
     this.classList.toggle('mb-124');
 })
 }
+
+const otherServicesBTN = document.querySelector('.other-service-open-btn');
+const otherServices = document.getElementsByClassName('other-service-off')
+otherServicesBTN.addEventListener('click', function() {
+    for (otherService of otherServices) {
+        otherService.classList.toggle('mob-other-service')
+    }
+    document.querySelector('.other-service-big').scrollIntoView()
+    if (otherServicesBTN.textContent == "Скрыть") {
+        otherServicesBTN.textContent = "Показать еще"
+    }
+    else {
+        otherServicesBTN.textContent = "Скрыть"
+    }
+    document.querySelector('.other-services').classList.toggle('mb-100')
+    otherServicesBTN.classList.toggle('mt-24')
+    otherServicesBTN.classList.toggle('top-64')
+})
+
+const copyrAlert = document.querySelector('.copyright-alert')
+copyrAlert.addEventListener('click', () => {
+    copyrAlert.querySelector('.copyright-content').classList.toggle('copyright-content-on')
+})
+
+const themeToggler = document.querySelector('.theme-toggle')
+themeToggler.addEventListener('click', () => {
+    toggleTheme(document.body, 'white-theme');
+    for (el of document.getElementsByClassName('outbox')) {
+        toggleTheme(el, black)
+    }
+    for (el of document.getElementsByClassName('product-inbox')) {
+        toggleTheme(el, black)
+    }
+    for (el of document.getElementsByClassName('other-service-inbox')) {
+        toggleTheme(el, black)
+    }
+    for (el of document.getElementsByClassName('step-item-left')) {
+        toggleTheme(el, black)
+    }
+    for (el of document.getElementsByClassName('portfolio-inbox')) {
+        toggleTheme(el, black)
+    }
+    for (el of document.getElementsByClassName('why-we-item')) {
+        toggleTheme(el, black)
+    }
+    for (el of document.getElementsByClassName('contact-us-fomr')) {
+        toggleTheme(el, black)
+    }
+    for (el of document.getElementsByClassName('form-title')) {
+        toggleTheme(el, black)
+    }
+    for (el of document.getElementsByClassName('form-item')) {
+        toggleTheme(el, white)
+    }
+    for (el of document.getElementsByClassName('product-price')) {
+        toggleTheme(el, onlycolorBlack)
+    }
+    for (el of document.getElementsByClassName('dev-time')) {
+        toggleTheme(el, borderWhite)
+    }
+    for (el of document.getElementsByClassName('other-btn')) {
+        toggleTheme(el, white)
+    }
+    for (el of document.getElementsByClassName('other-btn')) {
+        toggleTheme(el, shadowWhite)
+    }
+})
 
 
 
@@ -636,45 +606,6 @@ $('#footer-num2').submit(function () {
 
     return false;
 });
-
-// document.addEventListener('DOMContentLoaded', function () {
-//     const deadline = new Date(2023, 05, 01);
-    
-//     let timerId = null;
-    
-//     function declensionNum(num, words) {
-//         return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(num % 10 < 5) ? num % 10 : 5]];
-//     }
-    
-//     function countdownTimer() {
-//         const diff = deadline - new Date();
-//         if (diff <= 0) {
-//             clearInterval(timerId);
-//         }
-//         const days = diff > 0 ? Math.floor(diff / 1000 / 60 / 60 / 24) : 0;
-//         const hours = diff > 0 ? Math.floor(diff / 1000 / 60 / 60) % 24 : 0;
-//         const minutes = diff > 0 ? Math.floor(diff / 1000 / 60) % 60 : 0;
-//         const seconds = diff > 0 ? Math.floor(diff / 1000) % 60 : 0;
-//         $days.textContent = days < 10 ? '0' + days : days;
-//         $hours.textContent = hours < 10 ? '0' + hours : hours;
-//         $minutes.textContent = minutes < 10 ? '0' + minutes : minutes;
-//         $seconds.textContent = seconds < 10 ? '0' + seconds : seconds;
-//         $days.dataset.title = declensionNum(days, ['день', 'дня', 'дней']);
-//         $hours.dataset.title = declensionNum(hours, ['час', 'часа', 'часов']);
-//         $minutes.dataset.title = declensionNum(minutes, ['минута', 'минуты', 'минут']);
-//         $seconds.dataset.title = declensionNum(seconds, ['секунда', 'секунды', 'секунд']);
-//     }
-    
-//     const $days = document.querySelector('.timer__days');
-//     const $hours = document.querySelector('.timer__hours');
-//     const $minutes = document.querySelector('.timer__minutes');
-//     const $seconds = document.querySelector('.timer__seconds');
-    
-//     countdownTimer();
-    
-//     timerId = setInterval(countdownTimer, 1000);
-// });
-
 
 
 

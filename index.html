@@ -5,18 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Разработка сайтов под ключ с бессрочной гарантией от 5 дней. Разработка дизайна и оформления Вашей компании.">
+    <meta name="keywords"
+        content="заказать сайт, разработка сайта, сайт, дизайн, оформление, лендинг, web, web-project">
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-favicon.png">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500&family=Montserrat+Alternates&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800&family=Tilt+Neon&display=swap"
         rel="stylesheet">
-    <title>Web-Project</title>
+    <title>Студия веб-дизайна WEB-PROJECT. Разработка, продвижение, дизайн сайтов. </title>
 </head>
 
 <body>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(92933703, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/92933703" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EHEJNRNRM3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EHEJNRNRM3');
+    </script>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
     <div class="content">
         <div id="form2" class="contact-us-fomr">
             <div id="form-title2" class="form-title">Оставьте заявку или <br> свяжитесь с нами <br> удобным для Вас
@@ -29,7 +68,7 @@
                 </div>
                 <div class="text-field text-field_floating-3">
                     <input autocomplete="email" required name="f[email]" type="email" id="email2"
-                        class="form-item text-field__input" placeholder="">
+                        class="form-item text-field__input" placeholder="Email@email.com">
                     <label class="text-field__label" for="email">Почта</label>
                 </div>
                 <div id="comment-div" class="text-field text-field_floating-3">
@@ -41,7 +80,8 @@
                     <div class="checkbox-box">
                         <div class="checkbox-unchecked"></div>
                     </div>
-                    <span>Я соглашаюсь на <a class="confidence-policy-a" href="/policy/policy.html">хранение и обработку персональных данных</a></span>
+                    <span>Я соглашаюсь на <a class="confidence-policy-a" href="/additions/policy.html">хранение и обработку
+                            персональных данных</a></span>
                     <input required class="checkbox-input" type="checkbox" name="f[checkbox]" id="checkbox2">
                 </div>
                 <div id="mobile-contact-us-inform" class="contact-us-box contact-us-box-mobile">
@@ -52,7 +92,8 @@
                         class="contact-us-item-mobile">
                         <img src="img/vk.svg" alt="VKontakte">
                     </a>
-                    <a target="_blank" href="mailto:info@web-project-studio.ru" id="email-item" class="contact-us-item-mobile">
+                    <a target="_blank" href="mailto:info@web-project-studio.ru" id="email-item"
+                        class="contact-us-item-mobile">
                         <img src="img/email.svg" alt="Email">
                     </a>
                 </div>
@@ -175,16 +216,14 @@
                 <p>контакты</p>
             </a>
         </div>
-        <img id="title-back" src="img/title-back.webp" alt="" class="parallax-object">
-        <!-- <img src="img/black-ellipse.svg" alt="" class="parallax-object">
-        <img src="img/black-ellipse.svg" alt="" class="parallax-object">
-        <img src="img/Ellipse1.svg" alt="" class="parallax-object">
-        <img src="img/Ellipse2.svg" alt="" class="parallax-object">
-        <img src="img/Ellipse3.svg" alt="" class="parallax-object"> -->
+        <img id="title-back" src="img/title-back.webp" alt="background-triangle" class="parallax-object">
         <img src="" alt="" class="parallax-object">
         <div id="header-scrolled" class="header">
             <div class="logo">
-                <img src="img/logo.svg" alt="" class="logo-img">
+                <img src="img/logo.svg" alt="Логотип" class="logo-img">
+            </div>
+            <div class="theme-toggle" style="display: none;">
+                Сменить тему сайта
             </div>
             <div class="nav">
                 <div class="nav-menu">
@@ -202,10 +241,10 @@
                             <a href="#contact-us-st">Контакты</a>
                         </li> -->
                         <li class="nav-list-item">
-                            <a class="nlia form2-toggle-btn" id="take-offer" href="#contact-us-st">Заказать сайт</a>
+                            <a class="nlia form2-toggle-btn" id="take-offer" href="#socials-box">Заказать сайт</a>
                         </li>
                     </ul>
-                    <img id="go-home" src="img/homeic.svg" alt="" class="burger-home-img">
+                    <img id="go-home" src="img/homeic.svg" alt="На главную" class="burger-home-img">
                 </div>
                 <!-- <div id="close-btn-header" class="close-btn">
                     <span class="burger-line"></span>
@@ -223,250 +262,278 @@
                 <img id="ellipse2" src="img/Ellipse2.svg" alt="" class="parallax-object ellipse-shadow">
                 <img id="ellipse3" src="img/Ellipse3.svg" alt="" class="parallax-object ellipse-shadow">
                 <div class="title">
-                    <img src="img/title.svg" alt="" class="title-img">
+                    <img src="img/title.svg" alt="Заголовок" class="title-img">
                     <p class="typing-title"></p>
                 </div>
             </div>
-            <a href="#what-develop" class="scroll-down-window"><img src="img/down-arrow.svg" alt=""></a>
+            <a href="#what-develop" class="scroll-down-window"><img src="img/down-arrow.svg" alt="Скролл вниз"></a>
         </div>
-        <div class="container">
-            <div class="offer">
-                <div class="offer-title"></div>
-                <div class="offer-descr"></div>
-            </div>
-            <div id="catalog-container">
-                <div class="section-title how-to-work-mobile">
-                    <h2>
-                        Что разрабатываем?
-                    </h2>
+        <div class="background-container">
+            <div class="container">
+                <div class="offer">
+                    <div class="offer-title"></div>
+                    <div class="offer-descr"></div>
                 </div>
-                <div id="what-develop" class="catalog">
-                    <div class="products-box">
-                        <div id="landing-item" class="pi">
-                            <div class="products-item" id="landing-p-item">
-                                <div id="outbox" class="outbox">
-                                    <div id="inbox" class="product-inbox">
-                                        <div class="dev-time">
-                                            от 7 дней
-                                        </div>
-                                        <div class="product-title">
-                                            <h4>Лендинг</h4>
-                                            <p>одностраничный сайт</p>
-                                            <img src="img/hot.svg" alt="">
-                                        </div>
-                                        <div class="product-price">
-                                            <a>от 19990</a>
-                                        </div>
-                                    </div>
-                                    <div class="product-descr-hidden">
-                                        <div class="product-descr-title">
-                                            <h4>Кому подойдет <span>Лендинг</span></h4>
-                                        </div>
-                                        <div class="product-descr-descr">
-                                            <p>Лендинг — это одностраничный сайт с краткой информацией о товаре, услуге
-                                                или мероприятии. Он создаётся для того, чтобы продавать конкретный товар
-                                                или услугу, исследовать необходимый сегмент аудитории.</p>
-                                            <h5>Лендинг подойдет, если Вы:</h5>
-                                            <ul>
-                                                <li>Оказываете простые услуги (к примеру техосмотр автомобилей)</li>
-                                                <li>Организуете мероприятия или хотите привлечь клиента территориально
-                                                    (Жилые комплексы)</li>
-                                                <li>Предлагаете товар в малом ассортименте (Автосалоны, изделия ручной
-                                                    работы)</li>
-                                            </ul>
-                                            <div>
-                                                <h6>Низкая стоимость</h6>
-                                                <p>Минимальная стоимость разработки Лендинга от нашей студии всего
-                                                    19990.</p>
+                <div id="catalog-container">
+                    <div class="contact-us-title how-to-work-mobile">
+                        <h2>
+                            Что разрабатываем?
+                        </h2>
+                    </div>
+                    <div id="what-develop" class="catalog">
+                        <div class="products-box">
+                            <div id="landing-item" class="pi">
+                                <div class="products-item" id="landing-p-item">
+                                    <div id="outbox" class="outbox">
+                                        <div id="inbox" class="product-inbox">
+                                            <img class="product-arrow" src="/img/down-arrow.svg" alt="Развернуть">
+                                            <div class="dev-time">
+                                                от 7 дней
                                             </div>
-                                            <div>
-                                                <h6>Скорость разработки</h6>
-                                                <p>На разработку Лендинга обычно требуется от 7 до 21 дня</p>
+                                            <div class="product-title">
+                                                <h4>Лендинг</h4>
+                                                <p>одностраничный сайт</p>
+                                                <img src="img/hot.svg" alt="Популярно">
                                             </div>
-                                            <div>
-                                                <h6>Минимальные затраты на содержание</h6>
-                                                <p>Такой сайт не требует дополнительных затрат на ведение и модерацию,
-                                                    расходы ограничиваются оплатой хостинга и домена (200-300руб/мес)
-                                                </p>
-                                            </div>
-                                            <div>
-                                                <h6>Привлекает клиента</h6>
-                                                <p>Поможет клиенту найти Вас и обратиться именно к Вам</p>
-                                            </div>
-                                            <div>
-                                                <h6>Уникальный дизайн</h6>
-                                                <p>Наша студия предлагает уникальный дизайн-проект, подходящий Вашему
-                                                    бизнесу</p>
+                                            <div class="product-price">
+                                                <a>от 19990</a>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="bcard-item" class="pi">
-                            <div class="products-item">
-                                <div id="outbox" class="outbox">
-                                    <div id="inbox" class="product-inbox">
-                                        <div class="dev-time">
-                                            от 5 дней
-                                        </div>
-                                        <div class="product-title">
-                                            <h4>Сайт-визитка</h4>
-                                            <p>сайт с информацией о компании</p>
-                                        </div>
-                                        <div class="product-price">
-                                            <a>от 14990</a>
-                                        </div>
-                                    </div>
-                                    <div class="product-descr-hidden">
-                                        <div class="product-descr-title">
-                                            <h4>Кому подойдет <span>Визитка</span></h4>
-                                        </div>
-                                        <div class="product-descr-descr">
-                                            <p>Сайт-визитка наиболее простой вид сайтов, с помощью
-                                                которого можно презентовать как себя, так и свой бизнес или компанию.
-                                                Обычно он содержит не более 5 – 10 страниц, на которых содержится
-                                                основная информация.</p>
-                                            <p class="pdd-about"><span>Визитка подойдет, если Вы - молодая
-                                                    компания, нуждающаяся в простом и лаконичном представлении, для
-                                                    привлечения целевой аудитории.</span></p>
-                                            <!-- <h5>Плюсы сайта-визитки:</h5> -->
-                                            <div>
-                                                <h6>Низкая стоимость</h6>
-                                                <p>Минимальная стоимость разработки сайта-визитки от нашей студии всего
-                                                    14990. Подойдет даже начинающим предпринимателям.</p>
+                                        <div class="product-descr-hidden">
+                                            <div class="product-descr-title">
+                                                <h4>Кому подойдет <span>Лендинг</span></h4>
                                             </div>
-                                            <div>
-                                                <h6>Минимальные затраты на содержание</h6>
-                                                <p>Такой сайт не требует дополнительных затрат на ведение и модерацию,
-                                                    расходы ограничиваются оплатой хостинга и домена (200-300руб/мес)
-                                                </p>
-                                            </div>
-                                            <div>
-                                                <h6>Скорость разработки</h6>
-                                                <p>На разработку Сайта-визитки обычно требуется от 5 до 14 дней</p>
-                                            </div>
-                                            <div>
-                                                <h6>Идеален для работы в тандеме с соц.сетями</h6>
-                                                <p>Всё просто - соц.сетях вы взаимодействуете с клиентами, на сайте
-                                                    представляете информацию о себе и своих продуктах.</p>
-                                            </div>
-                                            <div>
-                                                <h6>Простота и лаконичность</h6>
-                                                <p>Не нагружен лишней информацией. Предоставляет клиенту возможность
-                                                    ознакомиться с продуктами/услугами компании.</p>
+                                            <div class="product-descr-descr">
+                                                <p>Лендинг — это одностраничный сайт с краткой информацией о товаре,
+                                                    услуге
+                                                    или мероприятии. Он создаётся для того, чтобы продавать конкретный
+                                                    товар
+                                                    или услугу, исследовать необходимый сегмент аудитории.</p>
+                                                <h5>Лендинг подойдет, если Вы:</h5>
+                                                <ul>
+                                                    <li>Оказываете простые услуги (к примеру техосмотр автомобилей)</li>
+                                                    <li>Организуете мероприятия или хотите привлечь клиента
+                                                        территориально
+                                                        (Жилые комплексы)</li>
+                                                    <li>Предлагаете товар в малом ассортименте (Автосалоны, изделия
+                                                        ручной
+                                                        работы)</li>
+                                                </ul>
+                                                <div>
+                                                    <h6>Низкая стоимость</h6>
+                                                    <p>Минимальная стоимость разработки Лендинга от нашей студии всего
+                                                        19990.</p>
+                                                </div>
+                                                <div>
+                                                    <h6>Скорость разработки</h6>
+                                                    <p>На разработку Лендинга обычно требуется от 7 до 21 дня</p>
+                                                </div>
+                                                <div>
+                                                    <h6>Минимальные затраты на содержание</h6>
+                                                    <p>Такой сайт не требует дополнительных затрат на ведение и
+                                                        модерацию,
+                                                        расходы ограничиваются оплатой хостинга и домена
+                                                        (200-300руб/мес)
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <h6>Привлекает клиента</h6>
+                                                    <p>Поможет клиенту найти Вас и обратиться именно к Вам</p>
+                                                </div>
+                                                <div>
+                                                    <h6>Уникальный дизайн</h6>
+                                                    <p>Наша студия предлагает уникальный дизайн-проект, подходящий
+                                                        Вашему
+                                                        бизнесу</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div id="multi-item" class="pi">
-                            <div class="products-item">
-                                <div id="outbox" class="outbox">
-                                    <div id="inbox" class="product-inbox">
-                                        <div class="dev-time">
-                                            от 14 дней
-                                        </div>
-                                        <div class="product-title">
-                                            <h4>Многостраничный</h4>
-                                            <p>сайт для крупных организаций</p>
-                                        </div>
-                                        <div class="product-price">
-                                            <a>от 44990</a>
-                                        </div>
-                                    </div>
-                                    <div class="product-descr-hidden">
-                                        <div class="product-descr-title">
-                                            <h4>Кому подойдет <span class="mnogostr-span">Многостраничный сайт</span></h4>
-                                        </div>
-                                        <div class="product-descr-descr">
-                                            <p>Многостраничный сайт – серьезный инструмент для компаний, у которых
-                                                множество товаров и услуг, которые нуждаются в полноценной презентации.
-                                                Универсальное решение для крупных проектов.</p>
-                                            <h5>Многостраничный сайт подойдет, если Вы:</h5>
-                                            <ul>
-                                                <li>Крупное предприятие с широким спектром услуг</li>
-                                                <li>Новостной портал, блог, большой информационный проект</li>
-                                            </ul>
-                                            <div>
-                                                <h6>Большой объем информации</h6>
-                                                <p>Многостраничный сайт способен вместить и структурировать в себе
-                                                    огромное количество информационных блоков</p>
+                            <div id="bcard-item" class="pi">
+                                <div class="products-item">
+                                    <div id="outbox" class="outbox">
+                                        <div id="inbox" class="product-inbox">
+                                            <img class="product-arrow" src="/img/down-arrow.svg" alt="Развернуть">
+                                            <div class="dev-time">
+                                                от 5 дней
                                             </div>
-                                            <div>
-                                                <h6>Крупный имиджевый проект</h6>
-                                                <p>Хороший, масштабный проект, реализованный на базе вашего бизнеса
-                                                    будет большим бонусом к репутации компании</p>
+                                            <div class="product-title">
+                                                <h4>Сайт-визитка</h4>
+                                                <p>сайт с информацией о компании</p>
                                             </div>
-                                            <div>
-                                                <h6>Универсальное решение</h6>
-                                                <p>Подходит для любого крупного проекта, количество страниц такого сайта
-                                                    ограниченно только фантазией заказчика</p>
+                                            <div class="product-price">
+                                                <a>от 14990</a>
                                             </div>
-                                            <div>
-                                                <h6>Уникальный дизайн</h6>
-                                                <p>Наша студия предлагает уникальный дизайн-проект, подходящий Вашему
-                                                    бизнесу</p>
+                                        </div>
+                                        <div class="product-descr-hidden">
+                                            <div class="product-descr-title">
+                                                <h4>Кому подойдет <span>Визитка</span></h4>
+                                            </div>
+                                            <div class="product-descr-descr">
+                                                <p>Сайт-визитка наиболее простой вид сайтов, с помощью
+                                                    которого можно презентовать как себя, так и свой бизнес или
+                                                    компанию.
+                                                    Обычно он содержит не более 5 – 10 страниц, на которых содержится
+                                                    основная информация.</p>
+                                                <p class="pdd-about"><span>Визитка подойдет, если Вы - молодая
+                                                        компания, нуждающаяся в простом и лаконичном представлении, для
+                                                        привлечения целевой аудитории.</span></p>
+                                                <!-- <h5>Плюсы сайта-визитки:</h5> -->
+                                                <div>
+                                                    <h6>Низкая стоимость</h6>
+                                                    <p>Минимальная стоимость разработки сайта-визитки от нашей студии
+                                                        всего
+                                                        14990. Подойдет даже начинающим предпринимателям.</p>
+                                                </div>
+                                                <div>
+                                                    <h6>Минимальные затраты на содержание</h6>
+                                                    <p>Такой сайт не требует дополнительных затрат на ведение и
+                                                        модерацию,
+                                                        расходы ограничиваются оплатой хостинга и домена
+                                                        (200-300руб/мес)
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <h6>Скорость разработки</h6>
+                                                    <p>На разработку Сайта-визитки обычно требуется от 5 до 14 дней</p>
+                                                </div>
+                                                <div>
+                                                    <h6>Идеален для работы в тандеме с соц.сетями</h6>
+                                                    <p>Всё просто - соц.сетях вы взаимодействуете с клиентами, на сайте
+                                                        представляете информацию о себе и своих продуктах.</p>
+                                                </div>
+                                                <div>
+                                                    <h6>Простота и лаконичность</h6>
+                                                    <p>Не нагружен лишней информацией. Предоставляет клиенту возможность
+                                                        ознакомиться с продуктами/услугами компании.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div id="shop-item" class="pi">
-                            <div class="products-item">
-                                <div id="outbox" class="outbox">
-                                    <div id="inbox" class="product-inbox">
-                                        <div class="dev-time">
-                                            от 21 дня
+                            <div id="multi-item" class="pi">
+                                <div class="products-item">
+                                    <div id="outbox" class="outbox">
+                                        <div id="inbox" class="product-inbox">
+                                            <img class="product-arrow" src="/img/down-arrow.svg" alt="Развернуть">
+                                            <div class="dev-time">
+                                                от 14 дней
+                                            </div>
+                                            <div class="product-title">
+                                                <h4>Многостраничный</h4>
+                                                <p>сайт для крупных организаций</p>
+                                            </div>
+                                            <div class="product-price">
+                                                <a>от 44990</a>
+                                            </div>
                                         </div>
-                                        <div class="product-title">
-                                            <h4>Интернет-магазин</h4>
-                                            <p>сайт для онлайн продаж</p>
-                                        </div>
-                                        <div class="product-price">
-                                            <a>от 64990</a>
+                                        <div class="product-descr-hidden">
+                                            <div class="product-descr-title">
+                                                <h4>Кому подойдет <span class="mnogostr-span">Многостраничный
+                                                        сайт</span></h4>
+                                            </div>
+                                            <div class="product-descr-descr">
+                                                <p>Многостраничный сайт – серьезный инструмент для компаний, у которых
+                                                    множество товаров и услуг, нуждающихся в полноценной
+                                                    презентации.
+                                                    Универсальное решение для крупных проектов.</p>
+                                                <h5>Многостраничный сайт подойдет, если Вы:</h5>
+                                                <ul>
+                                                    <li>Крупное предприятие с широким спектром услуг</li>
+                                                    <li>Новостной портал, блог, большой информационный проект</li>
+                                                </ul>
+                                                <div>
+                                                    <h6>Большой объем информации</h6>
+                                                    <p>Многостраничный сайт способен вместить и структурировать в себе
+                                                        огромное количество информационных блоков</p>
+                                                </div>
+                                                <div>
+                                                    <h6>Крупный имиджевый проект</h6>
+                                                    <p>Хороший, масштабный проект, реализованный на базе вашего бизнеса
+                                                        будет большим бонусом к репутации компании</p>
+                                                </div>
+                                                <div>
+                                                    <h6>Универсальное решение</h6>
+                                                    <p>Подходит для любого крупного проекта, количество страниц такого
+                                                        сайта
+                                                        ограниченно только фантазией заказчика</p>
+                                                </div>
+                                                <div>
+                                                    <h6>Уникальный дизайн</h6>
+                                                    <p>Наша студия предлагает уникальный дизайн-проект, подходящий
+                                                        Вашему
+                                                        бизнесу</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="product-descr-hidden">
-                                        <div class="product-descr-title">
-                                            <h4>Кому подойдет <span class="mnogostr-span">Интернет-магазин</span></h4>
+                                </div>
+                            </div>
+                            <div id="shop-item" class="pi">
+                                <div class="products-item">
+                                    <div id="outbox" class="outbox">
+                                        <div id="inbox" class="product-inbox">
+                                            <img class="product-arrow" src="/img/down-arrow.svg" alt="Развернуть">
+                                            <div class="dev-time">
+                                                от 21 дня
+                                            </div>
+                                            <div class="product-title">
+                                                <h4>Интернет-магазин</h4>
+                                                <p>сайт для онлайн продаж</p>
+                                            </div>
+                                            <div class="product-price">
+                                                <a>от 64990</a>
+                                            </div>
                                         </div>
-                                        <div class="product-descr-descr">
-                                            <p>Сайт, разрабатываемый в первую очередь для удобной онлайн-продажи товаров
-                                                или услуг.
-                                                Либо для оформления каталога товаров или услуг на сайте, без
-                                                онлайн-продажи.</p>
-                                            <h5>Интернет-магазин подойдет, если Вы:</h5>
-                                            <ul>
-                                                <li>Представляете клиенту широкий ассортимент товаров или услуг,
-                                                    доступных к заказу</li>
-                                                <li>Хотите дополнить свои продажи онлайн-заказами или просто разместить
-                                                    весь каталог своих товаров/услуг на сайте</li>
-                                            </ul>
-                                            <div>
-                                                <h6>Универсальное решение</h6>
-                                                <p>Интернет-магазин подойдет как крупному бренду, так и небольшой кондитерской с широким ассортиментом тортиков</p>
+                                        <div class="product-descr-hidden">
+                                            <div class="product-descr-title">
+                                                <h4>Кому подойдет <span class="mnogostr-span">Интернет-магазин</span>
+                                                </h4>
                                             </div>
-                                            <div>
-                                                <h6>Любое количество товаров</h6>
-                                                <p>В рамках интернет-магазина уместятся любое количество
-                                                    товаров/категорий/подкатегорий</p>
-                                            </div>
-                                            <div>
-                                                <h6>Онлайн - как смысл жизни</h6>
-                                                <p>Современный покупатель предпочитает иметь возможность сделать заказ
-                                                    онлайн</p>
-                                            </div>
-                                            <div>
-                                                <h6>Удобные системы оплаты</h6>
-                                                <p>Позволяют клиенту быстро и без хлопот оплатить товар/услугу онлайн</p>
-                                            </div>
-                                            <div>
-                                                <h6>Уникальный дизайн</h6>
-                                                <p>Наша студия предлагает уникальный дизайн-проект, подходящий Вашему
-                                                    бизнесу</p>
+                                            <div class="product-descr-descr">
+                                                <p>Сайт, разрабатываемый в первую очередь для удобной онлайн-продажи
+                                                    товаров
+                                                    или услуг.
+                                                    Либо для оформления каталога товаров или услуг на сайте, без
+                                                    онлайн-продажи.</p>
+                                                <h5>Интернет-магазин подойдет, если Вы:</h5>
+                                                <ul>
+                                                    <li>Представляете клиенту широкий ассортимент товаров или услуг,
+                                                        доступных к заказу</li>
+                                                    <li>Хотите дополнить свои продажи онлайн-заказами или просто
+                                                        разместить
+                                                        весь каталог своих товаров/услуг на сайте</li>
+                                                </ul>
+                                                <div>
+                                                    <h6>Универсальное решение</h6>
+                                                    <p>Интернет-магазин подойдет как крупному бренду, так и небольшой
+                                                        кондитерской с широким ассортиментом тортиков</p>
+                                                </div>
+                                                <div>
+                                                    <h6>Любое количество товаров</h6>
+                                                    <p>В рамках интернет-магазина уместятся любое количество
+                                                        товаров/категорий/подкатегорий</p>
+                                                </div>
+                                                <div>
+                                                    <h6>Онлайн - как смысл жизни</h6>
+                                                    <p>Современный покупатель предпочитает иметь возможность сделать
+                                                        заказ
+                                                        онлайн</p>
+                                                </div>
+                                                <div>
+                                                    <h6>Удобные системы оплаты</h6>
+                                                    <p>Позволяют клиенту быстро и без хлопот оплатить товар/услугу
+                                                        онлайн</p>
+                                                </div>
+                                                <div>
+                                                    <h6>Уникальный дизайн</h6>
+                                                    <p>Наша студия предлагает уникальный дизайн-проект, подходящий
+                                                        Вашему
+                                                        бизнесу</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -474,389 +541,432 @@
                             </div>
                         </div>
                     </div>
+                    <a href="#socials-box" class="card-take-offer-btn to-cu-btn">Заказать</a>
+                    <div class="contact-us-title how-to-work-mobile">
+                        <h2>Другие услуги</h2>
+                    </div>
+                    <div class="other-services mb-100">
+                        <div class="other-services-box">
+                            <div class="other-service other-service-big">
+                                <div class="other-service-inbox">
+                                    <div class="dev-time-box">
+                                        <div class="dev-time">от 1 дня</div>
+                                    </div>
+                                    <div class="other-service-title">
+                                        <img src="img/hot.svg" alt="Популярно" style="width: 160px;">
+                                        <h4>Редизайн сайтов</h4>
+                                        <p>внесение поправок в готовый сайт</p>
+                                    </div>
+                                    <div class="other-service-descr">
+                                        <p>Поможем, если сайт устарел, давно не обновлялся или не показывает нужную
+                                            конверсию.</p>
+                                    </div>
+                                    <div class="other-btn-box">
+                                        <a href="#socials-box" class="other-btn to-cu-btn">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="other-service other-service-off mob-other-service">
+                                <div class="other-service-inbox">
+                                    <div class="dev-time-box">
+                                        <div class="dev-time">от 3 дней</div>
+                                    </div>
+                                    <div class="other-service-title ost-min">
+                                        <h4>Создание фирменного стиля</h4>
+                                        <p>создание внешного образа компании</p>
+                                    </div>
+                                    <div class="other-service-descr ost-min">
+                                        <p>Поможем определиться с имиджем компании. С уникальным образом Вы привлечете
+                                            гораздо больше клиентов.</p>
+                                    </div>
+                                    <div class="other-btn-box">
+                                        <a href="#socials-box" class="other-btn to-cu-btn">Заказать</a>
+                                    </div>
+                                </div>
+                                <div class="other-service-inbox-before">
+                                    <h4>Фирменный <br> стиль</h4>
+                                </div>
+                            </div>
+                            <div class="other-service other-service-off mob-other-service">
+                                <div class="other-service-inbox">
+                                    <div class="dev-time-box">
+                                        <div class="dev-time">от 1 дня</div>
+                                    </div>
+                                    <div class="other-service-title ost-min">
+                                        <h4>Дизайн рекламной продукции</h4>
+                                        <p>разработка дизайна рекламных продуктов</p>
+                                    </div>
+                                    <div class="other-service-descr ost-min">
+                                        <p>Баннеры, визитки, листовки, презентации, вывески - всё это входит в спектр
+                                            наших услуг.</p>
+                                    </div>
+                                    <div class="other-btn-box">
+                                        <a href="#socials-box" class="other-btn to-cu-btn">Заказать</a>
+                                    </div>
+                                </div>
+                                <div class="other-service-inbox-before">
+                                    <h4>Рекламная <br> продукция</h4>
+                                </div>
+                            </div>
+                            <div class="other-service other-service-off mob-other-service">
+                                <div class="other-service-inbox">
+                                    <div class="dev-time-box">
+                                        <div class="dev-time">от 8 часов</div>
+                                    </div>
+                                    <div class="other-service-title ost-min">
+                                        <h4>Создание логотипа</h4>
+                                        <p>разработка уникального знака компании</p>
+                                    </div>
+                                    <div class="other-service-descr ost-min">
+                                        <p>Создадим информативный, лаконичный и символичный логотип для вашей компании.
+                                        </p>
+                                    </div>
+                                    <div class="other-btn-box">
+                                        <a href="#socials-box" class="other-btn to-cu-btn">Заказать</a>
+                                    </div>
+                                </div>
+                                <div class="other-service-inbox-before">
+                                    <h4>Логотип</h4>
+                                </div>
+                            </div>
+                            <div class="other-service other-service-off mob-other-service">
+                                <div class="other-service-inbox">
+                                    <div class="dev-time-box">
+                                        <div class="dev-time">от 7 дней</div>
+                                    </div>
+                                    <div class="other-service-title ost-min">
+                                        <h4>UI/UX дизайн</h4>
+                                        <p>разработка ui/ux дизайна для приложений</p>
+                                    </div>
+                                    <div class="other-service-descr ost-min">
+                                        <p>Сделаем удобный и понятный интерфейс, который доставит
+                                            удовольствие от пользования. </p>
+                                    </div>
+                                    <div class="other-btn-box">
+                                        <a href="#socials-box" class="other-btn to-cu-btn">Заказать</a>
+                                    </div>
+                                </div>
+                                <div class="other-service-inbox-before">
+                                    <h4>UI/UX дизайн</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="other-service-open-btn top-64">Показать еще</div>
+                    </div>
                 </div>
-                <a href="#contact-us-st" class="card-take-offer-btn to-cu-btn">Заказать</a>
-                <div class="section-title how-to-work-mobile">
-                    <h2>Другие услуги</h2>
+                <div class="container">
+                    <div id="how-to-work" class="contact-us-title how-to-work-mobile">
+                        <h2>
+                            Как мы работаем?
+                        </h2>
+                    </div>
+                    <div class="steps">
+                        <div class="steps-box">
+                            <div class="step-box">
+                                <div class="si si-1 si-l">
+                                    <div class="step-item step-item-left" data-step="0">
+                                        <p>Обсуждаем тип проекта, его цели <br> Подбираем наилучший вариант сайта</p>
+                                    </div>
+                                </div>
+                                <div class="si si-1-2 si-r">
+                                    <div class="step-item step-item-right" data-step="0">00 Обсуждение проекта</div>
+                                </div>
+                            </div>
+                            <div class="step-box">
+                                <div class="si si-2 si-l">
+                                    <div class="step-item step-item-left" data-step="0">
+                                        <p>Анализируем сферу бизнеса, её целевую аудиторию<br> Начинаем
+                                            разработку прототипа будущего сайта</p>
+                                    </div>
+                                </div>
+                                <div class="si si-2-2 si-r">
+                                    <div class="step-item step-item-right" data-step="0">01 Анализ бизнеса</div>
+                                </div>
+                            </div>
+                            <div class="step-box">
+                                <div class="si si-3 si-l">
+                                    <div class="step-item step-item-left" data-step="0">
+                                        <p>Прорабатываем полноценную дизайн-концепцию сайта в мельчайших интерактивных
+                                            деталях</p>
+                                    </div>
+                                </div>
+                                <div class="si si-3-2 si-r">
+                                    <div class="step-item step-item-right" data-step="0">02 Дизайн-концепция</div>
+                                </div>
+                            </div>
+                            <div class="step-box">
+                                <div class="si si-4 si-l">
+                                    <div class="step-item step-item-left" data-step="0">
+                                        <p>После утверждения дизайна разработчик начинает вёрстку<br> Проект
+                                            адаптируется под любой тип устройств</p>
+                                    </div>
+                                </div>
+                                <div class="si si-4-2 si-r">
+                                    <div class="step-item step-item-right" data-step="0">03 Программирование</div>
+                                </div>
+                            </div>
+                            <div class="step-box">
+                                <div class="si si-5 si-l">
+                                    <div class="step-item step-item-left" data-step="0">
+                                        <p>На этапе тестирования выявляются и исправляются все ошибки и вносятся
+                                            необходимые
+                                            правки</p>
+                                    </div>
+                                </div>
+                                <div class="si si-5-2 si-r">
+                                    <div class="step-item step-item-right" data-step="0">04 Тестирование</div>
+                                </div>
+                            </div>
+                            <div class="step-box">
+                                <div class="si si-6 si-l step-item-closed">
+                                    <div class="step-item step-item-left" data-step="0">
+                                        <p>Запускаем проект на хостинг и передаём клиенту управление сайтом</p>
+                                    </div>
+                                </div>
+                                <div class="si si-6-2 si-r">
+                                    <div class="step-item step-item-right" data-step="0">05 Запуск</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="other-services">
-                    <div class="other-services-box">
-                        <div class="other-service other-service-big">
-                            <div class="other-service-inbox">
-                                <div class="dev-time-box">
-                                    <div class="dev-time">от 1 дня</div>
+                <div id="portfolio-container">
+                    <div id="portfolio-st" class="contact-us-title how-to-work-mobile">
+                        <h2>Наши работы</h2>
+                    </div>
+                    <div class="portfolio">
+                        <div class="portfolio-box">
+                            <div class="portfolio-inbox">
+                                <div class="blur">
+                                    <a target="_blank" id="goto-avtomix" href="https://avtomix27.ru/"
+                                        class="portfolio-goto">Перейти</a>
                                 </div>
                                 <div class="other-service-title">
-                                    <img src="img/hot.svg" alt="" style="width: 160px;">
-                                    <h4>Редизайн сайтов</h4>
-                                    <p>внесение поправок в готовый сайт</p>
+                                    <h4>AVTOMIX27</h4>
+                                    <p>Сервис технического осмотра в Хабаровске</p>
                                 </div>
-                                <div class="other-service-descr">
-                                    <p>Поможем, если сайт устарел, давно не обновлялся или не показывает нужную
-                                        конверсию.</p>
+                                <div id="avtomix" class="portfolio-item"><img src="img/avtomix.webp" alt="Автомикс27">
                                 </div>
-                                <div class="other-btn-box">
-                                    <a href="#contact-us-st" class="other-btn to-cu-btn">Заказать</a>
+                            </div>
+                            <div class="portfolio-inbox">
+                                <div class="blur">
+                                    <a target="_blank" id="goto-taho" href="https://www.tahografdv.ru/"
+                                        class="portfolio-goto">Перейти</a>
+                                </div>
+                                <div class="other-service-title">
+                                    <h4>тахографдв.рф</h4>
+                                    <p>Редизайн сайта компании-оператора тахографов в Хабаровске</p>
+                                </div>
+                                <div id="taho" class="portfolio-item"><img src="img/taho.webp" alt="тахографдв.рф">
                                 </div>
                             </div>
                         </div>
-                        <div class="other-service">
-                            <div class="other-service-inbox">
-                                <div class="dev-time-box">
-                                    <div class="dev-time">от 7 дней</div>
-                                </div>
-                                <div class="other-service-title ost-min">
-                                    <h4>Создание фирменного стиля</h4>
-                                    <p>создание внешного образа компании</p>
-                                </div>
-                                <div class="other-service-descr ost-min">
-                                    <p>Поможем определиться с имиджем компании. С уникальным образом Вы привлечете
-                                        гораздо больше клиентов.</p>
-                                </div>
-                                <div class="other-btn-box">
-                                    <a href="#contact-us-st" class="other-btn to-cu-btn">Заказать</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="other-service">
-                            <div class="other-service-inbox">
-                                <div class="dev-time-box">
-                                    <div class="dev-time">от 7 дней</div>
-                                </div>
-                                <div class="other-service-title ost-min">
-                                    <h4>UI/UX дизайн</h4>
-                                    <p>разработка ui/ux дизайна для приложений</p>
-                                </div>
-                                <div class="other-service-descr ost-min">
-                                    <p>Сделаем удобный и понятный интерфейс, который доставит
-                                        удовольствие от пользования. </p>
-                                </div>
-                                <div class="other-btn-box">
-                                    <a href="#contact-us-st" class="other-btn to-cu-btn">Заказать</a>
-                                </div>
-                            </div>
+                        <div class="portfolio-inbox your-case-inbox">
+                            <a href="#contact-us-st" id="new-case" class="portfolio-item">
+                                <img src="img/your-case.svg" alt="Место для вашего кейса">
+                            </a>
+                            <p>Место для вашего кейса</p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="container">
-                <div id="how-to-work" class="section-title how-to-work-mobile">
-                    <h2>
-                        Как мы работаем?
-                    </h2>
-                </div>
-                <div class="steps">
-                    <div class="steps-box">
-                        <div class="step-box">
-                            <div class="si si-1 si-l">
-                                <div class="step-item step-item-left" data-step="0">
-                                    <p>Обсуждаем тип проекта, его цели <br> Подбираем наилучший вариант сайта</p>
-                                </div>
-                            </div>
-                            <div class="si si-1-2 si-r">
-                                <div class="step-item step-item-right" data-step="0">00 Обсуждение проекта</div>
-                            </div>
-                        </div>
-                        <div class="step-box">
-                            <div class="si si-2 si-l">
-                                <div class="step-item step-item-left" data-step="0">
-                                    <p>Анализируем сферу бизнеса, её целевую аудиторию<br> Начинаем
-                                        разработку прототипа будущего сайта</p>
-                                </div>
-                            </div>
-                            <div class="si si-2-2 si-r">
-                                <div class="step-item step-item-right" data-step="0">01 Анализ бизнеса</div>
-                            </div>
-                        </div>
-                        <div class="step-box">
-                            <div class="si si-3 si-l">
-                                <div class="step-item step-item-left" data-step="0">
-                                    <p>Прорабатываем полноценную дизайн-концепцию сайта в мельчайших интерактивных
-                                        деталях</p>
-                                </div>
-                            </div>
-                            <div class="si si-3-2 si-r">
-                                <div class="step-item step-item-right" data-step="0">02 Дизайн-концепция</div>
-                            </div>
-                        </div>
-                        <div class="step-box">
-                            <div class="si si-4 si-l">
-                                <div class="step-item step-item-left" data-step="0">
-                                    <p>После утверждения дизайна разработчик начинает вёрстку<br> Проект
-                                        адаптируется под любой тип устройств</p>
-                                </div>
-                            </div>
-                            <div class="si si-4-2 si-r">
-                                <div class="step-item step-item-right" data-step="0">03 Программирование</div>
-                            </div>
-                        </div>
-                        <div class="step-box">
-                            <div class="si si-5 si-l">
-                                <div class="step-item step-item-left" data-step="0">
-                                    <p>На этапе тестирования выявляются и исправляются все ошибки и вносятся необходимые
-                                        правки</p>
-                                </div>
-                            </div>
-                            <div class="si si-5-2 si-r">
-                                <div class="step-item step-item-right" data-step="0">04 Тестирование</div>
-                            </div>
-                        </div>
-                        <div class="step-box">
-                            <div class="si si-6 si-l step-item-closed">
-                                <div class="step-item step-item-left" data-step="0">
-                                    <p>Запускаем проект на хостинг и передаём клиенту управление сайтом</p>
-                                </div>
-                            </div>
-                            <div class="si si-6-2 si-r">
-                                <div class="step-item step-item-right" data-step="0">05 Запуск</div>
-                            </div>
-                        </div>
-                        <!-- <div class="step-icons-box">
-                            <div class="step-icon step-center">
-                                <div class="step-descr">
-                                    <h4>00</h4>
-                                    <p>Обсуждаем тип проекта, его цели</p>
-                                    <p>Подбираем наилучший вариант сайта</p>
-                                </div>
-                                <img src="img/step_consultation.svg" alt="">
-                            </div>
-                            <div class="step-icon step-down">
-                                <div class="step-descr">
-                                    <h4>01</h4>
-                                    <p>Анализируем сферу бизнеса, целевую аудиторию и её потребности</p>
-                                    <p>Начинаем разработку прототипа будущего сайта</p>
-                                </div>
-                                <img src="img/step_prototype.svg" alt="">
-                            </div>
-                            <div class="step-icon unvisible">
-                                <div class="step-descr">
-                                    <h4>02</h4>
-                                    <p>Прорабатываем полноценную дизайн-концепцию сайта в мельчайших интерактивных
-                                        деталях</p>
-                                    <p></p>
-                                </div>
-                                <img src="img/step_design.svg" alt="">
-                            </div>
-                            <div class="step-icon unvisible">
-                                <div class="step-descr">
-                                    <h4>03</h4>
-                                    <p>После утверждения дизайна разработчик начинает вёрстку проекта</p>
-                                    <p>Проект адаптируется под любой тип устройств</p>
-                                </div>
-                                <img src="img/step_layout.svg" alt="">
-                            </div>
-                            <div class="step-icon unvisible">
-                                <div class="step-descr">
-                                    <h4>04</h4>
-                                    <p>На этапе тестирования выявляются и исправляются все ошибки и вносятся необходимые правки</p>
-                                </div>
-                                <img src="img/step_testing.svg" alt="">
-                            </div>
-                            <div class="step-icon step-up">
-                                <div class="step-descr">
-                                    <h4>05</h4>
-                                    <p>Запускаем проект на хостинг и передаём клиенту управление сайтом</p>
-                                </div>
-                                <img src="img/step_start.svg" alt="">
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-            <div id="portfolio-container">
-                <div id="portfolio-st" class="section-title how-to-work-mobile">
-                    <h2>Наши работы</h2>
                 </div>
                 <div class="portfolio">
-                    <div class="portfolio-box">
-                        <div class="portfolio-inbox">
-                            <div class="blur">
-                                <a target="_blank" id="goto-avtomix" href="https://avtomix27.ru/"
-                                    class="portfolio-goto">Перейти</a>
-                            </div>
-                            <div class="other-service-title">
-                                <h4>AVTOMIX27</h4>
-                                <p>Сервис технического осмотра в Хабаровске</p>
-                            </div>
-                            <div id="avtomix" class="portfolio-item"><img src="img/avtomix.webp" alt=""></div>
+                    <div class="ready-works">
+                        <div class="contact-us-title how-to-work-mobile">
+                            <h2>Готовые шаблоны</h2>
                         </div>
-                        <div class="portfolio-inbox">
-                            <div class="blur">
-                                <a target="_blank" id="goto-flow" href="https://www.figma.com/file/BxbjC473ZjlfP8aphVCcje/%D0%93%D0%BE%D1%82%D0%BE%D0%B2%D1%8B%D0%B9-%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D0%BF%D1%82-%D1%86%D0%B2%D0%B5%D1%82%D0%BE%D1%87%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D0%B0?node-id=0%3A1&t=6qVUiZAzMU5cVtvW-1"
-                                    class="portfolio-goto">Перейти</a>
+                        <div class="portfolio-box">
+                            <div class="portfolio-inbox">
+                                <div class="blur">
+                                    <a target="_blank" id="goto-flow" href="https://cloud.mail.ru/public/7qVa/va1dhE1Ks"
+                                        alt="Ссылка на облако mail.ru" class="portfolio-goto">Перейти</a>
+                                </div>
+                                <div class="other-service-title">
+                                    <h4>Цветочный магазин</h4>
+                                    <p>Готовый макет цветочного магазина ждет именно Вас</p>
+                                </div>
+                                <div id="flow" class="portfolio-item"><img src="img/flow.webp"
+                                        alt="Готовый макет магазина цветов"></div>
                             </div>
-                            <div class="other-service-title">
-                                <h4>Цветочный магазин</h4>
-                                <p>Готовый макет цветочного магазина ждет именно Вас</p>
-                            </div>
-                            <div id="flow" class="portfolio-item"><img src="img/flow.webp" alt=""></div>
-                        </div>
-                        <div class="portfolio-inbox">
-                            <div class="blur">
-                                <a target="_blank" id="goto-taho" href="https://www.tahografdv.ru/"
-                                    class="portfolio-goto">Перейти</a>
-                            </div>
-                            <div class="other-service-title">
-                                <h4>тахографдв.рф</h4>
-                                <p>Редизайн сайта компании-оператора тахографов в Хабаровске</p>
-                            </div>
-                            <div id="taho" class="portfolio-item"><img src="img/taho.webp" alt=""></div>
-                        </div>
-                        <div class="portfolio-inbox">
-                            <!-- <div class="blur">
-                                <a target="_blank" id="goto-avtomix" href="https://avtomix27.ru/"
-                                    class="portfolio-goto">Перейти</a>
-                            </div> -->
-                            <div class="other-service-title">
-                                <h4>Место для вашего кейса</h4>
-                                <p>закажите сайт у нас, и он обязательно появится в этом окне</p>
-                            </div>
-                            <a href="#contact-us-st" id="new-case" class="portfolio-item"><img src="img/new-case.svg"
-                                    alt=""></a>
-                        </div>
-                        <!-- <div class="portfolio-inbox">
-                            <div class="other-service-title">
-                                <h4>Место для вашего кейса</h4>
-                                <p>закажите сайт у нас, и он обязательно появится в этом окне</p>
-                            </div>
-                            <a href="#contact-us-st" id="new-case" class="new-case"><img src="img/new-case.svg"
-                                    alt=""></a>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-            <div class="why-we">
-                <div class="contact-us-title why-we-title">
-                    <h3>Почему мы?</h3>
-                </div>
-                <div class="why-we-box">
-                    <div class="why-we-item-left">
-                        <div class="why-we-item">
-                            <div class="why-we-item-title">
-                                <h4>Сайт под ключ</h4>
-                            </div>
-                            <div class="why-we-item-descr">
-                                <p>В тарифы входит всё, начиная с первичного обсуждения проекта, заканчивая поисковой
-                                    оптимизацией и технической
-                                    поддержкой сайта</p>
+                            <div class="portfolio-inbox">
+                                <div class="blur">
+                                    <a target="_blank" id="goto-roast-beef"
+                                        href="https://cloud.mail.ru/public/JZcc/DaSaxc3Qw"
+                                        alt="Ссылка на облако mail.ru" class="portfolio-goto">Перейти</a>
+                                </div>
+                                <div class="other-service-title">
+                                    <h4>Ресторан</h4>
+                                    <p>Готовый макет ресторана ждет именно Вас</p>
+                                </div>
+                                <div id="roast-beef" class="portfolio-item"><img src="img/roast-beef.webp"
+                                        alt="Готовый макет ресторана"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="why-we-item-center">
-                        <div class="why-we-item">
-                            <div class="why-we-item-title">
-                                <h4>Оплата итерациями</h4>
-                            </div>
-                            <div class="why-we-item-descr">
-                                <p>Система оплаты итерациями позволяет заказчику контролировать каждый этап работы и
-                                    вносить необходимые поправки на любом этапе</p>
-                            </div>
+                        <div class="shablon-details">
+                            <p>Чтобы ознакомиться с шаблоном подробнее, <a href="#socials-box">свяжитесь с нами</a> или
+                                <a href="#contact-us-st">оставьте заявку</a>
+                            </p>
                         </div>
-                    </div>
-                    <div class="why-we-item-right">
-                        <div class="why-we-item">
-                            <div class="why-we-item-title">
-                                <h4>Бессрочная гарантия</h4>
-                            </div>
-                            <div class="why-we-item-descr">
-                                <p>Мы предоставляем бессрочную гарантию на наши проекты так как:</p>
-                                <ul>
-                                    <li>Полностью уверенны в функциональности</li>
-                                    <li>Уважаем время, средства клиента и свою репутацию</li>
-                                </ul>
-                            </div>
+                        <div class="copyright-alert">
+                            <p>©</p>
+                            <p class="copyright-content">Обращаем Ваше внимание, что все работы, представленные в данных
+                                разделах являются творческими произведениями и защищены авторским правом в соответствии
+                                с
+                                законодательством Российской Федерации. <br> Использование шаблонов в коммерческих целях
+                                без
+                                согласия автора недопустимо и наказывается по ст.1301 ГК РФ.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="contact-us-title">
-                <h3>Что используем для разработки?</h3>
-            </div>
-            <div class="what-stek-box">
-                <div class="what-stek-item">
-                    <div class="what-stek-text">
-                        <p class="t1">Основное направление нашей студии - разработка сайтов с помощью нативных средств
-                            разработки (HTML5, CSS3(SCSS), JS)</p>
-                        <p class="t2">Также мы предоставляем услуги по разработке сайтов на NOCODE решениях,
-                            отталкиваясь
-                            от ТЗ заказчика.</p>
-                        <p class="t3">В качестве дополнительных, мы оказываем услуги по разработке дизайна и фирменного
-                            стиля
-                            компании.</p>
+                <div class="why-we">
+                    <div id="why-we-title" class="contact-us-title why-we-title">
+                        <h3>Почему мы?</h3>
+                    </div>
+                    <div class="why-we-box">
+                        <div class="why-we-item-left">
+                            <div class="why-we-item">
+                                <div class="why-we-item-title">
+                                    <h4>Сайт под ключ</h4>
+                                </div>
+                                <div class="why-we-item-descr">
+                                    <p>В тарифы входит всё, начиная с первичного обсуждения проекта, заканчивая
+                                        поисковой
+                                        оптимизацией и технической
+                                        поддержкой сайта</p>
+                                    <img class="why-we-img" src="img/onkey.svg" alt="Под ключ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="why-we-item-center">
+                            <div class="why-we-item">
+                                <div class="why-we-item-title">
+                                    <h4>Оплата итерациями</h4>
+                                </div>
+                                <div class="why-we-item-descr">
+                                    <p>Система оплаты итерациями позволяет заказчику контролировать каждый этап работы и
+                                        вносить необходимые поправки на любом этапе</p>
+                                    <img class="why-we-img" src="img/payment.svg" alt="Поэтапная оплата">
+                                    <!-- <svg class="why-we-svg"  viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M29.8918 9.45784C30.5199 9.45784 31.0325 8.96043 31.0582 8.33808C31.0594 8.3229 31.0594 8.30655 31.0594 8.29021C31.0594 7.64567 30.5363 7.12257 29.8918 7.12257C29.2472 7.12257 28.7241 7.64567 28.7241 8.29021C28.7241 8.30655 28.7241 8.3229 28.7253 8.33808C28.751 8.96043 29.2636 9.45784 29.8918 9.45784Z" fill="#FFCC00"/>
+                                            <path d="M33.3939 31.0591C37.2642 31.0591 40.3997 27.9241 40.3997 24.0533C40.3997 20.1903 37.2569 17.0475 33.3939 17.0475H22.8852C22.2405 17.0475 21.7176 17.5702 21.7176 18.2151V28.7238H20.55C19.9052 28.7238 19.3823 29.2465 19.3823 29.8914C19.3823 30.5363 19.9052 31.0591 20.55 31.0591H21.7176V35.7296H20.55C19.9052 35.7296 19.3823 36.2523 19.3823 36.8972C19.3823 37.5421 19.9052 38.0649 20.55 38.0649H21.7176V43.903C21.7176 44.5479 22.2405 45.0707 22.8852 45.0707C23.53 45.0707 24.0529 44.5479 24.0529 43.903V38.0649H32.2263C32.8711 38.0649 33.3939 37.5421 33.3939 36.8972C33.3939 36.2523 32.8711 35.7296 32.2263 35.7296H24.0529V31.0591H33.3939ZM24.0529 19.3827H33.3939C35.9693 19.3827 38.0645 21.4779 38.0645 24.0533C38.0645 26.6327 35.9739 28.7238 33.3939 28.7238H24.0529V19.3827Z" fill="#FFCC00"/>
+                                            <path d="M29.8914 59.7828C45.9875 59.7828 59.7828 45.9935 59.7828 29.8914C59.7828 13.82 46.0181 0 29.8914 0C13.7954 0 0 13.7893 0 29.8914C0 45.986 13.7893 59.7828 29.8914 59.7828ZM29.8914 2.33527C44.5709 2.33527 57.4476 15.2119 57.4476 29.8914C57.4476 44.5709 44.5709 57.4476 29.8914 57.4476C15.2119 57.4476 2.33527 44.5709 2.33527 29.8914C2.33527 15.2119 15.2119 2.33527 29.8914 2.33527Z" fill="#FFCC00"/>
+                                            <path d="M29.8915 52.777C42.0582 52.777 52.7771 42.14 52.7771 29.8914C52.7771 19.4954 44.9723 9.99846 34.8118 7.58589C34.1843 7.43679 33.5549 7.82467 33.4059 8.45216C33.2571 9.07965 33.6448 9.709 34.2722 9.85799C43.4904 12.0467 50.4418 20.6593 50.4418 29.8914C50.4418 40.8388 40.8389 50.4418 29.8915 50.4418C18.9441 50.4418 9.34113 40.8388 9.34113 29.8914C9.34113 20.6593 16.2925 12.0467 25.5107 9.85799C26.1381 9.709 26.5259 9.07965 26.377 8.45216C26.228 7.82456 25.5984 7.43667 24.9712 7.58589C14.8186 9.99659 7.00586 19.487 7.00586 29.8914C7.00586 42.0582 17.6429 52.777 29.8915 52.777Z" fill="#FFCC00"/>
+                                        </svg> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="why-we-item-right">
+                            <div class="why-we-item">
+                                <div class="why-we-item-title">
+                                    <h4>Бессрочная гарантия</h4>
+                                </div>
+                                <div class="why-we-item-descr">
+                                    <p>Мы предоставляем полноценную бессрочную гарантию на наши проекты, oна включает в
+                                        себя полную техническую поддержку и исправление любых ошибок</p>
+                                    <img class="why-we-img" src="img/warranty.svg" alt="Бессрочная гарантия">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="what-stek-images-box">
-                    <img class="t1-rev" src="img/html-5.svg" alt="">
-                    <img class="t2-rev" src="img/css3.svg" alt="">
-                    <img class="t3-rev" src="img/javascript.svg" alt="">
-                    <img class="t1-rev" src="img/figma.svg" alt="">
-                    <img class="t2-rev" src="img/principle.webp" alt="">
-                    <img class="t3-rev" src="img/procreate.webp" alt="">
-                </div>
-            </div>
-            <div id="contact-us-st">
                 <div class="contact-us-title">
-                    <h3>Обратная связь</h3>
+                    <h3>Что используем для разработки?</h3>
                 </div>
-                <div class="contact-us">
-                    <div id="contacts-st">
-                        <div id="form" class="contact-us-fomr">
-                            <div id="form-title" class="form-title">Если стесняетесь, <br> свяжемся с Вами
-                                самостоятельно. <br> Отвечаем за 15 минут.</div>
-                            <form id="footer-num" action="" method="post" class="form-box">
-                                <div class="text-field text-field_floating-3">
-                                    <input required name="f[name]" id="name" class="form-item text-field__input"
-                                        placeholder="Ваше имя" type="text">
-                                    <label class="text-field__label" for="name">Имя</label>
-                                </div>
-                                <div class="text-field text-field_floating-3">
-                                    <input autocomplete="email" required name="f[email]" type="email" id="email"
-                                        class="form-item text-field__input" placeholder="">
-                                    <label class="text-field__label" for="email">Почта</label>
-                                </div>
-                                <div id="comment-div" class="text-field text-field_floating-3">
-                                    <input name="f[comment]" type="comment" id="comment"
-                                        class="form-item text-field__input" placeholder="Комментарий" type="text">
-                                    <label class="text-field__label" for="comment">Комментарий</label>
-                                </div>
-                                <div id="check-div" class="checkbox">
-                                    <div class="checkbox-box">
-                                        <div class="checkbox-unchecked"></div>
+                <div class="what-stek-box">
+                    <div class="what-stek-item">
+                        <div class="what-stek-text">
+                            <p class="t1">Основное направление нашей студии - разработка сайтов с помощью нативных
+                                средств
+                                разработки (HTML5, CSS3(SCSS), JS)</p>
+                            <p class="t2">Также мы предоставляем услуги по разработке сайтов на NOCODE решениях,
+                                отталкиваясь
+                                от ТЗ заказчика.</p>
+                            <p class="t3">В качестве дополнительных, мы оказываем услуги по разработке дизайна и
+                                фирменного
+                                стиля
+                                компании.</p>
+                        </div>
+                    </div>
+                    <div class="what-stek-images-box">
+                        <img class="t1-rev" src="img/html-5.svg" alt="HTML5">
+                        <img class="t2-rev" src="img/css3.svg" alt="CSS3">
+                        <img class="t3-rev" src="img/javascript.svg" alt="JavaScript">
+                        <img class="t1-rev" src="img/figma.svg" alt="Figma">
+                        <img class="t2-rev" src="img/principle.webp" alt="Principle">
+                        <img class="t3-rev" src="img/procreate.webp" alt="ProCreate">
+                    </div>
+                </div>
+                <div id="contact-us-st">
+                    <div class="contact-us-title">
+                        <h3>Обратная связь</h3>
+                    </div>
+                    <div class="contact-us">
+                        <div id="contacts-st">
+                            <div id="form" class="contact-us-fomr">
+                                <div id="form-title" class="form-title">Cвяжемся с Вами
+                                    самостоятельно. <br> Отвечаем за 15 минут.</div>
+                                <form id="footer-num" action="" method="post" class="form-box">
+                                    <div class="text-field text-field_floating-3">
+                                        <input required name="f[name]" id="name" class="form-item text-field__input"
+                                            placeholder="Ваше имя" type="text">
+                                        <label class="text-field__label" for="name">Имя</label>
                                     </div>
-                                    <span>Я соглашаюсь на <a class="confidence-policy-a" href="/policy/policy.html">хранение и обработку персональных данных</a></span>
-                                    <input required class="checkbox-input" type="checkbox" name="f[checkbox]"
-                                        id="checkbox">
-                                </div>
-                                <button id="submit-item" type="submit" class="form-item submit-item">Отправить</button>
-                                <div id="message"></div>
-                            </form>
-                        </div>
-                        <div class="contact-us-box">
-                            <a target="_blank" href="https://t.me/webproject_ru" id="tg-item" class="contact-us-item">
-                                <div class="in-c-ellipse"></div>
-                                <p>Telegram</p>
-                            </a>
-                            <a href="https://vk.me/webprojectstudio" target="_blank" id="vk-item"
-                                class="contact-us-item">
-                                <div class="in-c-ellipse"></div>
-                                <p>VKontakte</p>
-                            </a>
-                            <a target="_blank" href="mailto:info@web-project-studio.ru" id="email-item" class="contact-us-item">
-                                <div id="email-ellipse" class="in-c-ellipse"></div>
-                                <p>eMail</p>
-                            </a>
-                        </div>
-                        <div id="mobile-contact-us" class="contact-us-box contact-us-box-mobile">
-                            <a target="_blank" href="https://t.me/webproject_ru" id="tg-item" class="contact-us-item-mobile">
-                                <img src="img/tg.svg" alt="Telegram">
-                            </a>
-                            <a href="https://vk.me/webprojectstudio" target="_blank" id="vk-item"
-                                class="contact-us-item-mobile">
-                                <img src="img/vk.svg" alt="VKontakte">
-                            </a>
-                            <a target="_blank" href="mailto:info@web-project-studio.ru" id="email-item" class="contact-us-item-mobile">
-                                <img src="img/email.svg" alt="Email">
-                            </a>
+                                    <div class="text-field text-field_floating-3">
+                                        <input autocomplete="email" required name="f[email]" type="email" id="email"
+                                            class="form-item text-field__input" placeholder="Email@email.com">
+                                        <label class="text-field__label" for="email">Почта</label>
+                                    </div>
+                                    <div id="comment-div" class="text-field text-field_floating-3">
+                                        <input name="f[comment]" type="comment" id="comment"
+                                            class="form-item text-field__input" placeholder="Комментарий" type="text">
+                                        <label class="text-field__label" for="comment">Комментарий</label>
+                                    </div>
+                                    <div id="check-div" class="checkbox">
+                                        <div class="checkbox-box">
+                                            <div class="checkbox-unchecked"></div>
+                                        </div>
+                                        <span>Я соглашаюсь на <a class="confidence-policy-a"
+                                                href="/additions/policy.html">хранение и
+                                                обработку персональных
+                                                данных</a></span>
+                                        <input required class="checkbox-input" type="checkbox" name="f[checkbox]"
+                                            id="checkbox">
+                                    </div>
+                                    <button id="submit-item" type="submit"
+                                        class="form-item submit-item">Отправить</button>
+                                    <div id="message"></div>
+                                </form>
+                            </div>
+                            <div id="socials-box" class="contact-us-box">
+                                <a target="_blank" href="https://t.me/webproject_ru" id="tg-item"
+                                    class="contact-us-item">
+                                    <div class="in-c-ellipse"></div>
+                                    <p>Telegram</p>
+                                </a>
+                                <a href="https://vk.me/webprojectstudio" target="_blank" id="vk-item"
+                                    class="contact-us-item">
+                                    <div class="in-c-ellipse"></div>
+                                    <p>VKontakte</p>
+                                </a>
+                                <a target="_blank" href="mailto:info@web-project-studio.ru" id="email-item"
+                                    class="contact-us-item">
+                                    <div id="email-ellipse" class="in-c-ellipse"></div>
+                                    <p>eMail</p>
+                                </a>
+                            </div>
+                            <div id="mobile-contact-us" class="contact-us-box contact-us-box-mobile">
+                                <a target="_blank" href="https://t.me/webproject_ru" id="tg-item"
+                                    class="contact-us-item-mobile">
+                                    <img src="img/tg.svg" alt="Telegram">
+                                </a>
+                                <a href="https://vk.me/webprojectstudio" target="_blank" id="vk-item"
+                                    class="contact-us-item-mobile">
+                                    <img src="img/vk.svg" alt="VKontakte">
+                                </a>
+                                <a target="_blank" href="mailto:info@web-project-studio.ru" id="email-item"
+                                    class="contact-us-item-mobile">
+                                    <img src="img/email.svg" alt="Email">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

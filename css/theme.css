@@ -1,0 +1,33 @@
+.white-theme {
+    background-color: white;
+    color: #222;
+}
+
+.black-theme {
+    background-color: #222;
+    color: white;
+}
+
+.only-color_black {
+    color: #222;
+}
+
+.only-color_white {
+    color: white;
+}
+
+.border-black {
+    border-color: #222;
+}
+
+.border-white {
+    border-color: white;
+}
+
+.shadow-white {
+    box-shadow: white 10px 10px 0;
+}
+
+.shadow-black {
+    box-shadow: #222 10px 10px 0;
+}
