@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon" href="/apple-favicon.png">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/newmedia.css">
     <link rel="stylesheet" href="css/theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,7 +80,7 @@
                     <div class="checkbox-box">
                         <div class="checkbox-unchecked"></div>
                     </div>
-                    <span>Я соглашаюсь на <a class="confidence-policy-a" href="/additions/policy.html">хранение и обработку
+                    <span>Я соглашаюсь на <a class="confidence-policy-a" href="/additions/policy">хранение и обработку
                             персональных данных</a></span>
                     <input required class="checkbox-input" type="checkbox" name="f[checkbox]" id="checkbox2">
                 </div>
@@ -219,9 +219,9 @@
         <img id="title-back" src="img/title-back.webp" alt="background-triangle" class="parallax-object">
         <img src="" alt="" class="parallax-object">
         <div id="header-scrolled" class="header">
-            <div class="logo">
+            <a href="https://web-project-studio.ru/" class="logo">
                 <img src="img/logo.svg" alt="Логотип" class="logo-img">
-            </div>
+            </a>
             <div class="theme-toggle" style="display: none;">
                 Сменить тему сайта
             </div>
@@ -275,82 +275,14 @@
                     <div class="offer-descr"></div>
                 </div>
                 <div id="catalog-container">
-                    <div class="contact-us-title how-to-work-mobile">
+                    <div id="what-develop-title" class="contact-us-title how-to-work-mobile">
                         <h2>
                             Что разрабатываем?
                         </h2>
                     </div>
                     <div id="what-develop" class="catalog">
                         <div class="products-box">
-                            <div id="landing-item" class="pi">
-                                <div class="products-item" id="landing-p-item">
-                                    <div id="outbox" class="outbox">
-                                        <div id="inbox" class="product-inbox">
-                                            <img class="product-arrow" src="/img/down-arrow.svg" alt="Развернуть">
-                                            <div class="dev-time">
-                                                от 7 дней
-                                            </div>
-                                            <div class="product-title">
-                                                <h4>Лендинг</h4>
-                                                <p>одностраничный сайт</p>
-                                                <img src="img/hot.svg" alt="Популярно">
-                                            </div>
-                                            <div class="product-price">
-                                                <a>от 19990</a>
-                                            </div>
-                                        </div>
-                                        <div class="product-descr-hidden">
-                                            <div class="product-descr-title">
-                                                <h4>Кому подойдет <span>Лендинг</span></h4>
-                                            </div>
-                                            <div class="product-descr-descr">
-                                                <p>Лендинг — это одностраничный сайт с краткой информацией о товаре,
-                                                    услуге
-                                                    или мероприятии. Он создаётся для того, чтобы продавать конкретный
-                                                    товар
-                                                    или услугу, исследовать необходимый сегмент аудитории.</p>
-                                                <h5>Лендинг подойдет, если Вы:</h5>
-                                                <ul>
-                                                    <li>Оказываете простые услуги (к примеру техосмотр автомобилей)</li>
-                                                    <li>Организуете мероприятия или хотите привлечь клиента
-                                                        территориально
-                                                        (Жилые комплексы)</li>
-                                                    <li>Предлагаете товар в малом ассортименте (Автосалоны, изделия
-                                                        ручной
-                                                        работы)</li>
-                                                </ul>
-                                                <div>
-                                                    <h6>Низкая стоимость</h6>
-                                                    <p>Минимальная стоимость разработки Лендинга от нашей студии всего
-                                                        19990.</p>
-                                                </div>
-                                                <div>
-                                                    <h6>Скорость разработки</h6>
-                                                    <p>На разработку Лендинга обычно требуется от 7 до 21 дня</p>
-                                                </div>
-                                                <div>
-                                                    <h6>Минимальные затраты на содержание</h6>
-                                                    <p>Такой сайт не требует дополнительных затрат на ведение и
-                                                        модерацию,
-                                                        расходы ограничиваются оплатой хостинга и домена
-                                                        (200-300руб/мес)
-                                                    </p>
-                                                </div>
-                                                <div>
-                                                    <h6>Привлекает клиента</h6>
-                                                    <p>Поможет клиенту найти Вас и обратиться именно к Вам</p>
-                                                </div>
-                                                <div>
-                                                    <h6>Уникальный дизайн</h6>
-                                                    <p>Наша студия предлагает уникальный дизайн-проект, подходящий
-                                                        Вашему
-                                                        бизнесу</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                             <div id="bcard-item" class="pi">
                                 <div class="products-item">
                                     <div id="outbox" class="outbox">
@@ -410,6 +342,9 @@
                                                         ознакомиться с продуктами/услугами компании.</p>
                                                 </div>
                                             </div>
+                                            <a class="new-other-btn">
+                                                Заказать
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -423,7 +358,7 @@
                                                 от 14 дней
                                             </div>
                                             <div class="product-title">
-                                                <h4>Многостраничный</h4>
+                                                <h4>Корпоративный</h4>
                                                 <p>сайт для крупных организаций</p>
                                             </div>
                                             <div class="product-price">
@@ -468,6 +403,82 @@
                                                         бизнесу</p>
                                                 </div>
                                             </div>
+                                            <a class="new-other-btn">
+                                                Заказать
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="landing-item" class="pi">
+                                <div class="products-item" id="landing-p-item">
+                                    <div id="outbox" class="outbox">
+                                        <div id="inbox" class="product-inbox">
+                                            <img class="product-arrow" src="/img/down-arrow.svg" alt="Развернуть">
+                                            <div class="dev-time">
+                                                от 7 дней
+                                            </div>
+                                            <div class="product-title">
+                                                <h4>Лендинг</h4>
+                                                <p>одностраничный сайт</p>
+                                                <img src="img/hot.svg" alt="Популярно">
+                                            </div>
+                                            <div class="product-price">
+                                                <a>от 19990</a>
+                                                <img src="/img/arrow-href.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="product-descr-hidden">
+                                            <div class="product-descr-title">
+                                                <h4>Кому подойдет <span>Лендинг</span></h4>
+                                            </div>
+                                            <div class="product-descr-descr">
+                                                <p>Лендинг — это одностраничный сайт с краткой информацией о товаре,
+                                                    услуге
+                                                    или мероприятии. Он создаётся для того, чтобы продавать конкретный
+                                                    товар
+                                                    или услугу, исследовать необходимый сегмент аудитории.</p>
+                                                <h5>Лендинг подойдет, если Вы:</h5>
+                                                <ul>
+                                                    <li>Оказываете простые услуги (к примеру техосмотр автомобилей)</li>
+                                                    <li>Организуете мероприятия или хотите привлечь клиента
+                                                        территориально
+                                                        (Жилые комплексы)</li>
+                                                    <li>Предлагаете товар в малом ассортименте (Автосалоны, изделия
+                                                        ручной
+                                                        работы)</li>
+                                                </ul>
+                                                <div>
+                                                    <h6>Низкая стоимость</h6>
+                                                    <p>Минимальная стоимость разработки Лендинга от нашей студии всего
+                                                        19990.</p>
+                                                </div>
+                                                <div>
+                                                    <h6>Скорость разработки</h6>
+                                                    <p>На разработку Лендинга обычно требуется от 7 до 21 дня</p>
+                                                </div>
+                                                <div>
+                                                    <h6>Минимальные затраты на содержание</h6>
+                                                    <p>Такой сайт не требует дополнительных затрат на ведение и
+                                                        модерацию,
+                                                        расходы ограничиваются оплатой хостинга и домена
+                                                        (200-300руб/мес)
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <h6>Привлекает клиента</h6>
+                                                    <p>Поможет клиенту найти Вас и обратиться именно к Вам</p>
+                                                </div>
+                                                <div>
+                                                    <h6>Уникальный дизайн</h6>
+                                                    <p>Наша студия предлагает уникальный дизайн-проект, подходящий
+                                                        Вашему
+                                                        бизнесу</p>
+                                                </div>
+                                            </div>
+                                            <a class="new-other-btn">
+                                                Заказать
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -489,7 +500,7 @@
                                             </div>
                                         </div>
                                         <div class="product-descr-hidden">
-                                            <div class="product-descr-title">
+                                            <div id="product-descr-title-shop" class="product-descr-title">
                                                 <h4>Кому подойдет <span class="mnogostr-span">Интернет-магазин</span>
                                                 </h4>
                                             </div>
@@ -535,85 +546,81 @@
                                                         бизнесу</p>
                                                 </div>
                                             </div>
+                                            <a class="new-other-btn">
+                                                Заказать
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="web-app-item" class="pi">
+                                <div class="products-item">
+                                    <div id="outbox" class="outbox">
+                                        <div id="inbox" class="product-inbox">
+                                            <img class="product-arrow" src="/img/down-arrow.svg" alt="Развернуть">
+                                            <div class="dev-time">
+                                                от 21 дня
+                                            </div>
+                                            <div class="product-title">
+                                                <h4>Веб-приложение</h4>
+                                                <p>приложение в браузере</p>
+                                            </div>
+                                            <div class="product-price">
+                                                <a>от 49990</a>
+                                            </div>
+                                        </div>
+                                        <div class="product-descr-hidden">
+                                            <div id="product-descr-title-webp" class="product-descr-title">
+                                                <h4>Кому подойдет <span class="mnogostr-span">Веб-приложение</span>
+                                                </h4>
+                                            </div>
+                                            <div class="product-descr-descr">
+                                                <p>Сервис или приложение разрабатывается для удобного взаимодействия клиента с Вашими услугами. <br>
+                                                    Обычно подобные приложения разрабатываются в формате mobile-first, то есть в первую очередь для мобильных устройств.
+                                                </p>
+                                                <p> <strong> Веб-приложение подойдет, если Вы хотите дать своему клиенту более удобный, мобильно-ориентированный доступ к своим услугам и сервисам. </strong> </p>
+                                                <div>
+                                                    <h6>Универсальная альтернатива</h6>
+                                                    <p>Хорошая альтернатива дорогостоящей разработке полноценных мобильных приложений для IOS/ANDROID </p>
+                                                </div>
+                                                <div>
+                                                    <h6>Быстродействие</h6>
+                                                    <p>Даже в формате браузера быстродействие веб-приложения будет на уровне полноценных мобильных приложений</p>
+                                                </div>
+                                                <div>
+                                                    <h6>Онлайн решение</h6>
+                                                    <p>Современный пользователь предпочитает иметь возможность взаимодействовать с бизнесом онлайн: сделать заказ, получить, или узнать подробную информацию об услуге</p>
+                                                </div>
+                                                <div>
+                                                    <h6>Любые интеграции</h6>
+                                                    <p>Соцсети, системы оплаты, онлайн-запись, всё, что угодно можно встроить в приложение</p>
+                                                </div>
+                                                <div>
+                                                    <h6>Уникальный дизайн</h6>
+                                                    <p>Наша студия предлагает уникальный дизайн-проект, подходящий
+                                                        Вашему
+                                                        бизнесу</p>
+                                                </div>
+                                            </div>
+                                            <a class="new-other-btn">
+                                                Заказать
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <a href="#socials-box" class="card-take-offer-btn to-cu-btn">Заказать</a>
-                    <div class="contact-us-title how-to-work-mobile">
-                        <h2>Другие услуги</h2>
-                    </div>
-                    <div class="other-services mb-100">
+                        <a href="#socials-box" class="card-take-offer-btn to-cu-btn">Заказать</a>
                         <div class="other-services-box">
-                            <div class="other-service other-service-big">
-                                <div class="other-service-inbox">
-                                    <div class="dev-time-box">
-                                        <div class="dev-time">от 1 дня</div>
-                                    </div>
-                                    <div class="other-service-title">
-                                        <img src="img/hot.svg" alt="Популярно" style="width: 160px;">
-                                        <h4>Редизайн сайтов</h4>
-                                        <p>внесение поправок в готовый сайт</p>
-                                    </div>
-                                    <div class="other-service-descr">
-                                        <p>Поможем, если сайт устарел, давно не обновлялся или не показывает нужную
-                                            конверсию.</p>
-                                    </div>
-                                    <div class="other-btn-box">
-                                        <a href="#socials-box" class="other-btn to-cu-btn">Заказать</a>
-                                    </div>
-                                </div>
+                            <div id="other-title" class="contact-us-title how-to-work-mobile">
+                                <h2>Другие услуги</h2>
                             </div>
-                            <div class="other-service other-service-off mob-other-service">
-                                <div class="other-service-inbox">
-                                    <div class="dev-time-box">
-                                        <div class="dev-time">от 3 дней</div>
-                                    </div>
-                                    <div class="other-service-title ost-min">
-                                        <h4>Создание фирменного стиля</h4>
-                                        <p>создание внешного образа компании</p>
-                                    </div>
-                                    <div class="other-service-descr ost-min">
-                                        <p>Поможем определиться с имиджем компании. С уникальным образом Вы привлечете
-                                            гораздо больше клиентов.</p>
-                                    </div>
-                                    <div class="other-btn-box">
-                                        <a href="#socials-box" class="other-btn to-cu-btn">Заказать</a>
-                                    </div>
-                                </div>
-                                <div class="other-service-inbox-before">
-                                    <h4>Фирменный <br> стиль</h4>
-                                </div>
-                            </div>
-                            <div class="other-service other-service-off mob-other-service">
-                                <div class="other-service-inbox">
-                                    <div class="dev-time-box">
-                                        <div class="dev-time">от 1 дня</div>
-                                    </div>
-                                    <div class="other-service-title ost-min">
-                                        <h4>Дизайн рекламной продукции</h4>
-                                        <p>разработка дизайна рекламных продуктов</p>
-                                    </div>
-                                    <div class="other-service-descr ost-min">
-                                        <p>Баннеры, визитки, листовки, презентации, вывески - всё это входит в спектр
-                                            наших услуг.</p>
-                                    </div>
-                                    <div class="other-btn-box">
-                                        <a href="#socials-box" class="other-btn to-cu-btn">Заказать</a>
-                                    </div>
-                                </div>
-                                <div class="other-service-inbox-before">
-                                    <h4>Рекламная <br> продукция</h4>
-                                </div>
-                            </div>
-                            <div class="other-service other-service-off mob-other-service">
+                            <div id="other-logo" class="other-service other-service-off mob-other-service">
                                 <div class="other-service-inbox">
                                     <div class="dev-time-box">
                                         <div class="dev-time">от 8 часов</div>
                                     </div>
-                                    <div class="other-service-title ost-min">
+                                    <div id="other-logo-title" class="other-service-title ost-min">
                                         <h4>Создание логотипа</h4>
                                         <p>разработка уникального знака компании</p>
                                     </div>
@@ -621,20 +628,94 @@
                                         <p>Создадим информативный, лаконичный и символичный логотип для вашей компании.
                                         </p>
                                     </div>
-                                    <div class="other-btn-box">
+                                    <!-- <div class="other-btn-box">
                                         <a href="#socials-box" class="other-btn to-cu-btn">Заказать</a>
+                                    </div> -->
+                                    <div class="product-price">
+                                        <a href="#contacts-st">от 990</a>
                                     </div>
                                 </div>
                                 <div class="other-service-inbox-before">
                                     <h4>Логотип</h4>
                                 </div>
                             </div>
-                            <div class="other-service other-service-off mob-other-service">
+                            <div id="other-style" class="other-service other-service-off mob-other-service">
+                                <div class="other-service-inbox">
+                                    <div class="dev-time-box">
+                                        <div class="dev-time">от 3 дней</div>
+                                    </div>
+                                    <div id="other-style-title" class="other-service-title ost-min">
+                                        <h4>Создание фирменного стиля</h4>
+                                        <p>создание внешного образа компании</p>
+                                    </div>
+                                    <div class="other-service-descr ost-min">
+                                        <p>Поможем определиться с имиджем компании. С уникальным образом Вы привлечете
+                                            гораздо больше клиентов.</p>
+                                    </div>
+                                    <!-- <div class="other-btn-box">
+                                        <a href="#socials-box" class="other-btn to-cu-btn">Заказать</a>
+                                    </div> -->
+                                    <div class="product-price">
+                                        <a href="#contacts-st">от 4990</a>
+                                    </div>
+                                </div>
+                                <div class="other-service-inbox-before">
+                                    <h4>Фирменный <br> стиль</h4>
+                                </div>
+                            </div>
+                            <div id="other-rediz" class="other-service other-service-big">
+                                <div class="other-service-inbox">
+                                    <div class="dev-time-box">
+                                        <div class="dev-time">от 1 дня</div>
+                                    </div>
+                                    <div id="other-rediz-title" class="other-service-title">
+                                        <img src="img/hot.svg" alt="Популярно">
+                                        <h4>Редизайн сайтов</h4>
+                                        <p>внесение поправок в готовый сайт</p>
+                                    </div>
+                                    <div class="other-service-descr">
+                                        <p>Поможем, если сайт устарел, давно не обновлялся или не показывает нужную
+                                            конверсию.</p>
+                                    </div>
+                                    <!-- <div class="other-btn-box">
+                                        <a href="#socials-box" class="other-btn to-cu-btn">Заказать</a>
+                                    </div> -->
+                                    <div class="product-price">
+                                        <a href="#contacts-st">от 4990</a>
+                                        <img src="/img/arrow-href.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="other-adv" class="other-service other-service-off mob-other-service">
+                                <div class="other-service-inbox">
+                                    <div class="dev-time-box">
+                                        <div class="dev-time">от 1 дня</div>
+                                    </div>
+                                    <div id="other-adv-title" class="other-service-title ost-min">
+                                        <h4>Дизайн рекламной продукции</h4>
+                                        <p>разработка дизайна рекламных продуктов</p>
+                                    </div>
+                                    <div class="other-service-descr ost-min">
+                                        <p>Баннеры, визитки, листовки, презентации, вывески - всё это входит в спектр
+                                            наших услуг.</p>
+                                    </div>
+                                    <!-- <div class="other-btn-box">
+                                        <a href="#socials-box" class="other-btn to-cu-btn">Заказать</a>
+                                    </div> -->
+                                    <div class="product-price">
+                                        <a href="#contacts-st">от 1990</a>
+                                    </div>
+                                </div>
+                                <div class="other-service-inbox-before">
+                                    <h4>Рекламная <br> продукция</h4>
+                                </div>
+                            </div>
+                            <div id="other-ux-ui" class="other-service other-service-off mob-other-service">
                                 <div class="other-service-inbox">
                                     <div class="dev-time-box">
                                         <div class="dev-time">от 7 дней</div>
                                     </div>
-                                    <div class="other-service-title ost-min">
+                                    <div id="other-uxui-title" class="other-service-title ost-min">
                                         <h4>UI/UX дизайн</h4>
                                         <p>разработка ui/ux дизайна для приложений</p>
                                     </div>
@@ -642,8 +723,11 @@
                                         <p>Сделаем удобный и понятный интерфейс, который доставит
                                             удовольствие от пользования. </p>
                                     </div>
-                                    <div class="other-btn-box">
+                                    <!-- <div class="other-btn-box">
                                         <a href="#socials-box" class="other-btn to-cu-btn">Заказать</a>
+                                    </div> -->
+                                    <div class="product-price">
+                                        <a href="#contacts-st">от 4990</a>
                                     </div>
                                 </div>
                                 <div class="other-service-inbox-before">
@@ -651,10 +735,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="other-service-open-btn top-64">Показать еще</div>
                     </div>
+                    <a href="#socials-box" class="card-take-offer-btn to-cu-btn">Заказать</a>
                 </div>
-                <div class="container">
                     <div id="how-to-work" class="contact-us-title how-to-work-mobile">
                         <h2>
                             Как мы работаем?
@@ -669,7 +752,7 @@
                                     </div>
                                 </div>
                                 <div class="si si-1-2 si-r">
-                                    <div class="step-item step-item-right" data-step="0">00 Обсуждение проекта</div>
+                                    <div class="step-item step-item-right" data-step="0">Обсуждение проекта</div>
                                 </div>
                             </div>
                             <div class="step-box">
@@ -680,7 +763,7 @@
                                     </div>
                                 </div>
                                 <div class="si si-2-2 si-r">
-                                    <div class="step-item step-item-right" data-step="0">01 Анализ бизнеса</div>
+                                    <div class="step-item step-item-right" data-step="0">Анализ бизнеса</div>
                                 </div>
                             </div>
                             <div class="step-box">
@@ -691,7 +774,7 @@
                                     </div>
                                 </div>
                                 <div class="si si-3-2 si-r">
-                                    <div class="step-item step-item-right" data-step="0">02 Дизайн-концепция</div>
+                                    <div class="step-item step-item-right" data-step="0">Дизайн-концепция</div>
                                 </div>
                             </div>
                             <div class="step-box">
@@ -702,7 +785,7 @@
                                     </div>
                                 </div>
                                 <div class="si si-4-2 si-r">
-                                    <div class="step-item step-item-right" data-step="0">03 Программирование</div>
+                                    <div class="step-item step-item-right" data-step="0">Программирование</div>
                                 </div>
                             </div>
                             <div class="step-box">
@@ -714,7 +797,7 @@
                                     </div>
                                 </div>
                                 <div class="si si-5-2 si-r">
-                                    <div class="step-item step-item-right" data-step="0">04 Тестирование</div>
+                                    <div class="step-item step-item-right" data-step="0">Тестирование</div>
                                 </div>
                             </div>
                             <div class="step-box">
@@ -724,12 +807,11 @@
                                     </div>
                                 </div>
                                 <div class="si si-6-2 si-r">
-                                    <div class="step-item step-item-right" data-step="0">05 Запуск</div>
+                                    <div class="step-item step-item-right" data-step="0">Запуск</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 <div id="portfolio-container">
                     <div id="portfolio-st" class="contact-us-title how-to-work-mobile">
                         <h2>Наши работы</h2>
@@ -806,7 +888,7 @@
                                 <a href="#contact-us-st">оставьте заявку</a>
                             </p>
                         </div>
-                        <div class="copyright-alert">
+                        <!-- <div class="copyright-alert">
                             <p>©</p>
                             <p class="copyright-content">Обращаем Ваше внимание, что все работы, представленные в данных
                                 разделах являются творческими произведениями и защищены авторским правом в соответствии
@@ -814,7 +896,7 @@
                                 законодательством Российской Федерации. <br> Использование шаблонов в коммерческих целях
                                 без
                                 согласия автора недопустимо и наказывается по ст.1301 ГК РФ.</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="why-we">
@@ -887,12 +969,15 @@
                         </div>
                     </div>
                     <div class="what-stek-images-box">
-                        <img class="t1-rev" src="img/html-5.svg" alt="HTML5">
+                        <img class="t1-rev" src="img/html5.svg" alt="HTML5">
                         <img class="t2-rev" src="img/css3.svg" alt="CSS3">
-                        <img class="t3-rev" src="img/javascript.svg" alt="JavaScript">
+                        <img class="t3-rev" src="img/js.svg" alt="JavaScript">
+                        <img class="t1-rev" src="img/redux.svg" alt="Redux">
+                        <img class="t2-rev" src="img/react.svg" alt="React">
+                        <img class="t3-rev" src="img/typescript.svg" alt="TypeScript">
                         <img class="t1-rev" src="img/figma.svg" alt="Figma">
-                        <img class="t2-rev" src="img/principle.webp" alt="Principle">
-                        <img class="t3-rev" src="img/procreate.webp" alt="ProCreate">
+                        <img class="t2-rev" src="img/principle.png" alt="Principle">
+                        <img class="t3-rev" src="img/procreate 1.png" alt="ProCreate">
                     </div>
                 </div>
                 <div id="contact-us-st">
@@ -916,16 +1001,17 @@
                                         <label class="text-field__label" for="email">Почта</label>
                                     </div>
                                     <div id="comment-div" class="text-field text-field_floating-3">
-                                        <input name="f[comment]" type="comment" id="comment"
-                                            class="form-item text-field__input" placeholder="Комментарий" type="text">
-                                        <label class="text-field__label" for="comment">Комментарий</label>
+                                        <!-- <input wrap="soft" name="f[comment]" type="comment" id="comment"
+                                            class="form-item text-field__input" placeholder="Комментарий" type="text"> -->
+                                        <textarea placeholder="Комментарий" name="f[comment]" id="comment" cols="30" rows="10"></textarea>
+                                        <!-- <label class="text-field__label" for="comment">Комментарий</label> -->
                                     </div>
                                     <div id="check-div" class="checkbox">
                                         <div class="checkbox-box">
                                             <div class="checkbox-unchecked"></div>
                                         </div>
                                         <span>Я соглашаюсь на <a class="confidence-policy-a"
-                                                href="/additions/policy.html">хранение и
+                                                href="/additions/policy">хранение и
                                                 обработку персональных
                                                 данных</a></span>
                                         <input required class="checkbox-input" type="checkbox" name="f[checkbox]"
@@ -956,15 +1042,15 @@
                             <div id="mobile-contact-us" class="contact-us-box contact-us-box-mobile">
                                 <a target="_blank" href="https://t.me/webproject_ru" id="tg-item"
                                     class="contact-us-item-mobile">
-                                    <img src="img/tg.svg" alt="Telegram">
+                                    <img src="img/tg-mobile.svg" alt="Telegram">
                                 </a>
                                 <a href="https://vk.me/webprojectstudio" target="_blank" id="vk-item"
                                     class="contact-us-item-mobile">
-                                    <img src="img/vk.svg" alt="VKontakte">
+                                    <img src="img/vk-mobile.svg" alt="VKontakte">
                                 </a>
                                 <a target="_blank" href="mailto:info@web-project-studio.ru" id="email-item"
                                     class="contact-us-item-mobile">
-                                    <img src="img/email.svg" alt="Email">
+                                    <img src="img/email-mobile.svg" alt="Email">
                                 </a>
                             </div>
                         </div>
